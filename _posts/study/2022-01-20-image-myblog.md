@@ -26,6 +26,7 @@ MD파일을 생성하고, MD문법에 맞추어 글을 작성하고 이미지 �
 ![이미지1](https://github.com/wookikim95/wookikim95.github.io/blob/main/assets/img/study/github/2022-01-20_1.jpg?raw=true)
 <center>blog_source 자료를 모아놓은 폴더 (img)</center><br/>
 <br/>
+
 ![이미지2](https://github.com/wookikim95/wookikim95.github.io/blob/main/assets/img/study/github/2022-01-20_2.jpg?raw=true)
 <center>img 폴더 내의 study/github 카테고리의 포스트에 들어갈 이미지를 저장할 곳.</center><br/>
 <br/>
