@@ -35,15 +35,22 @@ MD파일을 생성하고, MD문법에 맞추어 글을 작성하고 이미지 �
 그리고, 이 과정에서 찍힌 사진 파일 또한 2022-01-20-3.jpg로 저장되어있는 상태이다.
 
 
+---
+
+
 ![이미지4](https://github.com/wookikim95/wookikim95.github.io/blob/main/assets/img/study/github/2022-01-20_4.jpg?raw=true)
 
 중간점검과정! 이렇게 깃허브 저장소 안에 있는 md파일 상에서는 이미지가 잘 출력된다.
 
 
+---
 
 ![이미지5](https://github.com/wookikim95/wookikim95.github.io/blob/main/assets/img/study/github/2022-01-20_5.jpg?raw=true)
 
 하지만.. 블로그 페이지로 와서 보니 이미지를 못찾은 것인지 깨져서 나온다. 무슨일인걸까??
+
+
+
 
 ---
 ## 나의 해결 방법
