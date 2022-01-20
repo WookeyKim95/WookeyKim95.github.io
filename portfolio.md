@@ -21,7 +21,7 @@ font-weight:bold">
 <center>220, Wangsimni-ro, Seongdong-gu, Seoul, Republic of Korea</center>
 
 ## Personal Data
----
+
 > 1995.8.7 출생
 
 > 대한민국, 서울특별시 서초구 거주
@@ -30,9 +30,9 @@ font-weight:bold">
 
 > Github : <a href="https://github.com/wookikim95">https://github.com/wookikim95</a>
 
-
-## Education
 ---
+## Education
+
 > Mar.2019 ~ Aug.2021 한양대학교
 >
 > 공과대학 건설환경공학과 (Department Of Civil & Environmental Engineering)
@@ -44,9 +44,9 @@ font-weight:bold">
 > Feb.2014 : 반포고등학교 졸업
 
 
-
-## Researching Projects Has Joined in...
 ---
+## Researching Projects Has Joined in...
+
 
 * **지능형 관제 플랫폼 및 빅 데이터 기반 최적 경로 네비게이션(C-Map) 기술 개발**
 
@@ -66,27 +66,27 @@ font-weight:bold">
 
 연구보조원(학부생 인턴) 2020.03.01 ~ 2021.08.31
 
-
-## Work Experiences
 ---
+## Work Experiences
+
 * Platom .inc 2021. 10 - 2021. 11 
 
-+ Intern, Developing Education App. for KMO
+  + Intern, Developing Education App. for KMO
 
 * Hanyang University 2020. 03 – 2021. 08
 
-+ Researching Assistant, Researching Project - Smart Construction System with Korea Expressway Corporation
+  + Researching Assistant, Researching Project - Smart Construction System with Korea Expressway Corporation
 
 
-
-## Awards
 ---
+## Awards
+
 
 -한양 졸업우수상 (졸업평점 4.00 이상)
 
-
-## Skills and Certification
 ---
+## Skills and Certification
+
 * Language
   + Korean(Native)
   + English(Fluent)
@@ -101,6 +101,7 @@ font-weight:bold">
   + Word
   + AutoCAD
 
+---
 ## Studying..
 
 * Algorithms and Data Structure
@@ -108,9 +109,8 @@ font-weight:bold">
 * Frontend
     + HTML/CSS/JavaScript
 
-
-## Interested in
 ---
+## Interested in..
 
 * Swimming
 * Playing the Piano

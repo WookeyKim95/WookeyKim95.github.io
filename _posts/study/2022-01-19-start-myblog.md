@@ -2,7 +2,7 @@
 layout: post
 title:  "첫 일지"
 subtitle:   "개요"
-date: 2021-01-19 11:16:51 +0900
+date: 2022-01-19 11:16:51 +0900
 categories: study
 tags: github
 comments: true
