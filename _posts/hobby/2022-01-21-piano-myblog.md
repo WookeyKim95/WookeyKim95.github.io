@@ -2,7 +2,7 @@
 layout: post
 title:  "피아노 학원을 다니다."
 subtitle:   "개요"
-date: 2022-01-21 09:58:24 +0900
+date: 2022-01-21 08:58:24 +0900
 categories: hobby
 tags: piano
 comments: true
