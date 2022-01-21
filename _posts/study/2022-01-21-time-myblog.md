@@ -47,6 +47,9 @@ md파일로 들어가서 다시 한번 날짜를 확인해보았다.<br/>
 
 다시 원래대로 돌려놓고, 이번엔 html의 기본 언어를 바꿔보기로했다.<br/>
 내가 사용하는 Jekyll테마는 **hydejack 무료버전**이다.<br/>
+**정확히 말하자면, 아래 따라쟁이님 블로그에서 샘플테마를 받아서 커스텀을 진행하였다.**<br/>
+출처 - [따라쟁이님 블로그, 하루만에 만드는 깃허브 블로그](https://khw11044.github.io/blog/githubpages/2020-12-26-making-blog-02/)<br/>
+<br/>
 ![이미지5](https://github.com/wookikim95/wookikim95.github.io/blob/main/assets/img/study/github/2022-01-21_6.jpg?raw=true)<br/>
 이 블로그 리소스의 경우 기본언어 설정하는 곳은 **_layout 폴더의 compress.html에 있었다.**<br/>
 <br/>
