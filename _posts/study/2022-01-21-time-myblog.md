@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "블로그 포스트 시간 조절하기"
+title:  "깃허브 블로그 포스트 날짜에 관한 일지"
 subtitle:   "개요"
 date: 2022-01-21 16:19:32 +0900
 categories: study
@@ -11,7 +11,7 @@ related_posts:
 ---
 
 
-## 어라.. 난 이글을 21일에 썼는데..?<br/>
+# 어라.. 난 이글을 21일에 썼는데..?<br/>
 
 내 블로그를 쭉 둘러보고 있었는데, 이상한 점을 발견했다.<br/>
 ![이미지1](https://github.com/wookikim95/wookikim95.github.io/blob/main/assets/img/study/github/2022-01-21_1.jpg?raw=true)<br/>
@@ -46,10 +46,26 @@ md파일로 들어가서 다시 한번 날짜를 확인해보았다.<br/>
 <br/>
 
 다시 원래대로 돌려놓고, 이번엔 html의 기본 언어를 바꿔보기로했다.<br/>
-내가 사용하는 깃허브 블로그테마는 **hydejack 무료버전**이다.<br/>
+내가 사용하는 Jekyll테마는 **hydejack 무료버전**이다.<br/>
 ![이미지5](https://github.com/wookikim95/wookikim95.github.io/blob/main/assets/img/study/github/2022-01-21_6.jpg?raw=true)<br/>
 이 블로그 리소스의 경우 기본언어 설정하는 곳은 **_layout 폴더의 compress.html에 있었다.**<br/>
 <br/>
 
 그리고 사진에는 없지만 크롬에서 한국어로 페이지 번역하기를 해보니까 내 블로그가 와장창 깨졌다..<br/>
-저기서 **default:'en'**을 **default:'ko'**로 바꿔보았다. 
+저기서 **default:'en'**을 **default:'ko'**로 바꿔보았다. <br/>
+
+![이미지5](https://github.com/wookikim95/wookikim95.github.io/blob/main/assets/img/study/github/2022-01-21_7.jpg?raw=true)<br/>
+그리고 우선 VSCode에서 bundle exec jekyll serve로 시뮬레이션해보니 날짜도 원하는 대로 나오고 언어도 ko로 잘 반영되었다.<br/>
+
+자 이제 남은건.. github에다 푸시해서 크롬 등 웹 상에서도 잘 반영되는지 확인하는 것이다..<br/>
+![이미지5](https://github.com/wookikim95/wookikim95.github.io/blob/main/assets/img/study/github/2022-01-21_8.jpg?raw=true)<br/>
+한 5분 정도 기다린 뒤에 마이크로소프트 엣지로 내 블로그에 와서 F12를 눌러보았다.<br/>
+하지만 언어설정은 한국어로 잘 되었지만 날짜는 여전했다..<br/>
+<br/>
+이건 내 개인적인 뇌피셜인데..<br/>
+VSCode에서 bundle exec jekyll serve로 시뮬레이션해서 접속하면 한국날짜가 반영되지만<br/>
+이 블로그는 깃허브 서버를 쓰다보니까 세계 표준시가 반영되는 것 같다..<br/>
+<br/>
+이런 현상이 발생한다는 것이 신기하다는 생각이 들면서도 지금 내 능력으로 여기서 더 잘못 건들면 홈페이지 깨질 것 같아서 우선 세계 표준시로 보는 것으로 해야겠다..<br/>
+그래도 업로드는 지금까지 업로드하던 시간 형식으로 해야지.<br/>
+

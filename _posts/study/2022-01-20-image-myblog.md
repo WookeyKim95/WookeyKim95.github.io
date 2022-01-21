@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "블로그 작성에 이미지 삽입하기."
+title:  "깃허브 블로그 작성에 이미지 삽입하기."
 subtitle:   "개요"
 date: 2022-01-20 09:10:32 +0900
 categories: study
