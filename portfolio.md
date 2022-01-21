@@ -75,7 +75,7 @@ font-weight:bold">
 
 * Hanyang University 2020. 03 – 2021. 08
 
-  + Researching Assistant, Researching Project - Smart Construction System with Korea Expressway Corporation
+  + Undergraduate Researching Assistant, Researching Project - Smart Construction System with Korea Expressway Corporation
 
 
 ---
