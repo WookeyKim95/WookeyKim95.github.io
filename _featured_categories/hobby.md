@@ -1,10 +1,10 @@
 ---
 layout: list
-title: Painting
-slug: painting
+title: Hobby
+slug: hobby
 menu: true
 submenu: true
 order: 4
 description: >
-  그림  
+  취미생활  
 ---
