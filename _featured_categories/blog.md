@@ -6,5 +6,5 @@ menu: true
 submenu: false
 order: 6
 description: >
-  기타 일상
+  일상 기록일지
 ---

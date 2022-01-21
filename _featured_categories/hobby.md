@@ -6,5 +6,5 @@ menu: true
 submenu: true
 order: 4
 description: >
-  취미생활  
+  취미생활 기록일지  
 ---
