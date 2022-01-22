@@ -18,7 +18,7 @@ tagline:             "Project : Reboot"
 # A short description of the page, used in the sidebar and as fallback for the meta description tag.
 # Markdown enabled, but don't use more than one paragraph (enforced by `>`)
 description:         >
-  안녕하세요! 저의 코딩공부, 그림, 일상기록일지입니다.
+  개발자를 꿈꾸며 한 페이지씩 써내려가는 나의 일지.
 
 # This should be the same author as first entry in `_data/authors.yml`
 author:
