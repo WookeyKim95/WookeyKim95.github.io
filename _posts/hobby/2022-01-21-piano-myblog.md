@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "피아노 학원을 다니다."
+title:  "피아노 첫 걸음. 음정, Major Scale 그리고 코드."
 subtitle:   "개요"
 date: 2022-01-21 08:58:24 +0900
 categories: hobby
