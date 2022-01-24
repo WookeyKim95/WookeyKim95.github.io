@@ -15,10 +15,6 @@
   {% endunless %}
 {% endfor %}
 
-{% if page.use_math %}
-  {% include mathjax_support.html %}
-{% endif %}
-
 {% if page.header-img %}
   <meta property="og:image" content="{{ site.url }}/assets/{{ page.header-img }}">
   <br/>

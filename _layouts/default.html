@@ -10,6 +10,10 @@ Looks like you are using the `{{ page.layout }}` layout. This layout is not supp
   {% include message.html text=text %}
   <hr/>
 
+  {% if page.use_math %}
+    {% include mathjax_support.html %}
+  {% endif %}
+
   {{ content }}
 
   <h2>Posts</h2>
