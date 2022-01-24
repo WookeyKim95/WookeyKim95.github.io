@@ -4,6 +4,10 @@ layout: base
 
 {% include post.html post=page link_title=false %}
 
+{% if page.use_math %}
+    {% include mathjax_support.html %}
+{% endif %}
+
 {% include about.html %}
 
 {% include related.html post=page %}
