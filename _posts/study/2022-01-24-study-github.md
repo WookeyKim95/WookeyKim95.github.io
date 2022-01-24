@@ -84,11 +84,13 @@ MathJax.Hub.Register.MessageHook("TeX Jax - parse error",function (message) {
 ### _includes 폴더 안의 head.html 수정하기<br/>
 <br/>
 head.html에 아래 코드를 추가해주자.<br/>
+
 ```
 {% if page.use_math %}
     {% include mathjax_support.html %}
 {% endif %}
 ```
+
 <br/>
 음! 포스트에 mathjax 수학공식을 사용한다면 아까 작성한 html파일을 활용하라는 내용인 것 같다!<br/>
 <br/>
@@ -150,11 +152,8 @@ related_posts:
 또한, 같은 페이지에서 새로고침을 해야 올바르게 반영이 되는 모습이 보인다. 흠..<br/>
 <br/>
 지금 문제 상황이 이렇다.<br/>
-
 필자가 사용하는 지킬테마는 **Hydejack**이다.<br/>
-
 지금 문제에서 핵심이 첫 페이지를 열었을 땐 수학 방정식 문법이 반영이 안되는 것이고,<br/>
-
 같은 페이지에서 새로고침을 해야 반영이 되는 것이다.<br/>
 그러면.. 해결방안은?<br/>
 <br/>
