@@ -44,6 +44,8 @@ related_posts:
 
 이를 염두하면서 이 과정을 파이썬 코드로 나타내보면<br/>
 ```
+import random
+
 def bubblesort(data):
     for i1 in range(len(data) - 1):
         swap = False # 이미 자리 바꾸기를 했는지 여부를 따짐.
@@ -56,7 +58,6 @@ def bubblesort(data):
         if swap == False:
             break
 
-import random
 
 data_list = random.sample(range(100), 50)
 print(data_list)
