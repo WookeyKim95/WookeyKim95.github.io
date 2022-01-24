@@ -45,9 +45,8 @@
   <title>Redirecting...</title>
 {% endunless %}
 
-{% if page.use_math %}
-    {% include mathjax_support.html %}
-{% endif %}
+{% include mathjax_support.html %}
+
 
 {% if page.description.size > 0 %}
   {% assign description = page.description | markdownify %}
