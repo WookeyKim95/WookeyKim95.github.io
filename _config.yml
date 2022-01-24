@@ -131,4 +131,10 @@ compress_html:
 sass:
   style:             compressed
 
+# Math Equation
+markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
 

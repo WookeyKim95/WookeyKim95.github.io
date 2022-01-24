@@ -1,10 +1,11 @@
 ---
 layout: post
 title:  "[알고리즘] 버블정렬."
-subtitle:   "개요"
+subtitle:   
 date: 2022-01-24 09:14:35 +0900
 categories: study
 tags: algorithm
+use_math: true
 comments: true
 related_posts:
 
