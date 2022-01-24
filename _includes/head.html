@@ -37,12 +37,17 @@
   {% endif %}
 {% endcapture %}
 
+{% if page.use_math %}
+    {% include mathjax_support.html}
+{% endif %}
+
 {% unless page.redirect %}
   <title>{{ title | strip }}</title>
 {% else %}
   <meta http-equiv="refresh" content="0; url={{ page.redirect.to }}">
   <title>Redirecting...</title>
 {% endunless %}
+
 
 {% if page.description.size > 0 %}
   {% assign description = page.description | markdownify %}
