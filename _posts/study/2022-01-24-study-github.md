@@ -12,6 +12,9 @@ related_posts:
 
    
 ## 어라? 수식이 반영이 안됐나?<br/>
+---
+<br/>
+
 ![이미지1](https://github.com/wookikim95/wookikim95.github.io/blob/main/assets/img/study/github/2022-01-24_2.jpg?raw=true)
 <br/>
 
@@ -23,10 +26,10 @@ related_posts:
 우선 VSCode에서 마크다운 미리보기로 보았을 땐 수식의 모양이 잘 나타났다.<br/>
  그런데 블로그에서 이러는 것을 보니, 블로그에서 수식을 구동하기 위해선 '뭔가 추가조치가 필요하구나.' 라는 생각이 들었다.<br/>
 
- ---
+
 
  ## 깃허브 블로그에 수식을 넣어주기 위한 조치.<br/>
-
+ ---
  역시나. 기본적으로 jekyll 깃허브 블로그는 지원이 안된다고 한다.<br/>
  VSCode 마크다운 미리보기에서 나온 것처럼 만들기 위해서는 변경해야할 내용이 있다고 한다.<br/>
 
@@ -90,7 +93,6 @@ head.html에 아래 코드를 추가해주자.<br/>
     {% include mathjax_support.html %}
 {% endif %}
 ```
-
 <br/>
 음! 포스트에 mathjax 수학공식을 사용한다면 아까 작성한 html파일을 활용하라는 내용인 것 같다!<br/>
 <br/>
@@ -138,14 +140,14 @@ related_posts:
 ![이미지4](https://github.com/wookikim95/wookikim95.github.io/blob/main/assets/img/study/github/2022-01-24_6.jpg?raw=true)<br/>
 <br/>
 와우! VSCode에서 bundle exec jekyll serve로 시뮬레이션해보니 잘 작동한다!<br/>
+그러나 대부분 여기서 곧 바로 문제가 해결되지만 나한텐 또 다른 문제가 발생했다.<br/>
+<br/>
 
-
-
-### 새로고침을 해야 반영이되네??<br/>
-
+## 내게 발생한 또 다른 문제<br/>
+---
 ![이미지5](https://github.com/wookikim95/wookikim95.github.io/blob/main/assets/img/study/github/2022-01-24_5.jpg?raw=true)<br/>
 <br/>
-그런데 다른 페이지에 갔다가 다시 돌아오면 또 반영이 안되어있다.<br/>
+다른 페이지에 갔다가 다시 돌아오면 또 저렇게 나타난다.<br/>
 
 ![이미지6](https://github.com/wookikim95/wookikim95.github.io/blob/main/assets/img/study/github/2022-01-24_6.jpg?raw=true)<br/>
 <br/>
