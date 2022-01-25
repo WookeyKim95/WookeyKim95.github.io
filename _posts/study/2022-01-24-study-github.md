@@ -93,6 +93,7 @@ head.html에 아래 코드를 추가해주자.<br/>
     {% include mathjax_support.html %}
 {% endif %}
 ```
+
 <br/>
 음! 포스트에 mathjax 수학공식을 사용한다면 아까 작성한 html파일을 활용하라는 내용인 것 같다!<br/>
 <br/>
@@ -173,6 +174,7 @@ Hydejack기준으로 필자는 _layouts 디렉토리의 post.html에도<br/>
     {% include mathjax_support.html %}
 {% endif %}
 ```
+
 을 추가해보았다.<br/>
 <br/>
 
