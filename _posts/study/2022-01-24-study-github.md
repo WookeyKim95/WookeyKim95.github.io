@@ -180,7 +180,7 @@ Hydejack기준으로 필자는 _layouts 디렉토리의 post.html에도<br/>
 
 ![이미지6](https://github.com/wookikim95/wookikim95.github.io/blob/main/assets/img/study/github/2022-01-24_8.jpg?raw=true)<br/>
 <br/>
-그랬더니 블로그를 첫 로드하고나서 게시물에 들어가니 mathjax_supprot.html이 반영이 된 것 같다.<br/>
+그랬더니 블로그를 첫 로드하고나서 게시물에 들어가니 mathjax_support.html이 반영이 된 것 같다.<br/>
 공식이 잘 나온다.<br/>
 <br/>
 
