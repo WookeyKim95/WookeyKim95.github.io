@@ -167,6 +167,7 @@ related_posts:
 ![이미지6](https://github.com/wookikim95/wookikim95.github.io/blob/main/assets/img/study/github/2022-01-24_7.jpg?raw=true)<br/>
 <br/>
 Hydejack기준으로 필자는 _layouts 디렉토리의 post.html에도<br/>
+
 ```
 {% if page.use_math %}
     {% include mathjax_support.html %}
