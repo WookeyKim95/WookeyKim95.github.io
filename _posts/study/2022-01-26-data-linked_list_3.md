@@ -12,14 +12,14 @@ related_posts:
 
 ### 값을 삭제할 때 삭제할 데이터가 없을 때에는?<br/>
 <br/>
-2편에서 링크드리스트의 데이터를 삭제하는 과정을 포스팅했는데, 두 가지 오류가 있었다.<br/>
+2편에서 링크드리스트의 데이터를 추가, 삭제하는 과정을 포스팅했는데, 두 가지 오류가 있었다.<br/>
 <br/>
 
 **1. 코드상에 누락한 부분이 있다.**<br/>
 **2. 삭제할 데이터가 링크드리스트 내에 존재하지 않는다면?**<br/>
 
 
-### 누락한 부분 수정<br/>
+### 1. 누락한 부분 수정<br/>
 
 ```
 def delete(data):
@@ -33,9 +33,9 @@ def delete(data):
     
     # head가 아니라면 이쪽으로 코드가 넘어온다.
 
-    ## 누락부분 ##
+    ############### 누락부분 ###############
     node = head
-    ##############
+    #######################################
 
     while (node.next).data != data:
         node = node.next
@@ -59,9 +59,10 @@ UnboundLocalError: local variable 'node' referenced before assignment
 
 오류가 발생한 부분은 데이터를 search하는 파트였는데, search 과정의 시작노드를 정해주지 않아서 참조할 변수를 찾을 수 없어 발생하는 오류였다.<br/>
 
-누락된 코드 `node = head`를 넣어주니 다시 잘 작동한다.
+누락된 코드 `node = head`를 넣어주니 다시 잘 작동한다.<br/>
+<br/>
 
-### 삭제할 데이터가 링크드리스트 내에 존재하지 않는 경우.<br/>
+### 2. 삭제할 데이터가 링크드리스트 내에 존재하지 않는 경우.<br/>
 
 첫 번째로 누락한 부분은 수정했지만, 링크드리스트 내에 없는 데이터를 삭제하려고 할 경우
 ```
@@ -69,17 +70,17 @@ while (node.next).data != data:
 
 AttributeError: 'NoneType' object has no attribute 'data'
 ```
-NoneType 오류가 발생한다.<br/>
-음, 없는 데이터를 삭제하려고 하니 오류가 당연히 발생할 수 밖에.<br/>
+NoneType관련 AttributeError가 발생한다.<br/>
+음, 없는 데이터를 삭제하려고 하니 오류가 당연히 발생할 수 밖에...<br/>
 자, 여기서 발생한 에러가 AttributeError라는 점에 주목했다.<br/>
 <br/>
 삭제하고자 하는 데이터가 링크드리스트에 없다면 컴퓨터는 링크드리스트 끝까지 search를 진행할 것이다.<br/>
 
 **하지만 끝까지 갔을 때 `node = node.next`를 실행하면 node.data는 NoneType이 되며,**<br/>
 **`while (node.next).data != data:` 이 부분에서 오류가 난다.**<br/>
-node에 저장되는 data의 특성은 str, int 혹은 float 등 일테니.<br/>
+node에 저장되는 data의 특성은 str, int 혹은 float 등 일테니...<br/>
 
-#### 나의 해결방법.<br/>
+### 나의 해결방법.<br/>
 
 ```
     try:
@@ -91,7 +92,7 @@ node에 저장되는 data의 특성은 str, int 혹은 float 등 일테니.<br/>
         return
 ```
 try, except 구문을 사용하였다.<br/>
-데이터가 없어서 발생할 수 있는 오류의 종류는 node.data가 NoneType가 되어 발생하는 AttributeError 종류라고 판단하였다. 따라서, 오류가 발생하지 않을 때에는 링크드리스드를 서치하고<br/>
+데이터가 없어서 발생할 수 있는 오류의 종류는 node.data가 NoneType이 되어 발생하는 AttributeError라고 판단하였다. 따라서, 오류가 발생하지 않을 때에는 링크드리스트를 서치하고<br/>
 node.data = NoneType이 될 때에는 데이터가 없다고 판단하여 AttributeError가 발생, delete()함수를 종료하는 코드로 작성하였다.<br/>
 
 아! 그리고 insert() 함수에서도 링크드리스트 내에 데이터가 없으면 같은 오류가 발생할 것이다.<br/>
@@ -109,6 +110,7 @@ def add(data):
         node = node.next
         
     node.next = Node(data)
+    
     return
 
 def insert(data, new_data):
@@ -150,10 +152,10 @@ def delete(data):
         return
         
     temp = (node.next).next
-    
     del node.next
-
     node.next = temp
+
+    return
 
 def node_print():
     node = head
@@ -234,6 +236,6 @@ node_print()
 퍄퍄
 ```
 휴우.. 에러없이 잘 진행되었다. 링크드리스트 내에 값이 없어서 발생하는 오류는 해결된 듯 하다.<br/>
-일단은..<br/>
+일단은 말이지...<br/>
 
 **4편에서 계속..**

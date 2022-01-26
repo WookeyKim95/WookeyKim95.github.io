@@ -53,12 +53,15 @@ def insert(data, new_data):
         node = node.next
     
     # 만약 data를 가진 노드에 도착하면 아래의 코드가 진행된다.
-    tem = node.next # 우선 기존의 다음 노드 주소를 임시 변수에 저장
-    node_new = Node(new_data) # 새로운 노드 생성
-    node.next = node_new # data를 가진 노드의 다음 주소를 새로운 노드의 주소로 변경
-    node = node_new
-    node.next = tem # 새로운 노드의 다음 주소를 기존의 다음 노드 주소로 연결하여 연결 완료.
-
+    if not node.next: # data가 마지막 노드이면 node.next만 추가하면 된다.
+        node.next = Node(new_data)
+        return
+    else: # 그렇지 않을 경우 진행하는 코드.
+        tem = node.next # 우선 기존의 다음 노드 주소를 임시 변수에 저장
+        node_new = Node(new_data) # 새로운 노드 생성
+        node.next = node_new # data를 가진 노드의 다음 주소를 새로운 노드의 주소로 변경
+        node = node_new
+        node.next = tem # 새로운 노드의 다음 주소를 기존의 다음 노드 주소로 연결하여 연결 완료.
 ```
 
 이렇게 하면 구현이 가능하다.<br/>
@@ -189,6 +192,7 @@ def delete(data):
 위와 같이 코드를 짤 수 있다.<br/>
 
 **헉!! 저녁에 위 코드에서 오류사항이 있다는 것을 발견하였다. 오류 수정은 3편에서!**<br/>
+
 
 ```
 node1 = Node(1)
