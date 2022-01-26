@@ -174,6 +174,8 @@ def delete(data):
         del node # 원래 head node 삭제
         return # 아래쪽의 코드가 실행되지 않도록 함수 종료.
     
+    # head가 아니라면 이쪽으로 데이터가 넘어온다.
+
     while (node.next).data != data:
         node = node.next
     
@@ -184,6 +186,9 @@ def delete(data):
     node.next = temp
 ```
 위와 같이 코드를 짤 수 있다.<br/>
+
+**헉!! 저녁에 위 코드에서 오류사항이 있다는 것을 발견하였다. 오류 수정은 3편에서!**<br/>
+
 ```
 node1 = Node(1)
 node2 = Node(2)
