@@ -87,13 +87,13 @@ class Node:
         self.data = data
         self.next = next
 
-    def add(data):
-        node = head # head노드에서 탐색 시작.
-        while node.next: # 다음 노드에 대한 포인터가 있다면 진행
-            node = node.next
-        
-        # while 구문이 끝난 시점에는 마지막 노드에 와있다.
-        node.next = Node(data)
+def add(data):
+    node = head # head노드에서 탐색 시작.
+    while node.next: # 다음 노드에 대한 포인터가 있다면 진행
+        node = node.next
+    
+    # while 구문이 끝난 시점에는 마지막 노드에 와있다.
+    node.next = Node(data)
 ```
 
 이렇게 구현할 수 있다!<br/>
@@ -108,12 +108,12 @@ class Station:
         self.name = name
         self.next = next
     
-    def add(name):
-        station = start
-        while station.next:
-            station = station.next
-        
-        station.next = Station(name)
+def add(name):
+    station = start
+    while station.next:
+        station = station.next
+    
+    station.next = Station(name)
 ```
 노드랑 비슷하게 역을 형성하고 추가할 수 있도록 코드를 짰다.<br/>
 
@@ -122,21 +122,13 @@ class Station:
 
 ```
 Bundang_K241 = Station('망포')
-Bundang_K242 = Station('매탄권선')
-Bundang_K241.next = Bundang_K242
 Start = Bundang_K241
 
-Bundang_K243 = Station('수원시청')
-Bundang_K242.next = Bundang_K243
-
-Bundang_K244 = Station('매교')
-Bundang_K243.next = Bundang_K244
-
-Bundang_K245 = Station('수원')
-Bundang_K244.next = Bundang_K245
-
-Bundang_K246 = Station('고색')
-Bundang_K245.next = Bundang_K246
+add('매탄권선')
+add('수원시청')
+add('매교')
+add('수원')
+add('고색')
 ```
 
 자! 이렇게 수인분당선에서 고색행 열차가 망포역 - 고색역 까지 주행하는 구간을 링크드리스트로 형성했다.
@@ -155,4 +147,4 @@ print(station.name)
 
 Spyder에서 구동해보니 잘 출력되었다!<br/>
 
-2편에서 계속..<br/>
+**2편에서 계속..**<br/>
