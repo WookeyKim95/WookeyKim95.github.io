@@ -614,8 +614,6 @@ def arrive_ment_kor(id_num):
 
 def arrive_ment_eng(id_num):
     
-    print('This stop is '+ id_num['name'] + ', ' + id_num['name'] + '.')
-    
     if id_num['door'] == '왼쪽':
         print('The door opens on the left.')
     elif id_num['door'] == '오른쪽':
@@ -654,7 +652,8 @@ def arrival_term(id_num):
     print('내리실 때에 두고 내리시는 물건이 없는지 다시 한번 확인하시기 바랍니다.')
     print('오늘도 이용해주셔서 감사합니다. 안녕히 가십시오!')
     print()
-        
+    
+    print('This stop is '+ id_num['name'] + ', ' + id_num['name'] + ', The last station.')
     arrive_ment_eng(id_num)
     
     print('Thank you for using our train!')
@@ -734,7 +733,7 @@ The door opens on the right.
 내리실 때에 두고 내리시는 물건이 없는지 다시 한번 확인하시기 바랍니다.
 오늘도 이용해주셔서 감사합니다. 안녕히 가십시오!
 
-This stop is 수서, 수서.
+This stop is 수서, 수서, The last station.
 The door opens on the left.
 
 Thank you for using our train!
@@ -835,7 +834,7 @@ The door opens on the right.
 내리실 때에 두고 내리시는 물건이 없는지 다시 한번 확인하시기 바랍니다.
 오늘도 이용해주셔서 감사합니다. 안녕히 가십시오!
 
-This stop is 양재, 양재.
+This stop is 양재, 양재, The last station.
 The door opens on the right.
 
 You can transfer to  신분당 line 
@@ -872,8 +871,6 @@ def arrive_ment_kor(id_num):
     return
 
 def arrive_ment_eng(id_num):
-    
-    print('This stop is '+ id_num['name'] + ', ' + id_num['name'] + '.')
     
     if id_num['door'] == '왼쪽':
         print('The door opens on the left.')
@@ -925,7 +922,8 @@ def arrival_term(id_num):
     print('내리실 때에 두고 내리시는 물건이 없는지 다시 한번 확인하시기 바랍니다.')
     print('오늘도 이용해주셔서 감사합니다. 안녕히 가십시오!')
     print()
-        
+    
+    print('This stop is '+ id_num['name'] + ', ' + id_num['name'] + ', The last station.')
     arrive_ment_eng(id_num)
     
     print('Thank you for using our train!')
@@ -1045,7 +1043,7 @@ The door opens on the right.
 내리실 때에 두고 내리시는 물건이 없는지 다시 한번 확인하시기 바랍니다.
 오늘도 이용해주셔서 감사합니다. 안녕히 가십시오!
 
-This stop is 수서, 수서.
+This stop is 수서, 수서, The last station.
 The door opens on the left.
 
 Thank you for using our train!
@@ -1124,7 +1122,7 @@ The door opens on the right.
 내리실 때에 두고 내리시는 물건이 없는지 다시 한번 확인하시기 바랍니다.
 오늘도 이용해주셔서 감사합니다. 안녕히 가십시오!
 
-This stop is 양재, 양재.
+This stop is 양재, 양재, The last station.
 The door opens on the right.
 
 You can transfer to  신분당 line 
@@ -1208,7 +1206,7 @@ The door opens on the left.
 내리실 때에 두고 내리시는 물건이 없는지 다시 한번 확인하시기 바랍니다.
 오늘도 이용해주셔서 감사합니다. 안녕히 가십시오!
 
-This stop is 죽전, 죽전.
+This stop is 죽전, 죽전, The last station.
 The door opens on the right.
 
 Thank you for using our train!
@@ -1290,7 +1288,7 @@ The door opens on the left.
 내리실 때에 두고 내리시는 물건이 없는지 다시 한번 확인하시기 바랍니다.
 오늘도 이용해주셔서 감사합니다. 안녕히 가십시오!
 
-This stop is 야탑, 야탑.
+This stop is 야탑, 야탑, The last station.
 The door opens on the left.
 
 Thank you for using our train!
@@ -1357,7 +1355,7 @@ The door opens on the left.
 내리실 때에 두고 내리시는 물건이 없는지 다시 한번 확인하시기 바랍니다.
 오늘도 이용해주셔서 감사합니다. 안녕히 가십시오!
 
-This stop is 정자, 정자.
+This stop is 정자, 정자, The last station.
 The door opens on the left.
 
 You can transfer to  분당 line 
@@ -1422,7 +1420,7 @@ You can transfer to  line no.3
 내리실 때에 두고 내리시는 물건이 없는지 다시 한번 확인하시기 바랍니다.
 오늘도 이용해주셔서 감사합니다. 안녕히 가십시오!
 
-This stop is 강남, 강남.
+This stop is 강남, 강남, The last station.
 The door opens on the left.
 
 Thank you for using our train!
