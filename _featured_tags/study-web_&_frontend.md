@@ -1,7 +1,7 @@
 ---
 layout: tag-blog
-title: HTML_CSS_JS
-slug: html_css_js
+title: Web & Frontend
+slug: web_&_frontend
 category: study
 menu: false
 order: 2
