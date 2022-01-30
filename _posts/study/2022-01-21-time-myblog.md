@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "깃허브 블로그 포스트 날짜에 관한 일지"
+title:  "[Github Blog] 깃허브 블로그 포스트 날짜에 관한 일지"
 subtitle:   "개요"
 date: 2022-01-21 16:19:32 +0900
 categories: study

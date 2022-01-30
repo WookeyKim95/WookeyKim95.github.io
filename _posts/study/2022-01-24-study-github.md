@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "깃허브 블로그에 수학 방정식 넣기."
+title:  "[Github Blog] 깃허브 블로그에 수학 방정식 넣기."
 subtitle:   "지킬 깃허브에 수식을 넣으려면?"
 date: 2022-01-24 14:26:23 +0900
 categories: study
