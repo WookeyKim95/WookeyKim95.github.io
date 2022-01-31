@@ -41,14 +41,14 @@ W3C라는 표준화 제정 단체에서 지정한다.<br/>
 ![웹 브라우저 구성](https://github.com/wookikim95/wookikim95.github.io/blob/main/assets/img/study/web_and_frontend/2022-01-31_5.jpg?raw=true)
 <br/>
 대표적으로 위와 같다. 뷰포트에다가 탭, 주소창,기능 버튼을 모두 포함하면 창(Window)이 되는 것이었더라..<br/>
-뷰포트를 윈도우로 잘못 알고 있었다.<br/>
+난 여태까지 뷰포트를 윈도우로 잘못 알고 있었다.<br/>
 
 ## 웹 브라우저의 종류<br/>
 
 대표적인 웹 브라우저의 종류는 아래와 같다.<br/>
 
 - 구글 : 크롬
-- MS : MS Edge, ~~IE(서비스 종료)~~
+- MS : MS Edge, ~~IE(서비스 지원 종료)~~
 - 네이버 : 웨일
 - 줌 인터넷 : 스윙
 - 모질라재단 : 파이어폭스

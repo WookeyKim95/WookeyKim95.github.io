@@ -112,7 +112,7 @@ font-weight:bold">
     + HTML/CSS/JavaScript
 
 ---
-## Interested in..
+## Hobbies
 
 * Swimming
 * Playing the Piano
