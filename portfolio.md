@@ -35,11 +35,13 @@ font-weight:bold">
 
 > Mar.2019 ~ Aug.2021 한양대학교
 >
-> 공과대학 건설환경공학과 (Department Of Civil & Environmental Engineering)
+> 공과대학 건설환경공학과 (Department Of Civil & Environmental Engineering)<br/>
+> (GPA : 4.11/4.5 with 130 credits acquired.)
 
 > Mar.2014 ~ Feb.2016 : 연세대학교 원주캠퍼스
 >
-> 과학기술대학 물리학과 (Department Of Physics)
+> 과학기술대학 물리학과 (Department Of Physics)<br/>
+> (GPA : 3.50/4.3 with 75 credits acquired.)
 
 > Feb.2014 : 반포고등학교 졸업
 
