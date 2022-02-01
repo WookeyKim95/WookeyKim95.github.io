@@ -7,7 +7,9 @@ categories: study
 tags: web_&_frontend
 comments: true
 related_posts:
-
+    - /_posts/study/2022-01-31-web_oper_and_browser.md
+    - /_posts/study/2022-01-30-web_mark.md
+    - /_posts/study/2022-01-30-web_image.md
 ---
 
 ## 웹 개발 결과물에 사용되는 오픈 라이선스에 대해 알아보자.<br/>

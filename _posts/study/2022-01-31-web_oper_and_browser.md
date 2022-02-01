@@ -7,7 +7,9 @@ categories: study
 tags: web_&_frontend
 comments: true
 related_posts:
-
+    - /_posts/study/2022-01-30-web_mark.md
+    - /_posts/study/2022-01-30-web_license.md
+    - /_posts/study/2022-01-30-web_image.md
 ---
 
 ## 웹 페이지를 로드하는 과정.<br/>
