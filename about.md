@@ -5,6 +5,8 @@ menu: true
 order: 2
 ---
 
+<img src='https://github.com/wookikim95/wookikim95.github.io/blob/main/assets/img/owner_char.png?raw=true' alt='Owner_char' style=float : left>
+
 ## 닉네임 우키킴(Wookikim)
 
 제 이름이 김성욱이다보니, '욱', '욱이'라는 말로 많이 불렸는데,<br/>
