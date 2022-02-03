@@ -7,7 +7,7 @@ categories: study
 tags: data_structure
 comments: true
 related_posts:
-    - /_posts/study/2022-02-02-data-binary_tree_2.md
+    - /_posts/study/2022-02-03-data-binary_tree_2.md
     
 ---
 
