@@ -138,3 +138,12 @@ lsi: false
 excerpt_separator: "\n\n"
 incremental: false
 
+# Searching
+tipue_search:
+     include:
+         pages: false
+         collections: []
+     exclude:
+         files: [search.html, index.html, tags.html]
+         categories: []
+         tags: []
