@@ -262,22 +262,29 @@ input[type="checkbox"]:checked ~ ul{
 
 .button {
 	display:inline-block;
-	cursor:pointer;
-	color:#277ef0;
 	font-family:Arial;
-	font-size:18px;
+	font-size:16px;
 	font-weight:bold;
 	padding:6px 100px;
 	text-decoration:none;
 	text-shadow:0px 1px 0px #ffffff;
 }
 
-.button:hover {
+.button.url_false {
+	cursor:default;
+	color:#8f8f8f;
+}
+
+.button.url_true {
+  cursor:pointer;
+  color:#277ef0;
+}
+.button.url_true:hover {
   color:#164786;
 	text-shadow:0px 2px 0px #ffffff;
 }
 
-.button:active {
+.button.url_true:active {
   position:relative;
 	top:1px;
   }
