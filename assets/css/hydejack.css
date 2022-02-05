@@ -263,9 +263,9 @@ input[type="checkbox"]:checked ~ ul{
 .button {
 	display:inline-block;
 	font-family:Arial;
-	font-size:16px;
+	font-size:1em;
 	font-weight:bold;
-	padding: 18px 100px;
+	padding: 6px 100px;
 	text-decoration:none;
 	text-shadow:0px 1px 0px #ffffff;
 }
