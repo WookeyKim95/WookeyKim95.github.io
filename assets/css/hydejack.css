@@ -265,7 +265,7 @@ input[type="checkbox"]:checked ~ ul{
 	font-family:Arial;
 	font-size:16px;
 	font-weight:bold;
-	padding:6px 100px;
+	padding: 18px 100px;
 	text-decoration:none;
 	text-shadow:0px 1px 0px #ffffff;
 }
