@@ -18,6 +18,7 @@ related_posts:
 2. 블로그 소스 폴더 내 _layouts 폴더에 있는 post.html 파일에 page-button.html 파일 연동시키기
 3. 버튼의 CSS 구성하기
 <br/>
+<br/>
 
 ### 1. 블로그 소스 폴더 내 _includes 폴더에 page-button.html 파일 구성하기.<br/>
 
@@ -46,6 +47,7 @@ _includes 폴더에다가 page-button.html파일을 새로 생성해주자.<br/>
 ```
 
 필자는 위와 같은 형태로 나타나도록 작성하였다.<br/>
+<br/>
 
 ### 2. 블로그 소스 폴더 내 _layouts 폴더에 post.html 파일 구성하기.<br/>
 
@@ -56,6 +58,7 @@ _layouts 폴더에 post.html파일에 들어가보자.<br/>
 만약에 아직 버튼이 없는 경우라면 중간의 `include page-button.html`코드가 없을 것이다.<br/>
 
 이 코드가 어디에 있냐에 따라서 이전 글, 다음 글 버튼의 위치가 달라지게 된다. 필자는 포스트 바로 밑에 오도록 배치해두었다.<br/>
+<br/>
 
 ### 3. 버튼의 CSS 구성하기.<br/>
 
@@ -105,7 +108,7 @@ css 파일 맨 밑에다가 아래의 코드들을 추가해주자.
 순서대로 `.page-control & .page-control > div / .button / .button:hover / .button:acitve` 클래스들이 기능을 하며, 현재 그렇게 설정되어 있는 상태이다.<br/>
 
 버튼의 모양을 다르게 설정하고 싶다면 background, font속성이나 border 속성 등을 활용해서 버튼의 모양을 조정할 수 있다.<br/>
-
+<br/>
 
 ### 4. 이전 글이나 다음 글이 없을 경우 버튼 다르게 하기.<br/>
 
@@ -163,6 +166,7 @@ url이 있을 경우와 없을 경우로 나누었다.<br/>
 ![노링크시2](https://github.com/wookikim95/wookikim95.github.io/blob/main/assets/img/study/github/2022-02-06_2.jpg?raw=true)
 
 구성을 완료하였다.<br/>
+<br/>
 
 ### 5. 모바일 세로보기에서 깨지는 현상.<br/>
 
@@ -220,8 +224,9 @@ VS Code 터미널에서 bundle exec jekyll serve를 실행하고,
 
 왼쪽이 세로모드, 오른쪽이 가로모드이다.<br/>
 오케이. MS Edge 개발자 도구에서 시험해보니 원하는 대로 출력된다.<br/>
+<br/>
 
-### 혹은 width 크기에 따라서?<br/>
+### 6. 혹은 width 크기에 따라서?<br/>
 
 아니면.. Width크기에 따라서 조절을 해볼 수 도 있다.<br/>
 개인적인 추측으로 가로모드, 세로모드가 결정되는 기준이 width랑 height 중에서 어느 쪽이 더 큰지 비교한 결과인 것 같다.<br/>
@@ -271,6 +276,7 @@ css 코드를 바꾼 뒤, MS Edge에서 시뮬레이션 해보았다.<br/>
 450x824 그리고 1024x1500으로 같은 세로모드지만 버튼 속성이 다르게 적용되었다.<br/>
 
 그리고 다시 갤럭시z폴드2에서 봤다. 역시 적용이 잘 되었다.<br/>
+<br/>
 
 ### 해결해야 할 것<br/>
 
