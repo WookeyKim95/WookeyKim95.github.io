@@ -260,9 +260,6 @@ input[type="checkbox"]:checked ~ ul{
   max-width: 50%;
 }
 
-.page-control > div.only-mobile {
-  max-width: 100%;
-}
 .button {
 	display:inline-block;
 	font-family:Arial;
@@ -273,8 +270,32 @@ input[type="checkbox"]:checked ~ ul{
 	text-shadow:0px 1px 0px #ffffff;
 }
 
-.button.only-mobile {
-	padding: 6px 20px;
+ /* Landscape mode */
+ @media only screen and (orientation: landscape) {
+  .button {
+    display:inline-block;
+    font-family:Arial;
+    font-size:16px;
+    font-weight:bold;
+    padding: 6px 100px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #ffffff;
+  }
+  .portrait_only   { display: none; }
+}
+
+/* Portrait mode */
+@media only screen and (orientation: portrait) {
+  .button {
+    display:inline-block;
+    font-family:Arial;
+    font-size:16px;
+    font-weight:bold;
+    padding: 6px 20px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #ffffff;
+  }
+  .landscape_only  { display: none; }
 }
 
 .button.url_false {
