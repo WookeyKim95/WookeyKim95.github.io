@@ -260,22 +260,12 @@ input[type="checkbox"]:checked ~ ul{
   max-width: 50%;
 }
 
-.button {
-	display:inline-block;
-	font-family:Arial;
-	font-size:1em;
-	font-weight:bold;
-	padding: 6px 100px;
-	text-decoration:none;
-	text-shadow:0px 1px 0px #ffffff;
-}
-
  /* Landscape mode */
  @media only screen and (orientation: landscape) {
   .button {
     display:inline-block;
     font-family:Arial;
-    font-size:16px;
+    font-size:25px;
     font-weight:bold;
     padding: 6px 100px;
     text-decoration:none;

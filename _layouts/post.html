@@ -2,11 +2,11 @@
 layout: base
 ---
 
-{% include post.html post=page link_title=false %}
-
 {% if page.use_math %}
     {% include mathjax_support.html %}
 {% endif %}
+
+{% include post.html post=page link_title=false %}
 
 {% include page-button.html %}
 
