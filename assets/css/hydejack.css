@@ -260,6 +260,9 @@ input[type="checkbox"]:checked ~ ul{
   max-width: 50%;
 }
 
+.page-control > div.only-mobile {
+  max-width: 100%;
+}
 .button {
 	display:inline-block;
 	font-family:Arial;
