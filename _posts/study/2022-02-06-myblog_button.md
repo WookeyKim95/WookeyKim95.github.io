@@ -221,6 +221,57 @@ VS Code 터미널에서 bundle exec jekyll serve를 실행하고,
 왼쪽이 세로모드, 오른쪽이 가로모드이다.<br/>
 오케이. MS Edge 개발자 도구에서 시험해보니 원하는 대로 출력된다.<br/>
 
+### 혹은 width 크기에 따라서?<br/>
+
+아니면.. Width크기에 따라서 조절을 해볼 수 도 있다.<br/>
+개인적인 추측으로 가로모드, 세로모드가 결정되는 기준이 width랑 height 중에서 어느 쪽이 더 큰지 비교한 결과인 것 같다.<br/>
+
+![모바일시험3](https://github.com/wookikim95/wookikim95.github.io/blob/main/assets/img/study/github/2022-02-06_8.jpg?raw=true)
+
+핸드폰 같은 부분에서 세로모드로 보면 지금과 같은 폰트크기나 padding이 알맞지만, 태블릿 pc 같이 화면이 큰 상태에서 세로모드로 보면 오히려 폰트크기가 작으면 불편하더라..<br/>
+
+버튼이 깨지는 원인은 좌우 padding이 화면의 width보다 커서 발생한 것이니까, width값이 작을 때에만 padding을 조절하면 되겠지??<br/>
+
+```
+/* width > 500px일 때 */
+ @media (min-width:501px) {
+  .button {
+    display:inline-block;
+    font-family:Arial;
+    font-size:25px;
+    font-weight:bold;
+    padding: 6px 100px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #ffffff;
+  }
+  .portrait_only   { display: none; }
+}
+
+/* width <= 500px일 때 */
+@media (max-width:500px) {
+  .button {
+    display:inline-block;
+    font-family:Arial;
+    font-size:16px;
+    font-weight:bold;
+    padding: 6px 20px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #ffffff;
+  }
+  .landscape_only  { display: none; }
+}
+```
+
+가로모드, 세로모드에 따라 분류했던 부분을 수정했다. 버튼 클래스 안의 요소는 그대로 두고, 조건을 각기 다르게 부여했다.<br/>
+필자는 width의 크기가 500px일때를 분기로 설정했다.
+
+![모바일시험4](https://github.com/wookikim95/wookikim95.github.io/blob/main/assets/img/study/github/2022-02-06_9.jpg?raw=true)
+
+css 코드를 바꾼 뒤, MS Edge에서 시뮬레이션 해보았다.<br/>
+450x824 그리고 1024x1500으로 같은 세로모드지만 버튼 속성이 다르게 적용되었다.<br/>
+
+그리고 다시 갤럭시z폴드2에서 봤다. 역시 적용이 잘 되었다.<br/>
+
 ### 해결해야 할 것<br/>
 
 하지만 카테고리 별이 아닌 전체 포스트를 기준으로 이전 글과 다음 글의 링크가 연결된다.

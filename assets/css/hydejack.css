@@ -260,8 +260,8 @@ input[type="checkbox"]:checked ~ ul{
   max-width: 50%;
 }
 
- /* Landscape mode */
- @media only screen and (orientation: landscape) {
+/* width > 500px일 때 */
+ @media (min-width:501px) {
   .button {
     display:inline-block;
     font-family:Arial;
@@ -274,8 +274,8 @@ input[type="checkbox"]:checked ~ ul{
   .portrait_only   { display: none; }
 }
 
-/* Portrait mode */
-@media only screen and (orientation: portrait) {
+/* width <= 500px일 때 */
+@media (max-width:500px) {
   .button {
     display:inline-block;
     font-family:Arial;
