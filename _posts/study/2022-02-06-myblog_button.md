@@ -129,7 +129,7 @@ _includes 폴더에다가 page-button.html파일의 코드를 아래 링크의 �
 
 url이 있을 경우와 없을 경우로 나누었다.<br/>
 
-그리고 css도 다르게 설정해주어야지.<br/>
+그리고 css도 다르게 설정해주어야한다.<br/>
 ```
 .button {
 	display:inline-block;
@@ -233,9 +233,9 @@ VS Code 터미널에서 bundle exec jekyll serve를 실행하고,
 
 ![모바일시험3](https://github.com/wookikim95/wookikim95.github.io/blob/main/assets/img/study/github/2022-02-06_8.jpg?raw=true)
 
-핸드폰 같은 부분에서 세로모드로 보면 지금과 같은 폰트크기나 padding이 알맞지만, 태블릿 pc 같이 화면이 큰 상태에서 세로모드로 보면 오히려 폰트크기가 작으면 불편하더라..<br/>
+핸드폰 같은 부분에서 세로모드로 보면 지금과 같은 폰트크기나 padding이 알맞지만, 태블릿 pc 같이 화면이 큰 상태에서 세로모드로 보면 오히려 폰트크기가 작으면 보기가 불편했다..<br/>
 
-버튼이 깨지는 원인은 좌우 padding이 화면의 width보다 커서 발생한 것이니까, width값이 작을 때에만 padding을 조절하면 되겠지??<br/>
+버튼이 깨지는 원인은 좌우 padding이 화면의 width보다 커서 발생한 것이니까, width값이 작을 때에만 padding을 조절하면 될까나??<br/>
 
 ```
 /* width > 500px일 때 */
@@ -268,7 +268,7 @@ VS Code 터미널에서 bundle exec jekyll serve를 실행하고,
 ```
 
 가로모드, 세로모드에 따라 분류했던 부분을 수정했다. 버튼 클래스 안의 요소는 그대로 두고, 조건을 각기 다르게 부여했다.<br/>
-필자는 width의 크기가 500px일때를 분기로 설정했다.
+필자는 width의 크기 500px을 경계값으로 설정했다.
 
 ![모바일시험4](https://github.com/wookikim95/wookikim95.github.io/blob/main/assets/img/study/github/2022-02-06_9.jpg?raw=true)
 
@@ -282,4 +282,4 @@ css 코드를 바꾼 뒤, MS Edge에서 시뮬레이션 해보았다.<br/>
 
 하지만 카테고리 별이 아닌 전체 포스트를 기준으로 이전 글과 다음 글의 링크가 연결된다.
 
-CSS와 웹을 더 공부하고 나서, 카테고리 별로 보고 싶으면 카테고리 별로 볼 수 있도록 하는 방법도 짜야 겠다.<br/>
+CSS와 웹을 더 공부하고 나서, 카테고리 별로 보고 싶으면 카테고리 별로 볼 수 있도록 하는 방법도 짜야겠다.<br/>
