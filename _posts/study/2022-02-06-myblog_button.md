@@ -167,7 +167,7 @@ url이 있을 경우와 없을 경우로 나누었다.<br/>
 
 ### 5. 모바일 세로보기에서 깨지는 현상.<br/>
 
-![버튼깨짐](https://github.com/wookikim95/wookikim95.github.io/blob/main/assets/img/study/github/2022-02-06_3.jpg?raw=true)
+<img src='https://github.com/wookikim95/wookikim95.github.io/blob/main/assets/img/study/github/2022-02-06_3.jpg?raw=true' alt='모바일 이미지 깨짐' style="width:40%; height:40%"><br/>
 
 모바일로 블로그를 둘러보는데 이전글, 다음글 버튼이 깨지는 현상이 발생한다.<br/>
 필자는 이 글 작성일 기준으로 갤럭시z폴드2를 사용하고 있었다.<br/>
