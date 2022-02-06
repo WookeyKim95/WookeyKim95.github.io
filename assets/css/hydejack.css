@@ -273,6 +273,10 @@ input[type="checkbox"]:checked ~ ul{
 	text-shadow:0px 1px 0px #ffffff;
 }
 
+.button.only-mobile {
+	padding: 6px 20px;
+}
+
 .button.url_false {
 	cursor:default;
 	color:#8f8f8f;
