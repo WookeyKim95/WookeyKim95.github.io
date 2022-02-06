@@ -26,7 +26,6 @@ related_posts:
 우선, 페이지 화면 내에 들어갈 버튼의 html을 구성해보자.<br/>
 
 _includes 폴더에다가 page-button.html파일을 새로 생성해주자.<br/>
-
 그리고 코드를 다음 링크에 있는 코드와 같이 넣어주자.<br/>
 
 [필자의 파일 링크](https://github.com/wookikim95/wookikim95.github.io/blob/main/_includes/page-button_1.html)<br/>
