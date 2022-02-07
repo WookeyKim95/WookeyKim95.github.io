@@ -25,7 +25,7 @@ idx가 현재 인덱스, idx_L이 최솟값을 가지는 인덱스 값이다.<br
 
 ![선택정렬](https://github.com/wookikim95/wookikim95.github.io/blob/main/assets/img/study/algorithm/2022-02-07_selection_sort_1.jpg?raw=true)
 
-그리고 선택정렬로 인한 시간복잡도는 반복문이 2개이므로 $O(n^2)$이다.<br/>
+그리고 선택정렬로 인한 시간복잡도는 반복문이 2개이므로 $ O({n}^2) $이다.<br/>
 <br/>
 
 ### 파이썬 코드로 선택정렬 구현하기<br/>
