@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[Algorithm] 선택정렬"
+title:  "[알고리즘] 선택정렬"
 subtitle:
 date: 2022-02-07 10:13:23 +0900
 categories: study
