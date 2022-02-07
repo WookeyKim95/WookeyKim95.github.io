@@ -5,7 +5,7 @@ menu: true
 order: 2
 ---
 
-<img src='https://github.com/wookikim95/wookikim95.github.io/blob/main/assets/img/owner_char.png?raw=true' alt='Owner_char' style='float:left; width:40%; height:40% ; margin-right:20px'>
+<img src='https://github.com/wookikim95/wookikim95.github.io/blob/main/assets/img/owner_char.png?raw=true' alt='Owner_char' style='float:left; width:40%; height:40% ; margin-right:20px ; box-shadow:none'>
 
 ## 닉네임 우키킴(Wookikim)
 
