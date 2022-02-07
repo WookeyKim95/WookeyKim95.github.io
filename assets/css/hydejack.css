@@ -86,6 +86,7 @@
   max-width: 100%;
   box-sizing: content-box;
   background-color: #fff;
+  box-shadow: 4px 4px 4px rgb(151, 151, 151);
 }
 
 .markdown-body code {
