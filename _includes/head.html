@@ -8,7 +8,6 @@
 <meta property="og:title" content="{{ page.title }}">
 <meta property="og:type" content="article">
 
-
 {% for tag_slug in page.tags %}
   {% unless tag.header-img %}
     {% assign tag = site.featured_tags | where: "slug", tag_slug | first %}
@@ -96,14 +95,14 @@
   window.disableDrawer = {{ site.disable_drawer | default:false}};
 </script>
 
-<!--[if lt IE 9]>
+<!--[if lt IE 9]-
 <script src="https://unpkg.com/html5shiv/dist/html5shiv.min.js"></script>
 <![endif]-->
 
 <!-- =============== -->
 <!-- STYLES          -->
 <!-- =============== -->
-<!--[if gt IE 8]><!---->
+<!--[if gt IE 8]>-->
 <style>
   {% capture include_to_scssify %}
   {% include styles/inline.scss %}

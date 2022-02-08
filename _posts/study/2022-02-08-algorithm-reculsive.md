@@ -5,6 +5,7 @@ subtitle:
 date: 2022-02-08 10:27:58 +0900
 tags: algorithm
 categories: study
+use_math: true
 comments: true
 related_posts:
 

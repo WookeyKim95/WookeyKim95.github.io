@@ -29,12 +29,13 @@ related_posts:
 
 
  ## 깃허브 블로그에 수식을 넣어주기 위한 조치.<br/>
- ---
+
  역시나. 기본적으로 jekyll 깃허브 블로그는 지원이 안된다고 한다.<br/>
  VSCode 마크다운 미리보기에서 나온 것처럼 만들기 위해서는 변경해야할 내용이 있다고 한다.<br/>
 
  참고 링크 : [Eun0님의 네이버 블로그](https://blog.naver.com/PostView.nhn?blogId=prt1004dms&logNo=221525385428&parentCategoryNo=&categoryNo=&viewDate=&isShowPopularPosts=false&from=postView)<br/>
 <br/>
+
 ### 먼저, _config.yml 파일에 아래 내용을 추가하자.<br/>
 
 
@@ -87,11 +88,12 @@ MathJax.Hub.Register.MessageHook("TeX Jax - parse error",function (message) {
 ### _includes 폴더 안의 head.html 수정하기<br/>
 <br/>
 head.html에 아래 코드를 추가해주자.<br/>
+(백슬래시를 제외하고 추가하자!)
 
 ```
-{% if page.use_math %}
-    {% include mathjax_support.html %}
-{% endif %}
+{\% if page.use_math \%}
+    {\% include mathjax_support.html \%}
+{\% endif \%}
 ```
 
 <br/>
@@ -170,12 +172,12 @@ related_posts:
 Hydejack기준으로 필자는 _layouts 디렉토리의 post.html에도<br/>
 
 ```
-{% if page.use_math %}
-    {% include mathjax_support.html %}
-{% endif %}
+{\% if page.use_math \%}
+    {\% include mathjax_support.html \%}
+{\% endif \%}
 ```
 
-을 추가해보았다.<br/>
+을 추가해보았다. (역시 백슬래시는 제외하고!)<br/>
 <br/>
 
 ![이미지6](https://github.com/wookikim95/wookikim95.github.io/blob/main/assets/img/study/github/2022-01-24_8.jpg?raw=true)<br/>
