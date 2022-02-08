@@ -3,8 +3,8 @@ layout: post
 title:  "[알고리즘] 삽입정렬."
 subtitle:   
 date: 2022-01-25 11:20:46 +0900
-categories: study
 tags: algorithm
+categories: study
 use_math: true
 comments: true
 related_posts:

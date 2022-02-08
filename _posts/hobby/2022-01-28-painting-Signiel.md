@@ -3,8 +3,8 @@ layout: post
 title:  "작년에 시그니엘 갔을 때"
 subtitle:
 date: 2022-01-28 17:50:20 +0900
-categories: hobby
 tags: painting
+categories: hobby
 comments: true
 related_posts:
 

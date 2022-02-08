@@ -3,8 +3,8 @@ layout: post
 title:  "[자료구조] 스택(Stack)"
 subtitle:   "개요"
 date: 2022-01-25 19:35:28 +0900
-categories: study
 tags: data_structure
+categories: study
 comments: true
 related_posts:
 

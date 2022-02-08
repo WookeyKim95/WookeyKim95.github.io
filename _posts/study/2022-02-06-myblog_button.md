@@ -3,8 +3,8 @@ layout: post
 title:  "[Github Blog] 이전, 다음 글 이동 버튼 만들기"
 subtitle:
 date: 2022-02-06 11:13:28 +0900
-categories: study
 tags: github
+categories: study
 comments: true
 related_posts:
 

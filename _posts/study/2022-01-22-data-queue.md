@@ -3,8 +3,8 @@ layout: post
 title:  "[자료구조] 큐(Queue)"
 subtitle:   "개요"
 date: 2022-01-22 09:10:21 +0900
-categories: study
 tags: data_structure
+categories: study
 comments: true
 related_posts:
 

@@ -3,8 +3,8 @@ layout: post
 title:  "[자료구조] 이진트리(Binary Tree) 3"
 subtitle:   "개요"
 date: 2022-02-04 13:10:45 +0900
-categories: study
 tags: data_structure
+categories: study
 comments: true
 related_posts:
     - /_posts/study/2022-02-02-data-binary_tree_1.md

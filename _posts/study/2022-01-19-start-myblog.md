@@ -3,8 +3,8 @@ layout: post
 title:  "[Github Blog] 첫 일지"
 subtitle:   "개요"
 date: 2022-01-19 11:16:51 +0900
-categories: study
 tags: github
+categories: study
 comments: true
 related_posts:
 

@@ -3,8 +3,8 @@ layout: post
 title:  "[자료구조] 링크드리스트(Linked_List) 5"
 subtitle:   "개요"
 date: 2022-01-27 09:21:46 +0900
-categories: study
 tags: data_structure
+categories: study
 comments: true
 related_posts:
 

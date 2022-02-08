@@ -3,8 +3,8 @@ layout: post
 title:  "[Web] 웹 개발 오픈 라이선스"
 subtitle:   "개요"
 date: 2022-01-30 12:24:23 +0900
-categories: study
 tags: web_&_frontend
+categories: study
 comments: true
 related_posts:
     - /_posts/study/2022-01-31-web_oper_and_browser.md

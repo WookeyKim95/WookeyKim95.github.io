@@ -3,8 +3,8 @@ layout: post
 title:  "새해를 맞아 그렸던 흑호랑이"
 subtitle:   "개요"
 date: 2022-01-23 22:04:24 +0900
-categories: hobby
 tags: painting
+categories: hobby
 comments: true
 related_posts:
 

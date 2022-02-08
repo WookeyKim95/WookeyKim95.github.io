@@ -3,8 +3,8 @@ layout: post
 title:  "지금까지 배운 피아노의 코드 8가지."
 subtitle:   "개요"
 date: 2022-01-29 23:10:57 +0900
-categories: hobby
 tags: piano
+categories: hobby
 comments: true
 related_posts:
 

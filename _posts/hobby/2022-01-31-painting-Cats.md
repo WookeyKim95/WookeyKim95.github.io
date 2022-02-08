@@ -3,8 +3,8 @@ layout: post
 title:  "아는 형님의 고양이들"
 subtitle:
 date: 2022-01-31 12:48:37 +0900
-categories: hobby
 tags: painting
+categories: hobby
 comments: true
 related_posts:
 

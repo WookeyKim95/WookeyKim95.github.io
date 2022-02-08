@@ -3,8 +3,8 @@ layout: post
 title:  "[Web] 웹앱의 작동 그리고 웹 브라우저"
 subtitle:   "개요"
 date: 2022-01-31 12:14:25 +0900
-categories: study
 tags: web_&_frontend
+categories: study
 comments: true
 related_posts:
     - /_posts/study/2022-01-30-web_mark.md
