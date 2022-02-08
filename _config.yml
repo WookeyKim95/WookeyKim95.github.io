@@ -44,7 +44,7 @@ google_fonts:        Lato
 
 # Set your Google Analytics id to receive `pageview` events.
 # To remove Google Anaylics from your page, remove the line below.
-google_analytics:    G-xxxx
+google_analytics:    G-BJN4F025K5
 
 # 댓글기능
 disqus: True
