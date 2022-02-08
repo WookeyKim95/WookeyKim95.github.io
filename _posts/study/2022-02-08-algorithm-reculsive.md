@@ -194,13 +194,13 @@ print(total(6))
 그 과정을 파이썬 코드로 구현해보자<br/>
 
 ```
-def pibo(n):
+def fibonacci(n):
     if n == 1:
         return 1
     elif n == 2:
         return 1
     elif n >= 3:
-        return pibo(n-1) + pibo(n-2)
+        return fibonacci(n-1) + fibonacci(n-2)
 ```
 
 n=1이나 2가 될 때까지 피보나치함수를 계속 호출한다. 그러다가 n=1이나 2가 되어 1이 반환되면 그 이후로 합산을 하기 시작하는 구조이다.<br/>
@@ -208,16 +208,16 @@ n=1이나 2가 될 때까지 피보나치함수를 계속 호출한다. 그러�
 ```
 # Test Code
 
-def pibo(n):
+def fibonacci(n):
     if n == 1:
         return 1
     elif n == 2:
         return 1
     elif n >= 3:
-        return pibo(n-1) + pibo(n-2)
+        return fibonacci(n-1) + fibonacci(n-2)
 
-print(pibo(5))
-print(pibo(8))
+print(fibonacci(5))
+print(fibonacci(8))
 
 # 결과 값
 
@@ -228,8 +228,9 @@ print(pibo(8))
 
 참고로, 코딩 문제에서 피보나치수열의 시작점이 0인 경우도 있고, 두 번째 값이 2인 경우도 있다.<br/>
 그 때 마다 상황에 맞춰서 반환 값을 바꿔주면 된다.<br/>
+<br/>
 
-#### 그러면 반대로 어떤 수는 피보나치 수열의 몇 번째 값인지 구할 수 있을까?<br/>
+### 그러면 반대로 어떤 수는 피보나치 수열의 몇 번째 값인지 구할 수 있을까?<br/>
 
 구할 수 있다!<br/>
 **단, 그 어떤 수와 그 이전 번째의 값이 주어져야 한다.<br/>**
@@ -244,7 +245,7 @@ print(pibo(8))
 ```
 count = 3 # 재귀호출을 모두 끝마쳤을 때 3번째수가 처음으로 반환되니까.
 
-def pibo_rev(a, b):
+def fibonacci_rev(a, b):
     global count
     if  a == 1 and b == 0:
         print(1)
@@ -258,17 +259,17 @@ def pibo_rev(a, b):
         return
     else:
         count += 1
-        return pibo_rev(b, a - b)
+        return fibonacci_rev(b, a - b)
 ```
 
 여기서 조건은 a > b, 즉 a가 피보나치수열의 몇 번째 수인지 구하고자 하는 것이며, b는 그 이전 번째의 수이다.<br/>
 
-pibo_rev(b, a - b)를 재귀호출하면서 몇 번째 수인지 세는 변수의 값을 1 씩 올린다.<br/>
+fibonacci_rev(b, a - b)를 재귀호출하면서 몇 번째 수인지 세는 변수의 값을 1 씩 올린다.<br/>
 
 ```
 # Test Code
 
-def pibo_rev(a, b):
+def fibonacci_rev(a, b):
     global count
     if  a == 1 and b == 0:
         print(1)
@@ -282,10 +283,10 @@ def pibo_rev(a, b):
         return
     else:
         count += 1
-        return pibo_rev(b, a - b)
+        return fibonacci_rev(b, a - b)
         
-pibo_rev(34, 21)
-pibo_rev(2, 1)
+fibonacci_rev(34, 21)
+fibonacci_rev(2, 1)
 ```
 34가 몇 번째 수인지 구하고 싶다. 기존에 알고 있었던 대로라면 34는 9번째 수이므로 올바르게 출력되는지 확인하면 된다.<br/>
 또한, 2는 3번째 수라는 것을 알고 있기 때문에 바로 3을 반환하도록 하면 된다.<br/>
@@ -304,15 +305,15 @@ pibo_rev(2, 1)
 
 count = 3
 
-def pibo(n):
+def fibonacci(n):
     if n == 1:
         return 1
     elif n == 2:
         return 1
     elif n >= 3:
-        return pibo(n-1) + pibo(n-2)
+        return fibonacci(n-1) + fibonacci(n-2)
 
-def pibo_rev(a, b):
+def fibonacci_rev(a, b):
     global count
     if  a == 1 and b == 0:
         print(1)
@@ -326,10 +327,10 @@ def pibo_rev(a, b):
         return
     else:
         count += 1
-        return pibo_rev(b, a - b)
+        return fibonacci_rev(b, a - b)
         
-pibo_rev(pibo(8), pibo(7))
-pibo_rev(pibo(26), pibo(25))
+fibonacci_rev(fibonacci(8), fibonacci(7))
+fibonacci_rev(fibonacci(26), fibonacci(25))
 
 # 결과 값
 8
