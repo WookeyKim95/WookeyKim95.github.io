@@ -96,7 +96,7 @@ print(fibonacci(40))
 
 부득이하게 재귀호출을 사용해야하는 경우가 아니라면 큰 값을 계산할 때에는 동적 계획법을 사용하는 것이 훨씬 좋다.<br/>
 
-![피보나치 계산과정](https://github.com/wookikim95/wookikim95.github.io/blob/main/assets/img/study/algorithm/2022-02-09_DP_1.jpg?raw=true)
+![피보나치 계산과정](https://github.com/WookeyKim95/WookeyKim95.github.io/blob/main/assets/img/study/algorithm/2022-02-09_DP_1.jpg?raw=true)
 
 그림으로 그려보니까 실감이 난다.<br/>
 

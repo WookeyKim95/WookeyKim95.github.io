@@ -69,12 +69,12 @@ print(data_list)
 
 input data<br/>
 
-![입력](https://github.com/wookikim95/wookikim95.github.io/blob/main/assets/img/study/algorithm/2022-01-24_bubble_1.jpg?raw=true)
+![입력](https://github.com/WookeyKim95/WookeyKim95.github.io/blob/main/assets/img/study/algorithm/2022-01-24_bubble_1.jpg?raw=true)
 <br/>
 <br/>
 output data<br/>
 
-![출력](https://github.com/wookikim95/wookikim95.github.io/blob/main/assets/img/study/algorithm/2022-01-24_bubble_2.jpg?raw=true)
+![출력](https://github.com/WookeyKim95/WookeyKim95.github.io/blob/main/assets/img/study/algorithm/2022-01-24_bubble_2.jpg?raw=true)
 <br/>
 Spyder에서 실행시켜보았다. 음! 잘나온다.<br/>
 

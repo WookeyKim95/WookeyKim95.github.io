@@ -5,9 +5,9 @@ menu: true
 order: 2
 ---
 
-<img src='https://github.com/wookikim95/wookikim95.github.io/blob/main/assets/img/owner_char.png?raw=true' alt='Owner_char' style='float:left; width:40%; height:40% ; margin-right:20px ; box-shadow:none'>
+<img src='https://github.com/WookeyKim95/WookeyKim95.github.io/blob/main/assets/img/owner_char.png?raw=true' alt='Owner_char' style='float:left; width:40%; height:40% ; margin-right:20px ; box-shadow:none'>
 
-## 닉네임 우키킴(Wookikim)
+## 닉네임 우키킴(Wookey_Kim)
 
 제 이름이 김성욱이다보니, '욱', '욱이'라는 말로 많이 불렸는데, 그게 좋아서 욱이 -> 우키에다가 제 성씨인 김을 붙여서 우키킴이라는 닉네임을 만들었습니다.<br/>
 <br/>
