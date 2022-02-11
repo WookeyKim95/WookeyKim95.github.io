@@ -28,29 +28,29 @@ font-weight:bold">
 
 > 연락처: bluebear9508@naver.com
 
-> Github : <a href="https://github.com/wookikim95">https://github.com/wookikim95</a>
+> Github : <a href="https://github.com/wookeykim95">https://github.com/wookeykim95</a>
 
 ---
 ## Education
 
-> Sep.2021 한양대학교 대학원 _(A Month)_
+> **Sep.2021 한양대학교 대학원** _(A Month)_
 >
 > 일반대학원 건설환경공학과<br/>
 > Department Of Civil & Environmental Engineering)<br/>
 > _Track : Construction project management_
 
 
-> Mar.2019 ~ Aug.2021 한양대학교 _(30 Monthes)_
+> **Mar.2019 ~ Aug.2021 한양대학교** _(30 Monthes)_
 >
 > 공과대학 건설환경공학과<br/>
 > (Department Of Civil & Environmental Engineering)<br/>
-> GPA : 4.11/4.5 with 131학점 수료
+> GPA : 4.11/4.5 , 131학점 이수
 
-> Mar.2014 ~ Feb.2016 : 연세대학교 원주캠퍼스 _(24 Monthes)_
+> **Mar.2014 ~ Feb.2016 : 연세대학교 원주캠퍼스** _(24 Monthes)_
 >
 > 과학기술대학 물리학과<br/>
 > (Department Of Physics)<br/>
-> GPA : 3.50/4.3, 75학점 수료<br/>
+> GPA : 3.50/4.3 , 75학점 이수<br/>
 
 > Feb.2014 : 반포고등학교 졸업
 
@@ -62,27 +62,28 @@ font-weight:bold">
 > **지능형 관제 플랫폼 및 빅 데이터 기반 최적 경로 네비게이션(C-Map) 기술 개발**
 >
 > <span style="font-size:0.9em">한국도로공사 스마트건설기술사업단</span><br/>
-> <span style="font-size:0.9em">연구보조원(학부생 인턴) 2020.06.01 ~ 2021.08.31</span>
+> <span style="font-size:0.9em">연구보조원(학부생 인턴) 2020.06.01 ~ 2021.08.31 _(15 monthes)_</span>
 
 <br/>
 
 >**스마트 디지털 엔지니어링 전문인력사업**
 >
 ><span style="font-size:0.9em">서울대학교 산학협력단</span><br/>
-><span style="font-size:0.9em">연구보조원(학부생 인턴) 2020.09.01 ~ 2021.02.28</span>
+><span style="font-size:0.9em">연구보조원(학부생 인턴) 2020.09.01 ~ 2021.02.28 _(6 monthes)_</span>
 
 <br/>
 
 >**토공사를 위한 디지털트윈 프레임워크**
 >
 ><span style="font-size:0.9em">한국연구재단</span><br/>
-><span style="font-size:0.9em">연구보조원(학부생 인턴) 2020.03.01 ~ 2021.08.31</span>
+><span style="font-size:0.9em">연구보조원(학부생 인턴) 2020.03.01 ~ 2021.08.31 _(18 monthes)_</span>
 
 ---
 ## Work Experiences
 
->**Platom .inc 2021. 10 - 2021. 11**<br/>
->  (2 monthes)<br/>
+
+> **<span style="font-size:1.3em">Platom .inc</span>** <br/>
+>  2021.10 - 2021.11   (2 monthes)<br/>
 >
 >  **_Intern_**<br/>
 >  KMO(한국수학올림피아드) 교육용 애플리케이션 **MO**개발 참여<br/>
@@ -90,12 +91,10 @@ font-weight:bold">
 >  + <span style="font-size:0.9em">홍보문구 제시</span>
 >  + <span style="font-size:0.9em">문제내용 오류 검토</span>
 
-
 <br/>
 
-
-> **Hanyang University 2020. 03 – 2021. 09**<br/>
->  (19 monthes)<br/>
+> **<span style="font-size:1.3em">Hanyang University</span>** <br/>
+>  2020.03 – 2021.09   (19 monthes)<br/>
 >
 >  _**Researching Assistant**_<br/>
 >  스마트 건설기술 개발프로젝트 참여<br/>
@@ -107,10 +106,10 @@ font-weight:bold">
 >
 >
 >   + <span style="font-size:0.9em">빅데이터 기반 건설장비 운용경로 내비게이션 C-Map 개발 </span>
->     + <span style="font-size:0.8em">3D Voxel망을 통한 토량계산</span>
->     + <span style="font-size:0.8em">3D Voxel의 XYZ좌표 및 토량계산 결과 데이터를 통한 건설장비 운용경로 산출 로직 작성</span>
+>      + <span style="font-size:0.8em">GPS의 시각, 위치 데이터를 Input으로 설정하여 건설장비의 행태 추정</span>
+>     + <span style="font-size:0.8em">3D Voxel 망을 통한 토량계산</span>
+>     + <span style="font-size:0.8em">3D Voxel 망의 XYZ좌표 및 토량계산 결과 데이터를 통한 건설장비 운용경로 산출 로직 작성</span>
 
-<br/>
 
 ---
 ## Awards
