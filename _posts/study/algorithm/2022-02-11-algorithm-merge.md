@@ -109,7 +109,7 @@ TypeError: slice indices must be integers or None or have an __index__ method
 
 medium 값이 float 값이 나와버려서 인덱싱에 오류가 발생했다.<br/>
 
-### 2. 리스트는 리스트끼리 합칠 수 있다. ###
+### 2. 리스트는 리스트끼리만 합칠 수 있다. ###
 ```
 # 수정 전 코드
 if left[i] < right[j]:
