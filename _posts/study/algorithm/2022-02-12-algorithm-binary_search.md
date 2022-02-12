@@ -16,7 +16,7 @@ related_posts:
 찾고자하는 값(Target)을 정한 뒤, 리스트의 중간 값과 비교한다. 맞으면 True를, 틀리면 리스트를 중간 값을 기준으로 반으로 나눈 후에 위 과정을 반복한다.<br/>
 만약 리스트의 길이가 1이거나 0이 되었음에도 불구하고 값을 찾지 못하면 False를 반환한다.<br/>
 
-![이진탐색과정](https://github.com/WookeyKim95/WookeyKim95.github.io/blob/main/assets/img/study/algorithm/2022-02-11_binary_search_1.jpg?raw=true)
+![이진탐색과정](https://github.com/WookeyKim95/WookeyKim95.github.io/blob/main/assets/img/study/algorithm/2022-02-12_binary_search_1.jpg?raw=true)
 <br/>
 
 ## 파이썬 코드로 구현
