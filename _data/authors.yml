@@ -21,6 +21,11 @@ vvs:
     srcset:
       1x:            /assets/img/me.png
       2x:            /assets/img/me.png
+  
+  # photo for left sidebar
+  picture_left:
+    src:             /assets/img/LeftMe.png
+    srcset:
 
   # Social media icons in sidebar
   # Comment/uncommet to show/hide
