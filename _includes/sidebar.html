@@ -10,9 +10,7 @@
         {{ site.tagline | truncatewords:50 | markdownify }}
       </div>
       <div class="sidebar-box">
-        {% if author.picture %}
-          {% include srcset-img.html class="me" img=author.picture alt=author.name %}
-        {% endif %}
+        <img src="..\assets\img\icon_gradation.png" style="align-self:center; border-radius:50%; width:50%; height:50%">
       </div>
       {{ site.description | truncatewords:50 | markdownify }}
       {% assign author = site.data.authors.first[1] %}
