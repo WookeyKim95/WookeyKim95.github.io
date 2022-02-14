@@ -7,15 +7,23 @@ order: 2
 
 <img src='https://github.com/WookeyKim95/WookeyKim95.github.io/blob/main/assets/img/owner_char.png?raw=true' alt='Owner_char' style='float:left; width:40%; height:40% ; margin-right:20px ; box-shadow:none'>
 
-## 닉네임 우키킴(Wookey_Kim)
+## 닉네임 : 우키킴(WooKey_Kim)
+<span style="font-size:1.3em;">
 
-제 이름이 김성욱이다보니, '욱', '욱이'라는 말로 많이 불렸는데, 그게 좋아서 욱이 -> 우키에다가 제 성씨인 김을 붙여서 우키킴이라는 닉네임을 만들었습니다.<br/>
+**우(Wook) : 펼칠 욱(旭)**<br/>
+**키(Key) : 문제를 푸는 열쇠**<br/>
+**WooKey = Wook + Key**
+
+</span>
+문제를 해결하고 생각을 현실로 펼치는 열쇠가 되는 개발자.<br/>
+참 가지가지 하는 개발자.<br/>
+그런 개발자가 되고 싶습니다.<br/>
 <br/>
 
 ## 프로그래밍은 차근차근 기초부터.
 
 - 자료구조, 알고리즘에 대해서 차근차근 공부해나가고자 하는 중 입니다.<br/>
-- 분야는 현재 웹 개발을 지망하고있고, 프론트엔드부터 시작하여 나중에는 풀 스택 개발자로 성장하는 것을 꿈꾸고 있습니다.<br/>
+- 웹 개발이나 3D 작업을 공부하고 싶습니다.<br/>
 <br/>
 
 ## 제가 생각하는 저의 성격은?
@@ -24,3 +32,4 @@ order: 2
 - 상상하고 시각화하는 것을 좋아합니다.
 - 무언가에 빠지고 싶어합니다.
 - 효율적으로 문제를 해결하고 싶어합니다.
+- 해결하지 못하면 마음이 불편합니다.
