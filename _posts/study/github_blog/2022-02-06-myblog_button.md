@@ -249,7 +249,6 @@ VS Code 터미널에서 bundle exec jekyll serve를 실행하고,
     text-decoration:none;
     text-shadow:0px 1px 0px #ffffff;
   }
-  .portrait_only   { display: none; }
 }
 
 /* width <= 500px일 때 */
@@ -263,7 +262,6 @@ VS Code 터미널에서 bundle exec jekyll serve를 실행하고,
     text-decoration:none;
     text-shadow:0px 1px 0px #ffffff;
   }
-  .landscape_only  { display: none; }
 }
 ```
 
