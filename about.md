@@ -6,7 +6,7 @@ order: 2
 ---
 
 <style>
-/* width > 500px일 때 */
+/* width > 700px일 때 */
  @media (min-width:701px) {
   #img_class {
     float:left;
@@ -18,7 +18,7 @@ order: 2
 
 }
 
-/* width <= 500px일 때 */
+/* width <= 700px일 때 */
 @media (max-width:700px) {
   #img_class {
     height:calc(width) ;
