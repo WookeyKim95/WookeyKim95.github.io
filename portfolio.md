@@ -5,9 +5,28 @@ menu: true
 order: 1
 ---
 
+<style>
+/* width > 700px일 때 */
+ @media (min-width:701px) {
+  #img_port {
+    border-radius:50%;
+    float:right;
+  }
 
-<img src="assets\img\me.png" style="border-radius:50%; float:right">
+}
 
+/* width <= 700px일 때 */
+@media (max-width:700px) {
+  #img_port {
+    border-radius:50%;
+  }
+
+}
+</style>
+
+<center>
+<img src="assets\img\me.png" id="img_port">
+</center>
 
 <center>
 <span style=
