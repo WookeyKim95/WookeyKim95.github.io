@@ -5,7 +5,10 @@ menu: true
 order: 1
 ---
 
-* * *
+
+<img src="assets\img\me.png" style="border-radius:50%; float:right">
+
+
 <center>
 <span style=
 "font-size:170%;
@@ -19,6 +22,9 @@ font-weight:bold">
 <center>Hanyang University</center>
 
 <center>220, Wangsimni-ro, Seongdong-gu, Seoul, Republic of Korea</center>
+
+* * *
+
 
 ## Personal Data
 
