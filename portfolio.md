@@ -36,11 +36,15 @@ font-weight:bold">
 </span>
 </center>
 
-<center>Major : Civil & Environmental Engineering</center>
+<center>Bachelor of Science</center>
+
+<center>Civil & Environmental Engineering</center>
 
 <center>Hanyang University</center>
 
-<center>220, Wangsimni-ro, Seongdong-gu, Seoul, Republic of Korea</center>
+<center>220, Wangsimni-ro, Seongdong-gu, Seoul</center>
+
+<center>Republic of Korea</center>
 
 * * *
 
@@ -58,7 +62,8 @@ font-weight:bold">
 ---
 ## Education
 
-> **2021.09 한양대학교 대학원** _(A Month)_
+> **2021.09 : 한양대학교 대학원** <br/>
+> _(A Month)_
 >
 > 일반대학원 건설환경공학과<br/>
 > Department Of Civil & Environmental Engineering)<br/>
@@ -66,7 +71,8 @@ font-weight:bold">
 
 <br/>
 
-> **2019.03 ~ 2021.08 한양대학교** _(30 Monthes)_
+> **2019.03 ~ 2021.08 : 한양대학교** <br/>
+> _(30 Monthes)_
 >
 > 공과대학 건설환경공학과<br/>
 > (Department Of Civil & Environmental Engineering)<br/>
@@ -74,7 +80,8 @@ font-weight:bold">
 
 <br/>
 
-> **2014.03 ~ 2016.02 : 연세대학교(원주)** _(24 Monthes)_
+> **2014.03 ~ 2016.02 : 연세대학교(원주)** <br/>
+> _(24 Monthes)_
 >
 > 과학기술대학 물리학과<br/>
 > (Department Of Physics)<br/>

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "GitHub에 파일 올리기 및 용어 정리"
+title:  "[GitHub] GitHub에 파일 올리기 및 용어 정리"
 subtitle:   
 date: 2022-02-15 09:52:23 +0900
 categories: study
