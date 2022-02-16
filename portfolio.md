@@ -6,48 +6,58 @@ order: 1
 ---
 
 <style>
+  
 /* width > 700px일 때 */
+
  @media (min-width:701px) {
-  #img_port {
-    border-radius:50%;
+
+  #grid_img {
     float:right;
+    border-radius:50%;
+    width:169px;
+    height:178px;
+    margin-right:20px
+  }
+
+  #grid_content {
+    text-align:center;
   }
 
 }
+
 
 /* width <= 700px일 때 */
 @media (max-width:700px) {
-  #img_port {
+
+  #grid_img {
     border-radius:50%;
+    text-align:center;
+  }
+
+  #grid_content {
+    text-align:center;
   }
 
 }
+
 </style>
 
-<center>
-<img src="assets\img\me.png" id="img_port">
-</center>
+  <div>
+  <img src="assets\img\me.png" id="grid_img" alt="me">
+  </div>
 
-<center>
-<span style=
-"font-size:170%;
-font-weight:bold">
-김성욱
-</span>
-</center>
+  <div id="grid_content">
+  <span style="font-size:170%;font-weight:bold">
+  김성욱<br/>
+  </span>
+  Bachelor of Science<br/>
+  Civil & Environmental Engineering<br/>
+  Hanyang University<br/>
+  220, Wangsimni-ro, Seongdong-gu, Seoul<br/>
+  Republic of Korea<br/>
+  </div>
 
-<center>Bachelor of Science</center>
-
-<center>Civil & Environmental Engineering</center>
-
-<center>Hanyang University</center>
-
-<center>220, Wangsimni-ro, Seongdong-gu, Seoul</center>
-
-<center>Republic of Korea</center>
-
-* * *
-
+---
 
 ## Personal Data
 
