@@ -23,10 +23,10 @@ related_posts:
 
 <br/>
 
-![졸업사진1](https://github.com/WookeyKim95/WookeyKim95.github.io/blob/main/assets/img/blog/2022-02-17_1.jpg?raw=true)
+![졸업사진1](https://github.com/WookeyKim95/WookeyKim95.github.io/blob/main/assets/img/blog/2022_02_17_1.jpg?raw=true)
 <br/>
 
-![졸업사진2](https://github.com/WookeyKim95/WookeyKim95.github.io/blob/main/assets/img/blog/2022-02-17_2.jpg?raw=true)
+![졸업사진2](https://github.com/WookeyKim95/WookeyKim95.github.io/blob/main/assets/img/blog/2022_02_17_2.jpg?raw=true)
 <br/>
 
-![졸업사진3](https://github.com/WookeyKim95/WookeyKim95.github.io/blob/main/assets/img/blog/2022-02-17_3.jpg?raw=true)
+![졸업사진3](https://github.com/WookeyKim95/WookeyKim95.github.io/blob/main/assets/img/blog/2022_02_17_3.jpg?raw=true)
