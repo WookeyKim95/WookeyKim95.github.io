@@ -3,8 +3,8 @@ layout: post
 title:  "졸업은 반년 전, 졸업식은 지금"
 subtitle:   
 date: 2022-02-17 19:05:28 +0900
-tags: blog
-categories: 
+tags:
+categories: blog
 use_math: true
 comments: true
 related_posts:
