@@ -45,7 +45,7 @@ order: 1
     display:flex;
     justify-content:center;
     margin-left:20px;
-
+    margin-top:30px
   }
 
   #Files > #File {
@@ -74,7 +74,10 @@ order: 1
 
 ---
 
-## My portfolio (Click to Download)
+## My portfolio
+
+(Click to Download)
+
 
 <div id="Files">
   
