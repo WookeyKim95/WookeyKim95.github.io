@@ -74,19 +74,19 @@ order: 1
 
 ---
 
-## My portfolio (Click to Open)
+## My portfolio (Click to Download)
 
 <div id="Files">
   
   <div id="File">
   
-  <a href="https://github.com/WookeyKim95/WookeyKim95.github.io/blob/main/assets/img/blog/2022_02_17_1.jpg">CV</a>
+  <a href="https://github.com/WookeyKim95/WookeyKim95.github.io/raw/main/CV_KimSungWook.pdf">CV</a>
   
   </div>
   
   <div id="File">
   
-  <a href="https://github.com/WookeyKim95/WookeyKim95.github.io/blob/main/assets/img/blog/2022_02_17_1.jpg">Portfolio</a>
+  <a href="https://github.com/WookeyKim95/WookeyKim95.github.io/raw/main/Portfolio_KimSungWook.pdf">Portfolio</a>
   
   </div>
 </div>
