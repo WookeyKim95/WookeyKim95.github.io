@@ -1,6 +1,6 @@
 ---
 layout: about
-title: Portfolio
+title: My Career
 menu: true
 order: 1
 ---
@@ -40,6 +40,21 @@ order: 1
 
 }
 
+  #Files {
+    color:#6699CC;
+    display:flex;
+    justify-content:center;
+    margin-left:20px;
+
+  }
+
+  #Files > #File {
+    font-size:170%;
+    font-weight:bold;
+    width: 200px;
+    height: 15px
+  }
+
 </style>
 
   <div>
@@ -59,6 +74,26 @@ order: 1
 
 ---
 
+## My portfolio (Click to Open)
+
+<div id="Files">
+  
+  <div id="File">
+  
+  <a href="https://github.com/WookeyKim95/WookeyKim95.github.io/blob/main/assets/img/blog/2022_02_17_1.jpg">CV</a>
+  
+  </div>
+  
+  <div id="File">
+  
+  <a href="https://github.com/WookeyKim95/WookeyKim95.github.io/blob/main/assets/img/blog/2022_02_17_1.jpg">Portfolio</a>
+  
+  </div>
+</div>
+
+<br>
+
+---
 ## Personal Data
 
 > 1995.8.7 출생
@@ -178,8 +213,10 @@ order: 1
   + Excel
   + Powerpoint
   + Word
-  + AutoCAD
+  + AutoCAD (LOD 400)
+  + Revit (LOD 300)
 
+     
 ---
 ## Studying..
 
@@ -187,6 +224,9 @@ order: 1
 
 * Frontend<br/>
   HTML/CSS/JavaScript
+
+* 3D Modeling<br/>
+  Blender
 
 ---
 ## Hobbies
