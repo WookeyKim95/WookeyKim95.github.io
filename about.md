@@ -2,7 +2,7 @@
 layout: about
 title: About Me
 menu: true
-order: 2
+order: 1
 ---
 
 <style>

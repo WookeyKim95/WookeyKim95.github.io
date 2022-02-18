@@ -2,7 +2,7 @@
 layout: about
 title: My Career
 menu: true
-order: 1
+order: 2
 ---
 
 <style>
