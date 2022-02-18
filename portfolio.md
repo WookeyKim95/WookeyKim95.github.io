@@ -124,20 +124,8 @@ order: 2
 >
 > 공과대학 건설환경공학과<br/>
 > (Department Of Civil & Environmental Engineering)<br/>
-> GPA : 4.11/4.5 , 131학점 이수
-
-<br/>
-
-> **2014.03 ~ 2016.02 : 연세대학교(원주)** <br/>
-> _(24 Monthes)_
->
-> 과학기술대학 물리학과<br/>
-> (Department Of Physics)<br/>
-> GPA : 3.50/4.3 , 75학점 이수<br/>
-
-<br/>
-
-> **2014.02 : 반포고등학교 졸업**
+> GPA : 4.11/4.5 , 131학점 이수<br/>
+> Summa Cum Laude
 
 
 ---
