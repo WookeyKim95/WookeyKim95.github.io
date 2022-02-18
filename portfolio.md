@@ -83,13 +83,13 @@ order: 1
   
   <div id="File">
   
-  <a href="https://github.com/WookeyKim95/WookeyKim95.github.io/raw/main/CV_KimSungWook.pdf">CV</a>
+  <a href="https://github.com/WookeyKim95/WookeyKim95.github.io/raw/main/CV_KimSungWook.pdf?raw=true">CV</a>
   
   </div>
   
   <div id="File">
   
-  <a href="https://github.com/WookeyKim95/WookeyKim95.github.io/raw/main/Portfolio_KimSungWook.pdf">Portfolio</a>
+  <a href="https://github.com/WookeyKim95/WookeyKim95.github.io/raw/main/Portfolio_KimSungWook.pdf?raw=true">Portfolio</a>
   
   </div>
 </div>
