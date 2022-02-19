@@ -110,7 +110,7 @@ order: 2
 ---
 ## Education
 
-> **2021.09 : 한양대학교 대학원** <br/>
+> **2021.09 : 한양대학교 대학원(자퇴)** <br/>
 >
 > 일반대학원 건설환경공학과<br/>
 > Department Of Civil & Environmental Engineering)<br/>
