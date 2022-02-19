@@ -111,7 +111,6 @@ order: 2
 ## Education
 
 > **2021.09 : 한양대학교 대학원** <br/>
-> _(A Month)_
 >
 > 일반대학원 건설환경공학과<br/>
 > Department Of Civil & Environmental Engineering)<br/>
@@ -119,8 +118,7 @@ order: 2
 
 <br/>
 
-> **2019.03 ~ 2021.08 : 한양대학교** <br/>
-> _(30 Monthes)_
+> **2021.08 : 한양대학교 졸업** <br/>
 >
 > 공과대학 건설환경공학과<br/>
 > (Department Of Civil & Environmental Engineering)<br/>
@@ -133,7 +131,7 @@ order: 2
 
 
 > **<span style="font-size:1.3em">Platom .inc</span>** <br/>
->  2021.10 - 2021.11   (2 monthes)<br/>
+>  2021.10 - 2021.11  <br/>
 >
 >  **_Intern_**<br/>
 >  KMO(한국수학올림피아드) 교육용 애플리케이션 **MO**개발 참여<br/>
@@ -144,7 +142,7 @@ order: 2
 <br/>
 
 > **<span style="font-size:1.3em">Hanyang University</span>** <br/>
->  2020.03 – 2021.09   (19 monthes)<br/>
+>  2020.03 – 2021.09 <br/>
 >
 >  _**Researching Assistant**_<br/>
 >  스마트 건설기술 개발프로젝트 참여<br/>
@@ -167,21 +165,21 @@ order: 2
 > **지능형 관제 플랫폼 및 빅 데이터 기반 최적 경로 네비게이션(C-Map) 기술 개발**
 >
 > <span style="font-size:0.9em">한국도로공사 스마트건설기술사업단</span><br/>
-> <span style="font-size:0.9em">연구보조원(학부생 인턴) 2020.06 ~ 2021.08 _(15 monthes)_</span>
+> <span style="font-size:0.9em">연구보조원(학부생 인턴) 2020.06 ~ 2021.08 </span>
 
 <br/>
 
 >**스마트 디지털 엔지니어링 전문인력사업**
 >
 ><span style="font-size:0.9em">서울대학교 산학협력단</span><br/>
-><span style="font-size:0.9em">연구보조원(학부생 인턴) 2020.09 ~ 2021.02 _(6 monthes)_</span>
+><span style="font-size:0.9em">연구보조원(학부생 인턴) 2020.09 ~ 2021.02 </span>
 
 <br/>
 
 >**토공사를 위한 디지털트윈 프레임워크**
 >
 ><span style="font-size:0.9em">한국연구재단</span><br/>
-><span style="font-size:0.9em">연구보조원(학부생 인턴) 2020.03 ~ 2021.08 _(18 monthes)_</span>
+><span style="font-size:0.9em">연구보조원(학부생 인턴) 2020.03 ~ 2021.08 </span>
 
 ---
 ## Awards
