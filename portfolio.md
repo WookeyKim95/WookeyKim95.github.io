@@ -185,7 +185,7 @@ order: 2
 ## Awards
 
 
--한양 졸업우수상 (졸업평점 4.00 이상)
+- 한양 졸업우수상 (졸업평점 4.00 이상)
 
 ---
 ## Skills and Certification
