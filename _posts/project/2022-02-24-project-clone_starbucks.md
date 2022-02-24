@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[클론프로젝트]스타벅스코리아 1일차"
+title:  "[클론프로젝트] 스타벅스코리아 1일차"
 subtitle:
 date: 2022-02-24 18:45:51 +0900
 categories: project
