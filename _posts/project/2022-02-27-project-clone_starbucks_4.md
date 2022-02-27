@@ -15,6 +15,9 @@ related_posts:
 [내 프로젝트 깃허브 저장소 링크](https://github.com/WookeyKim95/clone_StarbucksKorea)
 <br/>
 
+[필요자료가 있는 박영웅님 깃허브 링크](https://github.com/Parkyoungwoong/starbucks-vanilla-app)<br/>
+
+
 API 끌어다 쓴 링크<br/>
 
 [Gsap_scrollToPlugin](https://greensock.com/scrolltoplugin/)<br/>
@@ -148,3 +151,5 @@ CSS코드가 없으면 딱딱하게 회전효과 없이 바뀌고, CSS를 통해
 우선 페이지 자체를 만드는 작업은 모두 끝이 났다.<br/>
 
 하지만 개발은 만든다고 끝나는 것이 아니라, 유지보수까지 해야한다. 만약에 변경하거나 유지보수 할 일이 생겼다면 일지에 계속 기록될 것이다.<br/>
+강의를 진행해주시고 필요자료를 제공해주신 박영웅님께 감사드립니다.<br/>
+
