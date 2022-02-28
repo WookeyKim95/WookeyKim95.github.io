@@ -3,8 +3,8 @@ layout: post
 title:  "[Web] 웹 애니메이션 1"
 subtitle:  
 date: 2022-02-28 09:01:17 +0900
-tags: web_&_frontend
 categories: study
+tags: web_&_frontend
 comments: true
 related_posts:
 
