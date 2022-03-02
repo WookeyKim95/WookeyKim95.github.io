@@ -16,7 +16,7 @@ layout: base
   {% assign currentdate = post.date | date: "%Y" %}
   {% if currentdate != date %}
     {% unless forloop.first %}</ul>{% endunless %}
-    <h2 id="y{{post.date | date: "%Y"}}" class="hr">{{ currentdate }}</h2>
+    <h2 id="y{{post.date | date: '%Y'}}" class="hr">{{ currentdate }}</h2>
     <ul class="related-posts">
     {% assign date = currentdate %}
   {% endif %}
