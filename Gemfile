@@ -32,4 +32,7 @@ group :jekyll_plugins do
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+gem 'tzinfo-data'
+
+# Added at 2022-03-12 16:32:22 +0900 by wookeykim\user:
+gem "webrick", "~> 1.7"

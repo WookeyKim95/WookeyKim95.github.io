@@ -1,0 +1,176 @@
+I"�<h2 id="웹-개발-특수문자의-기능-뿐만-아니라-읽는-법도-알아두자">웹 개발 특수문자의 기능 뿐만 아니라 읽는 법도 알아두자.<br /></h2>
+
+<p>개발 언어를 배우다보면 백슬래시(), 따옴표(‘) 등 많은 기호를 접하게 된다.<br />
+하지만 개발은 혼자서 진행하는 것이 아니라, 다른 이해관계자들과 함께 협업을 하는 것이다.<br />
+같은 기호를 가리킨다고 해도 읽는 방법이 달라서 혼란이 올 수 있으므로 특수문자를 부르는 명칭도 숙지를 할 필요가 있다.<br />
+<br />
+예를 들어, ~ 표시는 우리가 흔히 물결표시라고 알고 있지만, Tilde라는 명칭을 가지고 있다.<br />
+그리고 역 따옴표로 알고 있는 ` 이 기호도 Grave, Backtick이라는 명칭을 가지고 있다.<br />
+이 두 가지의 명칭을 모른다면 아래와 같은 상황이 일어나겠지.<br /></p>
+
+<ul>
+  <li>A : 여기다가 Tilde 사용해주세요.</li>
+  <li>B : Tilde가 뭐죠..??</li>
+  <li>A : Grave랑 같은 키에 그거 쉬프트 누르면 있는거요!</li>
+  <li>B : ‘Grave는 또 뭐야..’<br />
+… 잠시 후…</li>
+  <li>B : 아.. 물결표(~)랑, 역 따옴표(`)..</li>
+</ul>
+
+<p>협업을 하는 데 있어서 같은 기호라고해도 어떻게 불리는지 알아야 더욱 원활한 협업을 이어갈 수 있기 때문에 사소해보이지만 이 부분도 중요하다고 느껴졌다.<br />
+아래 테이블에 오늘 배운 개발 특수문자의 명칭에 대해서 정리를 해두어야지.<br /></p>
+
+<table>
+  <thead>
+    <tr>
+      <th><center>기호<center></center></center></th>
+      <th><center>명칭<center></center></center></th>
+      <th><center>읽는 법<center></center></center></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>`</td>
+      <td>Backtick, Grave</td>
+      <td>백틱, 그레이브</td>
+    </tr>
+    <tr>
+      <td>~</td>
+      <td>Tilde</td>
+      <td>틸드, 물결 표시</td>
+    </tr>
+    <tr>
+      <td>!</td>
+      <td>Exclamation Mark</td>
+      <td>느낌표</td>
+    </tr>
+    <tr>
+      <td>@</td>
+      <td>At Sign</td>
+      <td>골뱅이, 앳 사인</td>
+    </tr>
+    <tr>
+      <td>#</td>
+      <td>Sharp, Number Sign</td>
+      <td>샾, 우물 정자, 넘버 사인</td>
+    </tr>
+    <tr>
+      <td>$</td>
+      <td>Dollar Sign</td>
+      <td>달러 사인</td>
+    </tr>
+    <tr>
+      <td>%</td>
+      <td>Percent Sign</td>
+      <td>퍼센트 사인</td>
+    </tr>
+    <tr>
+      <td>^</td>
+      <td>Carot</td>
+      <td>캐럿 (무언가 이상을 표현)</td>
+    </tr>
+    <tr>
+      <td>&amp;</td>
+      <td>Ampersand</td>
+      <td>앰퍼샌드</td>
+    </tr>
+    <tr>
+      <td>*</td>
+      <td>Asterisk</td>
+      <td>별표, 에스터리스크</td>
+    </tr>
+    <tr>
+      <td>-</td>
+      <td>Hyphen, Dash</td>
+      <td>하이픈, 대시</td>
+    </tr>
+    <tr>
+      <td>_</td>
+      <td>Underscore, Low Dash</td>
+      <td>언더스코어, 로우 대시</td>
+    </tr>
+    <tr>
+      <td>=</td>
+      <td>Equal Sign</td>
+      <td>이퀄스</td>
+    </tr>
+    <tr>
+      <td>”</td>
+      <td>Quotation Mark</td>
+      <td>쿼테이션, 큰 따옴표</td>
+    </tr>
+    <tr>
+      <td>’</td>
+      <td>Apostrophe</td>
+      <td>아포스트로피, 작은 따옴표</td>
+    </tr>
+    <tr>
+      <td>:</td>
+      <td>Colon</td>
+      <td>콜론</td>
+    </tr>
+    <tr>
+      <td>;</td>
+      <td>Semi Colon</td>
+      <td>세미 콜론</td>
+    </tr>
+    <tr>
+      <td>,</td>
+      <td>Comma</td>
+      <td>콤마, 쉼표</td>
+    </tr>
+    <tr>
+      <td>.</td>
+      <td>Period, Dot</td>
+      <td>피리어드, 닷, 마침표</td>
+    </tr>
+    <tr>
+      <td>?</td>
+      <td>Question Mark</td>
+      <td>물음표</td>
+    </tr>
+    <tr>
+      <td>/</td>
+      <td>Slash</td>
+      <td>슬래시</td>
+    </tr>
+    <tr>
+      <td>\</td>
+      <td>Back Slash</td>
+      <td>백 슬래시</td>
+    </tr>
+    <tr>
+      <td>|</td>
+      <td>Vertical Bar</td>
+      <td>버티컬 바</td>
+    </tr>
+    <tr>
+      <td>( )</td>
+      <td>Parenthesis</td>
+      <td>소괄호, 퍼렌서시스</td>
+    </tr>
+    <tr>
+      <td>{ }</td>
+      <td>Brace</td>
+      <td>중괄호, 브레이스</td>
+    </tr>
+    <tr>
+      <td>[ ]</td>
+      <td>Bracket</td>
+      <td>대괄호, 브래킷</td>
+    </tr>
+    <tr>
+      <td>&lt; &gt;</td>
+      <td>Angle Bracket</td>
+      <td>꺽쇠 괄호, 앵글 브래킷</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>정리하다보니까 한글로도 이걸 어떻게 읽는 것인지 몰랐던 기호도 많았다. (특히 앵글 브래킷)<br />
+전부 다 영어로 읽어야 하나? 걱정됐지만 느낌표, 물음표 처럼 영문 명칭이 너무 긴 경우는 그냥 편하게 느낌표, 물음표로 읽는 경우도 있다고 한다.<br />
+<br />
+그리고 각 특수 문자마다 기능이 다르기 때문에 개발을 하다보면 자연스럽게 익숙해질 것이다.<br />
+지금 쓰고 있는 이 포스트도 줄 바꾸기에 앵글 브래킷과 백 슬래시가 엄청나게 사용되고 있고,<br />
+위에 있는 테이블도 다수의 버티컬 바(|)가 사용되어 만들어졌으니.. 아, 나중에 마크다운 문법도 천천히 정리해서 포스팅 해야겠다.<br /></p>
+:ET

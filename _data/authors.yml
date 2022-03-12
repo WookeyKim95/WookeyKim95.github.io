@@ -1,7 +1,7 @@
 # The primary author of this blog.
 # Must be the same as `author` in `_config.yml`.
 # Change `author1` to your shortname.
-author1:
+WK:
   name:              SungWook Kim
   email:             bluebear9508@naver.com
 
@@ -9,10 +9,10 @@ author1:
   # Markdown enabled, can use multiple paragraphs (enabled by `|`)
 # 자기 소개
   about:             |
-    28살 부터 개발 공부를 시작한 김성욱이라고합니다.
+    28살에 개발 공부를 시작한 김성욱이라고 합니다!
 
   # This photo will be used in the about section
-    picture:
+  picture:
     src:             /assets/img/me.png
     # srcset is optional, but can be used to provide higher res versions for retina displays
     srcset:

@@ -25,6 +25,7 @@ layout: base
 {% include post.html post=page link_title=false %}
 
 <hr class="dingbat related" />
+{% include page-button.html %}
 
 {% assign addons = site.hydejack.post_addons %}
 {% unless addons %}{% assign addons = "about,newsletter,related,random" | split:"," %}{% endunless %}
