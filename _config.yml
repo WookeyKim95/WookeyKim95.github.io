@@ -4,7 +4,7 @@
 # IMPORTANT: Set the URL of your site.
 # Set to https://<username>.github.io when hosting on GitHub Pages
 # (unless you are using a custom domain).
-url:                   https://domain.tld
+url:                   https://wookeykim95.github.io
 
 # IMPORTANT: Set The "base URL" of your site.
 #
@@ -19,22 +19,19 @@ baseurl:               ''
 
 # Language of your content in 2-letter code, e.g.: en, de.
 # You may also provide a location, e.g.: en-us, de_AT.
-lang:                  en
+lang:                  ko
 
 # The title of your blog. Used in the sidebar and the browser tab.
-title:                 Hydejack
+title:                 우키킴의 일지
+
+# A shorter description for the sidebar.
+tagline:               >
+  Project : Reboot
 
 # A short description (~150 chars) of the page used for the meta description tag.
 # Can use markdown, but no more than one paragraph (enforced by `>`)
 description:           >
-  A Jekyll theme with JavaScript powers. "Best Theme by a Mile".
-  Combines the best of static sites and modern web apps.
-  Open `_config.yml` to edit this text.
-
-# A shorter description for the sidebar.
-tagline:               >
-  A Jekyll theme with JavaScript powers.
-  Open `_config.yml` to edit this text.
+  개발자를 꿈꾸며 한 페이지씩 써내려가는 나의 일지.
 
 # A list of keywords for your blog
 keywords:              []
@@ -51,7 +48,7 @@ author:
   # twitter:             <username>
 
 # This text will appear in a `<small>` tag in the footer of every page.
-copyright:             © 2017. All rights reserved.
+copyright:             © 2022. All rights reserved.
 
 # Add links to the footer.
 # Typically you'll want to link to your impress, cookies or privacy policy, etc.
@@ -65,7 +62,7 @@ copyright:             © 2017. All rights reserved.
 permalink:             pretty
 
 # Pagination configuration (used by the `blog` layout)
-paginate:              5
+paginate:              6
 paginate_path:         /page-:num/
 
 
