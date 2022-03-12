@@ -12,6 +12,10 @@ url:                 https://Wookeykim95.github.io
 # Set to '/<reponame>' when using the `gh-pages` branch of a repository
 baseurl:             ""
 
+# Language of your content in 2-letter code, e.g.: en, de.
+# You may also provide a location, e.g.: en-us, de_AT.
+lang:                  ko
+
 # A very short description of your page
 tagline:             "Project : Reboot"
 
@@ -19,6 +23,12 @@ tagline:             "Project : Reboot"
 # Markdown enabled, but don't use more than one paragraph (enforced by `>`)
 description:         >
   개발자를 꿈꾸며 한 페이지씩 써내려가는 나의 일지.
+
+# A list of keywords for your blog
+keywords:              []
+
+# Used by jekyll-seo-tag...
+logo:                  /assets/icons/icon.png
 
 # This should be the same author as first entry in `_data/authors.yml`
 author:
