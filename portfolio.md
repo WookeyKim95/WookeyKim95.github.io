@@ -133,7 +133,7 @@ order: 2
 > **<span style="font-size:1.3em">Platom .inc</span>** <br/>
 >  2021.10 - 2021.11  <br/>
 >
->  **_Intern_**<br/>
+>  **_Assistant_**<br/>
 >  KMO(한국수학올림피아드) 교육용 애플리케이션 **MO**개발 참여<br/>
 >  + <span style="font-size:0.9em">플로우차트, 기능명세서 작성</span>
 >  + <span style="font-size:0.9em">홍보문구 제시</span>
