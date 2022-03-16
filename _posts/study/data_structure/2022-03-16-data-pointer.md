@@ -2,7 +2,7 @@
 layout: post
 title:  "[자료구조] C언어에서 포인터"
 subtitle:
-date: 2022-03-16 13:01:46 +0900
+date: 2022-03-16 14:09:46 +0900
 tags: data_structure
 categories: study
 comments: true
