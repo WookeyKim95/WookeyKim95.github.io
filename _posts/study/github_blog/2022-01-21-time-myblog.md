@@ -63,7 +63,8 @@ md파일로 들어가서 다시 한번 날짜를 확인해보았다.<br/>
 자 이제 남은건.. github에다 푸시해서 크롬 등 웹 상에서도 잘 반영되는지 확인하는 것이다..<br/>
 <br/>
 <br/>
-![이미지5](https://github.com/wookikim95/wookikim95.github.io/blob/main/assets/img/study/github/2022-01-21_8.jpg?raw=true)<br/>
+
+![이미지6](https://github.com/wookikim95/wookikim95.github.io/blob/main/assets/img/study/github/2022-01-21_8.jpg?raw=true)<br/>
 한 5분 정도 기다린 뒤에 마이크로소프트 엣지로 내 블로그에 와서 F12를 눌러보았다.<br/>
 하지만 언어설정은 한국어로 잘 되었지만 날짜는 여전했다..<br/>
 <br/>
@@ -85,9 +86,11 @@ VSCode에서 bundle exec jekyll serve로 시뮬레이션해서 접속하면 한�
 새로운 사실을 발견했다. 세계 표준시 문제가 맞는 것 같다.<br/>
 자신이 같은 날에 깃허브에 커밋을 했더라도, 9시 이전에 커밋했을 경우 자신의 깃허브에 커밋했다는 표시가 블록에 반영이 되지 않는다.<br/>
 
-![이미지5](https://github.com/wookeykim95/wookeykim95.github.io/blob/main/assets/img/study/github/2022-03-20_1.jpg?raw=true)<br/>
+![이미지7](https://github.com/wookeykim95/wookeykim95.github.io/blob/main/assets/img/study/github/2022-03-20_github_1.jpg?raw=true)<br/>
 
 
 오전 8시 42분에 커밋을 했고, 9시 이후에 다시 새로고침을 해보니 커밋내용이 반영되었다.<br/>
+
+![이미지8](https://github.com/wookeykim95/wookeykim95.github.io/blob/main/assets/img/study/github/2022-03-20_2.jpg?raw=true)<br/>
 
 깃허브가 전 세계에서 운용되는 것이다보니 이런 현상이 발생하는 것 같다.<br/>
