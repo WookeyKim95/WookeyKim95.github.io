@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "간단한 major scale 구현"
+title:  "[코딩 도전] 간단한 major scale 구현"
 subtitle:   
 date: 2022-02-20 16:10:27 +0900
 tags: coding_test
