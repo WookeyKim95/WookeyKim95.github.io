@@ -7,4 +7,5 @@ submenu: true
 order: 5
 description: >
   공부 일지
+accent_color: '#006699'
 ---
