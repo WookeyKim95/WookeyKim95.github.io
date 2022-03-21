@@ -1,11 +1,7 @@
 # The primary author of this blog.
 # Must be the same as `author` in `_config.yml`.
 # Change `author1` to your shortname.
-<<<<<<< HEAD
-vvs:
-=======
 WK:
->>>>>>> bf8378dad02b04878ce4616235c7bae54f42a273
   name:              SungWook Kim
   email:             bluebear9508@naver.com
 

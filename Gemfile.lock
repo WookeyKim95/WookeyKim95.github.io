@@ -5,18 +5,12 @@ GEM
       public_suffix (>= 2.0.2, < 5.0)
     colorator (1.1.0)
     concurrent-ruby (1.1.9)
-<<<<<<< HEAD
     duktape (2.6.0.0)
-=======
->>>>>>> bf8378dad02b04878ce4616235c7bae54f42a273
     em-websocket (0.5.3)
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0)
     eventmachine (1.2.7)
-<<<<<<< HEAD
     execjs (2.8.1)
-=======
->>>>>>> bf8378dad02b04878ce4616235c7bae54f42a273
     ffi (1.15.5)
     forwardable-extended (2.6.0)
     http_parser.rb (0.8.0)
@@ -37,7 +31,6 @@ GEM
       rouge (~> 3.0)
       safe_yaml (~> 1.0)
       terminal-table (~> 2.0)
-<<<<<<< HEAD
     jekyll-compose (0.12.0)
       jekyll (>= 3.7, < 5.0)
     jekyll-default-layout (0.1.5)
@@ -56,11 +49,6 @@ GEM
       jekyll (>= 3.0, < 5.0)
     jekyll-redirect-from (0.16.0)
       jekyll (>= 3.3, < 5.0)
-=======
-    jekyll-feed (0.16.0)
-      jekyll (>= 3.7, < 5.0)
-    jekyll-paginate (1.1.0)
->>>>>>> bf8378dad02b04878ce4616235c7bae54f42a273
     jekyll-relative-links (0.6.1)
       jekyll (>= 3.3, < 5.0)
     jekyll-sass-converter (2.2.0)
@@ -69,7 +57,6 @@ GEM
       jekyll (>= 3.8, < 5.0)
     jekyll-sitemap (1.4.0)
       jekyll (>= 3.7, < 5.0)
-<<<<<<< HEAD
     jekyll-theme-hydejack (9.1.6)
       jekyll (>= 3.8, < 5.0)
       jekyll-include-cache (~> 0.2)
@@ -84,12 +71,6 @@ GEM
     kramdown-math-katex (1.0.1)
       katex (~> 0.4)
       kramdown (~> 2.0)
-=======
-    jekyll-watch (2.2.1)
-      listen (~> 3.0)
-    kramdown (2.3.1)
-      rexml
->>>>>>> bf8378dad02b04878ce4616235c7bae54f42a273
     kramdown-parser-gfm (1.1.0)
       kramdown (~> 2.0)
     liquid (4.0.3)
@@ -99,10 +80,7 @@ GEM
     mercenary (0.4.0)
     pathutil (0.16.2)
       forwardable-extended (~> 2.6)
-<<<<<<< HEAD
     posix-spawn (0.3.15)
-=======
->>>>>>> bf8378dad02b04878ce4616235c7bae54f42a273
     public_suffix (4.0.6)
     rb-fsevent (0.11.1)
     rb-inotify (0.10.1)
@@ -119,10 +97,7 @@ GEM
     tzinfo-data (1.2021.5)
       tzinfo (>= 1.0.0)
     unicode-display_width (1.8.0)
-<<<<<<< HEAD
     wdm (0.1.1)
-=======
->>>>>>> bf8378dad02b04878ce4616235c7bae54f42a273
     webrick (1.7.0)
 
 PLATFORMS
@@ -147,12 +122,8 @@ DEPENDENCIES
   jekyll-titles-from-headings
   kramdown-math-katex
   tzinfo-data
-<<<<<<< HEAD
   wdm
   webrick
-=======
-  webrick (~> 1.7)
->>>>>>> bf8378dad02b04878ce4616235c7bae54f42a273
 
 BUNDLED WITH
    1.16.1
