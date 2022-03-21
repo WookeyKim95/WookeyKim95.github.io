@@ -15,6 +15,14 @@
 # General settings
 # ---------------------------------------------------------------------------------------
 
+# This should be the same author as first entry in `_data/authors.yml`.
+# Duplication is necessary due to the `jekyll-feed`, `jekyll-seo-tag` plugin.
+author:
+  name:             SungWook Kim
+  email:            bluebear9508@naver.com
+  # Used by `jekyll-seo-tag`:
+  # twitter:             <username>
+
 # Language of your content in 2-letter code, e.g.: en, de.
 # You may also provide a location, e.g.: en-us, de_AT.
 lang:                  ko
@@ -38,6 +46,7 @@ keywords:              [About Me, Web]
 # It also used by the `jekyll-seo-tag` plugin.
 logo:                  /assets/img/logo.png
 
+<<<<<<< HEAD
 # This should be the same author as first entry in `_data/authors.yml`.
 author:
   # Used by `jekyll-feed`:
@@ -45,6 +54,9 @@ author:
   email:               <mail@domain.tld>
   # # Used by `jekyll-seo-tag`:
   # twitter:             <username>
+=======
+
+>>>>>>> bf8378dad02b04878ce4616235c7bae54f42a273
 
 # Add links to the sidebar.
 menu:
@@ -391,6 +403,7 @@ compress_html:
 sass:
   style:               compressed
 
+<<<<<<< HEAD
 # Jekyll Compose Defaults
 # ---------------------------------------------------------------------------------------
 
@@ -420,3 +433,26 @@ jekyll_compose:
       links:
         - title: Project Link
           url: https://example.com
+=======
+# If you are upgrading form v5 (or earlier), uncomment the lines below,
+# so that the location of the feed XML stays the same.
+# feed:
+#   path:                atom.xml
+
+# Math
+markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
+
+# Searching
+tipue_search:
+     include:
+         pages: false
+         collections: []
+     exclude:
+         files: [search.html, index.html, tags.html]
+         categories: []
+         tags: []
+>>>>>>> bf8378dad02b04878ce4616235c7bae54f42a273

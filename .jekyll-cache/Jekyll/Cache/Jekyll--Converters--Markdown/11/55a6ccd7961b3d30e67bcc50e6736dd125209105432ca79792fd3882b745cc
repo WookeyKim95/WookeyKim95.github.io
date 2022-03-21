@@ -1,0 +1,142 @@
+I"{<h2 id="자바스크립트의-기초인-출력과-연산자-">자바스크립트의 기초인 출력과 연산자 <br /></h2>
+<p><br /></p>
+
+<h3 id="출력--consolelog">출력 : console.log()<br /></h3>
+<p><br /></p>
+
+<p>파이썬의 print에 해당하는 기본적인 출력코드이다.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>console.log("Hello World!");
+
+# 출력결과
+Hello World!
+</code></pre></div></div>
+
+<p>type of를 활용하면 자료형을 출력할 수 있다.<br /></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>console.log(typeof "Hello World!");
+console.log(typeof 123);
+console.log(typeof true);
+</code></pre></div></div>
+
+<h3 id="javascript의-연산자">Javascript의 연산자<br /></h3>
+<p><br /></p>
+
+<h4 id="산술-연산자">산술 연산자<br /></h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// 산술 연산자
+console.log(1 + 2);
+console.log(5 - 2);
+console.log(3 * 4);
+console.log(4 / 3); // 실수가 출력
+console.log(10 / 2); // 정수가 출력
+console.log(7 % 5); // 나머지가 출력
+</code></pre></div></div>
+<p>파이썬과 거의 같다.<br />
+<br /></p>
+
+<h4 id="할당-연산자">할당 연산자<br /></h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// 할당 연산자 : const, var, let
+const a = 2;
+const b = 3;
+console.log(a + b);
+
+var d = 10;
+
+let c = 7; // let은 const와 달리 재할당 가능.
+console.log(c + b);
+c = c + 1;
+console.log(c);
+</code></pre></div></div>
+
+<p>Javascript의 연산자는 var, let, const가 있다. <br /></p>
+
+<p>const는 나머지 둘과 달리 재할당이 불가능하고, 값을 변경할 수 없다.<br />
+따라서, 값을 바꾸고 싶지 않을 때 할당을 하면 적절하다.<br /></p>
+
+<p>let과 var은 const와 달리 재할당이 가능하다는 공통점이 있다.<br />
+<br /></p>
+
+<p>단, let은 var과 달리 아래의 코드와 같이</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>let c = 7;
+let c = 8;
+
+# 결과 : Error
+</code></pre></div></div>
+<p>재할당이 불가능하며, 위에 나온 코드처럼 let을 빼야 한다.<br /></p>
+
+<p>또한, 더 중요한 차이점은</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>console.log(a);
+var a = 8;
+console.log(a);
+
+# 결과
+undefined
+8
+
+console.log(a);
+let a = 8;
+console.log(a);
+
+# 결과
+Error
+</code></pre></div></div>
+<p>위와 같이 var는 변수선언보다 출력이 먼저 실행됨에도 불구하고 에러가 나지 않는다는 것이다.<br /></p>
+
+<p>따라서 현재는 var보다는 let이 훨씬 더 많이 쓰이고 있는 추세이다.<br />
+<br /></p>
+
+<h4 id="비교-연산자">비교 연산자<br /></h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// 비교 연산자
+
+let d = 1;
+let e = 1;
+
+console.log(d === e);
+# 결과 : true
+# === 는 값이 일치하는지를 따진다.
+
+console.log(2 === '2');
+# 결과 : false
+# 자료형이 다르다.
+
+console.log(2 == '2');
+# 결과 : true
+# 자료형을 따지지 않고 값을 따진다.
+
+console.log(2 !== 1) // true
+
+// &amp;&amp; : 파이썬의 and에 해당함. (모두 참이여야 참)
+// || : 파이썬의 or에 해당함. (하나라도 참이면 참)
+// ! : 파이썬의 not에 해당함. (반대의 논리를 출력함)
+</code></pre></div></div>
+<p><br /></p>
+
+<h4 id="삼항-연산자">삼항 연산자<br /></h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// 삼항 연산자
+
+const p = 1 &lt; 2 // true 반환
+
+if (p) {
+    console.log('참');
+}
+else {
+    console.log('거짓');
+}
+
+// 위의 조건문을 축약하면?
+
+console.log(p ? '참' : '거짓')
+
+# 이것이 바로 삼항 연산자이다.
+
+# 조건 p가 참이면 :의 앞,
+# 거짓이면 :의 뒤를 실행함.
+</code></pre></div></div>
+<p>삼항 연산자를 통해서 if-else문을 한 줄로 축약이 가능하다.<br /></p>
+:ET

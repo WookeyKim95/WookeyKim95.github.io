@@ -1,7 +1,11 @@
 # The primary author of this blog.
 # Must be the same as `author` in `_config.yml`.
 # Change `author1` to your shortname.
+<<<<<<< HEAD
 vvs:
+=======
+WK:
+>>>>>>> bf8378dad02b04878ce4616235c7bae54f42a273
   name:              SungWook Kim
   email:             bluebear9508@naver.com
 
@@ -9,7 +13,7 @@ vvs:
   # Markdown enabled, can use multiple paragraphs (enabled by `|`)
   # 자기 소개
   about:             |
-    28살 부터 개발 공부를 시작한 김성욱이라고합니다.
+    28살에 개발 공부를 시작한 김성욱이라고 합니다!
 
     웹 개발자를 지망하고 있습니다!
 

@@ -50,6 +50,14 @@ group :jekyll_plugins do
   gem "jekyll-compose"
 end
 
+<<<<<<< HEAD
 gem 'wdm' if Gem.win_platform?
 gem "tzinfo-data" if Gem.win_platform?
 
+=======
+# Windows does not include zoneinfo files, so bundle the tzinfo-data gem
+gem 'tzinfo-data'
+
+# Added at 2022-03-12 16:32:22 +0900 by wookeykim\user:
+gem "webrick", "~> 1.7"
+>>>>>>> bf8378dad02b04878ce4616235c7bae54f42a273
