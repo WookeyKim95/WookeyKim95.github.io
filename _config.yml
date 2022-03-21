@@ -46,17 +46,13 @@ keywords:              [About Me, Web]
 # It also used by the `jekyll-seo-tag` plugin.
 logo:                  /assets/img/logo.png
 
-<<<<<<< HEAD
 # This should be the same author as first entry in `_data/authors.yml`.
 author:
   # Used by `jekyll-feed`:
-  name:                <firstname> <lastname>
-  email:               <mail@domain.tld>
+  name:              SungWook Kim
+  email:             bluebear9508@naver.com
   # # Used by `jekyll-seo-tag`:
   # twitter:             <username>
-=======
-
->>>>>>> bf8378dad02b04878ce4616235c7bae54f42a273
 
 # Add links to the sidebar.
 menu:
