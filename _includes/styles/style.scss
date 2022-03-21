@@ -114,4 +114,61 @@ $font-family: {{ font }};
   h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .heading {
     font-family: {{ font_heading }};
   }
+
+  .page-control {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .page-control > div {
+    max-width: 50%;
+  }
+
+/* width > 500px일 때 */
+@media (min-width:501px) {
+    .button {
+      display:inline-block;
+      font-family:Arial;
+      font-size:25px;
+      font-weight:bold;
+      padding: 6px 100px;
+      text-decoration:none;
+      text-shadow:0px 1px 0px #ffffff;
+    }
+  }
+  
+  /* width <= 500px일 때 */
+  @media (max-width:500px) {
+    .button {
+      display:inline-block;
+      font-family:Arial;
+      font-size:16px;
+      font-weight:bold;
+      padding: 6px 20px;
+      text-decoration:none;
+      text-shadow:0px 1px 0px #ffffff;
+    }
+  }
+
+.button.url_false {
+	cursor:default;
+	color:#8f8f8f;
+}
+
+.button.url_true {
+  cursor:pointer;
+  color:#277ef0;
+}
+.button.url_true:hover {
+  color:#164786;
+	text-shadow:0px 2px 0px #ffffff;
+}
+
+.button.url_true:active {
+  position:relative;
+	top:1px;
+  }
+
 {% endunless %}
