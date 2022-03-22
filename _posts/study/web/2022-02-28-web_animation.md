@@ -10,6 +10,8 @@ related_posts:
 
 ---
 
+# [Web] 웹 애니메이션 1<br/>
+
 ## 웹 페이지에 애니메이션 부여하기 1<br/>
 
 [클론 프로젝트 깃허브 링크](https://github.com/WookeyKim95/clone_StarbucksKorea)<br/>

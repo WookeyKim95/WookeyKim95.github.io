@@ -10,7 +10,7 @@ related_posts:
 
 ---
 
-## 스타벅스 코리아 홈페이지의 보수가 필요하다.
+## [클론프로젝트] 스타벅스코리아_보수필요
 
 [내 프로젝트 깃허브 저장소 링크](https://github.com/WookeyKim95/clone_StarbucksKorea)
 <br/>

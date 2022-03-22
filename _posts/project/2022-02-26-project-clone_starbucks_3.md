@@ -10,7 +10,7 @@ related_posts:
 
 ---
 
-## 스타벅스 코리아 홈페이지 만들기 3일차
+## [클론프로젝트] 스타벅스코리아 3일차
 
 [내 프로젝트 깃허브 저장소 링크](https://github.com/WookeyKim95/clone_StarbucksKorea)
 <br/>

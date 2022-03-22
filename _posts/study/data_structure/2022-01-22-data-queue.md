@@ -10,6 +10,7 @@ related_posts:
 
 ---
 
+# [자료구조] 큐(Queue)<br/>
 
 ## 큐란 무엇인가?<br/>
 

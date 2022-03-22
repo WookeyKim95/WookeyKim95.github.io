@@ -11,6 +11,8 @@ related_posts:
 
 ---
 
+# [알고리즘] BFS와 DFS<br/>
+
 ## BFS와 DFS란?<br/>
 
 아래 사진과 같이 그래프가 있다고 하자.<br/>

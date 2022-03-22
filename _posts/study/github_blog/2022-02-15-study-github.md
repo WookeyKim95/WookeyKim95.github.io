@@ -10,7 +10,8 @@ related_posts:
 
 ---
 
-   
+# [GitHub] GitHub에 파일 올리기 및 용어 정리<br/>
+
 ## Git 용어 모음<br/>
 
 참고 링크 : [유튜브_코딩알려주는누나](https://www.youtube.com/watch?v=lelVripbt2M)

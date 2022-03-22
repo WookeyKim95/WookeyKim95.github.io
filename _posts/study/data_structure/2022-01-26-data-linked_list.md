@@ -10,6 +10,7 @@ related_posts:
 
 ---
 
+# [자료구조] 링크드리스트(Linked_List) 1<br/>
 
 ## 링크드리스트란 무엇인가?<br/>
 
