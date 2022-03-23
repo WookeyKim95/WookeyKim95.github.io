@@ -8,6 +8,6 @@ description: >
   일상 기록일지
 accent_color: '#268bd2'
 accent_image:
-  background: 
-  overlay:    true
+  background: 'og_picture.JPG'
+  overlay:    false
 ---
