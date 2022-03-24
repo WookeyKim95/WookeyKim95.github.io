@@ -24,6 +24,12 @@ related_posts:
 
 ### 1. 포스트의 구성<br/>
 
+![포스트구성1](https://github.com/WookeyKim95/WookeyKim95.github.io/blob/main/assets/img/project/2022-03-24_upgrade_1.jpg?raw=true)
+<br/>
+
+![포스트구성2](https://github.com/WookeyKim95/WookeyKim95.github.io/blob/main/assets/img/project/2022-03-24_upgrade_2.jpg?raw=true)
+<br/>
+
 title이 아니라, 글의 맨 첫번째 줄을 제목으로 사용하게 된다.<br/>
 이거는 그냥 포스트 안에서 첫째줄에 제목을 넣어주었다.<br/>
 <br/>
