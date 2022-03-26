@@ -9,6 +9,6 @@ description: >
   취미생활 기록일지
 accent_color: '#6666cc'
 accent_image:
-  background: 'sidebar-bg.JPG'
+  background: 
   overlay:    false  
 ---
