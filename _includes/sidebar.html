@@ -11,6 +11,7 @@
 
     <div class="sidebar-sticky" style="text-align: center">
       <div class="sidebar-about">
+
         <h2 class="h1"><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h2>
         {% assign text = site.tagline | default:site.description %}
         {% if text %}
@@ -18,7 +19,12 @@
             {{ text | markdownify | replace:'<p>','' | replace:'</p>','' }}
           </p>
         {% endif %}
+      <div style="display:flex">
+        <a class="no-hover" href="/" tabindex="-1" style="margin:0 auto;">
+          <img src="/assets/img/LeftMe.png" class="avatar" alt="logo" width="120" hieght="120" loading="lazy">
+        </a>
       </div>
+    </div>
 
 
       <div style="text-align: center; padding-inline:50px; margin: 25px 0">

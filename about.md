@@ -38,7 +38,6 @@ order: 1
  WooKey = Wook + Key<br/>
 </span>
 
-<br/>
 
 ## 제가 꿈꾸는 저의 모습<br/>
 
@@ -47,7 +46,6 @@ order: 1
 
 <span style="font-size:1.3em;">입니다.</span>
 
-<br/>
 
 ## 프로그래밍은 기초부터 조금씩
 
