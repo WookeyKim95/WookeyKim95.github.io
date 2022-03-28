@@ -15,6 +15,7 @@ related_posts:
 [new_ver 브랜치](https://github.com/WookeyKim95/WookeyKim95.github.io/tree/new_ver)
 
 ## 사이드바에 로고를 넣자!<br/>
+<br/>
 
 ```
 logo:                  /assets/img/LeftMe.png
@@ -32,6 +33,7 @@ _config.yml파일을 아무리 뒤져보아도 문제가 해결되지 않았는�
 <br/>
 
 ### sidebar.html 고치기<br/>
+<br/>
 
 ```
 <div class="sidebar-about">
@@ -209,6 +211,7 @@ div 안에 a를 정의해준 다음에 div의 스타일은 display:flex를,<br/>
 <Br/>
 
 ## 후기<br/>
+<br/>
 
 굵직하게 해결하고 싶은 문제는 모두 해결한 것 같다.<br/>
 
