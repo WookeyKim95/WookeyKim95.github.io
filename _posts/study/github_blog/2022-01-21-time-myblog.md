@@ -10,8 +10,9 @@ related_posts:
 
 ---
 
+# [Github Blog] 깃허브 블로그 포스트 날짜에 관한 일지<br/>
 
-# 어라.. 난 이글을 21일에 썼는데..?<br/>
+## 어라.. 난 이글을 21일에 썼는데..?<br/>
 
 내 블로그를 쭉 둘러보고 있었는데, 이상한 점을 발견했다.<br/>
 ![이미지1](https://github.com/wookikim95/wookikim95.github.io/blob/main/assets/img/study/github/2022-01-21_1.jpg?raw=true)<br/>

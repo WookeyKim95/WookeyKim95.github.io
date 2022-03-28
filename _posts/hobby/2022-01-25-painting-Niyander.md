@@ -10,7 +10,7 @@ related_posts:
 
 ---
 
-### 니얀다. 내게는 잊기 힘든 캐릭터.<br/>
+### [Niyander] 내게는 잊기 힘든 캐릭터.<br/>
 <br/>
 
 ![니얀다](https://github.com/wookikim95/wookikim95.github.io/blob/main/assets/img/hobby/painting/Niyander_2022-01-25.jpg?raw=true)

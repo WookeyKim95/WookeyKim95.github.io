@@ -11,6 +11,8 @@ related_posts:
 
 ---
 
+# [코딩 도전] 간단한 major scale 구현<br/>
+
 ### C Major Scale인 상태에서 다른 Major Scale로 변환하는 코드를 작성하시오.<br/>
 
 우리가 '도'라고 알고있었던 소리의 공식적인 이름은 C이다.<br/>

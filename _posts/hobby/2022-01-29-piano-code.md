@@ -10,7 +10,7 @@ related_posts:
 
 ---
 
-## 지금까지 배운 피아노의 코드는 8가지 이다.<br/>
+## 지금까지 배운 피아노의 코드는 8가지<br/>
 
 - Triad
     + Major Triad (X)

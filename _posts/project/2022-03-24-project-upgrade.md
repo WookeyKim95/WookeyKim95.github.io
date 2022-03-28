@@ -10,7 +10,7 @@ related_posts:
 
 ---
 
-## 깃허브 블로그 업그레이드하기.
+# [Github blog] 블로그 테마 업그레이드하기_1
 
 [new_ver 브랜치](https://github.com/WookeyKim95/WookeyKim95.github.io/tree/new_ver)
 

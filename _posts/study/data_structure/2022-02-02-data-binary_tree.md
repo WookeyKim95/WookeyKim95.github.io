@@ -11,6 +11,8 @@ related_posts:
     
 ---
 
+# [자료구조] 이진트리(Binary Tree) 1<br/>
+
 ## 이진트리(Binary Tree)란?<br/>
 
 ![이진트리](https://github.com/wookikim95/wookikim95.github.io/blob/main/assets/img/study/algorithm/2022-02-02_binary_tree_1.jpg?raw=true)
