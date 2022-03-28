@@ -81,7 +81,7 @@ h2 파트 위에 이 코드를 넣어주기로 했다.<br/>
 
 이렇게 하고 로컬서버를 돌려본 결과.<br/>
 
-![에러]()
+![에러](https://github.com/WookeyKim95/WookeyKim95.github.io/blob/main/assets/img/project/2022-03-28-project_1.jpg?raw=true)
 
 오.. 이런..<br/>
 
@@ -98,7 +98,7 @@ h2 파트 위에 이 코드를 넣어주기로 했다.<br/>
 
 여기서 F12를 누르면 개발자를 위한 창이 나오는데, 여기서 코드를 열람할 수 있다.<br/>
 
-![사진]()
+![사진](https://github.com/WookeyKim95/WookeyKim95.github.io/blob/main/assets/img/project/2022-03-28-project_2.jpg?raw=true)
 
 그렇다. 저 사진에 나와있는 부분 중에서 네모 부분을 그대로 따라서 치면 되지 않을까?
 
@@ -122,7 +122,7 @@ h2 파트 위에 이 코드를 넣어주기로 했다.<br/>
 
 그리고 그 결과는 아래와 같았다.<br/>
 
-![사진2]()
+![사진2](https://github.com/WookeyKim95/WookeyKim95.github.io/blob/main/assets/img/project/2022-03-28-project_3.jpg?raw=true)
 <br/>
 <br/>
 
@@ -167,7 +167,7 @@ h2 파트 위에 이 코드를 넣어주기로 했다.<br/>
 
 위와 같이 코드를 수정하였다.<br/>
 
-![사진3]()
+![사진3](https://github.com/WookeyKim95/WookeyKim95.github.io/blob/main/assets/img/project/2022-03-28-project_4.jpg?raw=true)
 
 떼어내는데에는 성공했다!<br/>
 
@@ -203,7 +203,7 @@ div 안에 a를 정의해준 다음에 div의 스타일은 display:flex를,<br/>
 
 그리고 그 결과는?<br/>
 
-![성공!]()
+![성공!](https://github.com/WookeyKim95/WookeyKim95.github.io/blob/main/assets/img/project/2022-03-28-project_5.jpg?raw=true)
 
 성공하였다!<br/>
 <Br/>
