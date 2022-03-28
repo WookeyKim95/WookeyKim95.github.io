@@ -1,32 +1,24 @@
-<span class="sr-only">Navigation:</span>
+<span class="sr-only">{{ site.data.strings.navigation | default:"Navigation" }}{{ site.data.strings.colon | default:":" }}</span>
 <ul>
-  {% assign pages = site.pages %}
-
-  {% for document in site.documents %}
-    {% assign pages = pages | push: document %}
-  {% endfor %}
-
-  {% assign subpages = pages | where: "menu", false | sort: "order" %}
-  {% assign pages = pages | where: "menu", true | sort: "order" %}
-  {% assign count = 0%}
-  {% for node in pages %}
-  {% assign count = count | plus: 1 %}
-    <li>
-      <input type="checkbox" id="list-item-{{ count }}"/>
-      <div  class="list-wrapper">
-      <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ node.url | relative_url }}">{{ node.title }}</a>
-       {% if node.submenu %}<label class="folder" for="list-item-{{ count }}">▾</label>{% endif %}
-    </div>
-     <ul class="list-body">
-       {% for subnode in subpages %}
-           {% if subnode.category == node.slug %}
-             <li>
-               <a class="sidebar-nav-subitem{% if page.url == subnode.url %} active{% endif %}" href="{{ subnode.url | relative_url }}">{{ subnode.title }}</a>
-             </li>
-           {% endif %}
-         {% endfor %}
-     </ul>
-    </li>
-
+  {% assign pages = site.pages | where: "menu", true %}
+  {% assign documents = site.documents | where: "menu", true %}
+  {% assign nodes = pages | concat: documents | sort: "order" %}
+  {% for node in nodes %}
+    {% unless node.redirect_to %}
+      <li>
+        <a
+          {% if forloop.first %}id="_navigation"{% endif %}
+          href="{{ node.url | relative_url }}"
+          class="sidebar-nav-item{% if page.url contains node.url %} active{% endif %}"
+          {% if path.rel %}rel="{{ node.rel }}"{% endif %}
+          >
+          {{ node.title }}
+        </a>
+      </li>
+    {% else %}
+      <li>
+        <a href="{{ node.redirect_to }}" class="sidebar-nav-item external" >{{ node.title }}</a>
+      </li>
+    {% endunless %}
   {% endfor %}
 </ul>

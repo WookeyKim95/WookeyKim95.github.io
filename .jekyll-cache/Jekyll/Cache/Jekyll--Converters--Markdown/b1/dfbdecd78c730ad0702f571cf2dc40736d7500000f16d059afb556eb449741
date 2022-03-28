@@ -1,0 +1,142 @@
+I"�<h3 id="백준-알고리즘에서-2108번이-재채점되어있었다">백준 알고리즘에서 2108번이 재채점되어있었다.<br /></h3>
+
+<p><img src="https://github.com/WookeyKim95/WookeyKim95.github.io/blob/main/assets/img/study/coding_test/2022-02-21_1.jpg?raw=true" alt="재채점결과" />
+<br /></p>
+
+<p>근데 재채점결과가 틀렸습니다! 로 바뀌었다…<br /></p>
+
+<p>다시 코딩해야곘다..<br />
+<br /></p>
+
+<h3 id="문제는-아래와-같다">문제는 아래와 같다.<br /></h3>
+
+<p><a href="https://www.acmicpc.net/problem/2108">문제 바로가기</a><br /></p>
+
+<p><img src="https://github.com/WookeyKim95/WookeyKim95.github.io/blob/main/assets/img/study/coding_test/2022-02-21_2.jpg?raw=true" alt="문제" />
+<br />
+<br /></p>
+
+<p>그리고 본래 제출했던 코드는 아래와 같다.<br /></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import sys
+from collections import Counter
+
+case = int(sys.stdin.readline())
+
+pya = []
+for i in range(case):
+    a = int(sys.stdin.readline())
+    pya.append(a)
+
+if case == 1:
+    print(pya[0])
+    print(pya[0])
+    print(pya[0])
+    print(0)
+    sys.exit()
+
+pya = sorted(pya)
+sys.stdout.write('%.0f\n' %(sum(pya) / (len(pya))))
+sys.stdout.write('%.i\n' %(pya[len(pya)//2]))
+cnt = Counter(pya) #아하 이거는 각 구성요소별 몇개인지 tuple로 나타내주는거고
+cnt = sorted(cnt.items(), key = lambda x: (-x[1],x[0])) # 이거는 tuple 오른쪽에 있는놈을 기준으로 정렬하는 기준인가
+
+if cnt[0][1] == cnt[1][1] :
+    print(cnt[1][0])
+else:
+    print(cnt[0][0])
+
+sys.stdout.write('%i' %(pya[-1] - pya[0]))
+</code></pre></div></div>
+
+<p>보니까 문제가 바뀌었나… 생각했다.<br /></p>
+
+<p>최빈값을 출력하는데 값이 여러개라면 두번째 값을 출력해야한다. 그런데 저 코드로 출력하면 100% 오류가난다.<br /></p>
+
+<p>그리고 테스트케이스</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>3
+0
+0
+-1
+</code></pre></div></div>
+<p>로 출력을 하면</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>-0
+0
+1
+</code></pre></div></div>
+<p>로 출력되는 오류가 발생한다. 이를 수정해야겠다.<br /></p>
+
+<p><img src="https://github.com/WookeyKim95/WookeyKim95.github.io/blob/main/assets/img/study/coding_test/2022-02-21_3.jpg?raw=true" alt="뭐야 이건 또" /></p>
+
+<p>ㅋㅋㅋ Spyder에서 출력할 땐 문제 없었는데 이런 종류의 오답은 처음봐서 놀랬다.<br />
+<br /></p>
+
+<h3 id="정정완료-그리고-코드">정정완료 그리고 코드<br /></h3>
+
+<p>우선 수정내용을 요약하자면</p>
+
+<ul>
+  <li>sys.stdout.write 함수를 print함수로 모두 바꾸었다.</li>
+  <li>하지만, 중간에 코드를 멈추는 경우는 있기 때문에 import sys는 남겨두었다.</li>
+  <li>pya와 같은 나만 알아볼 수 있는 함수명을 input_int와 같이 비교적 대중적으로 바꾸었다.</li>
+  <li>sys.stdin.readline() 함수를 input()함수로 바꾸었다.</li>
+</ul>
+
+<p>요즘 sys.stdout이나 sys.stdin 함수가 이상한 것인가..? 왜 내 랩탑에서는 이상하게 작동하는지 모르겠다. 파이썬 3.9를 사용하고 있는데, 파이썬 자체에서 업그레이드 되면서 내용이 바뀐 것인가 싶다.<br /></p>
+
+<p>이 부분에 대해선 구글링이 필요할 것 같다.<br /></p>
+
+<p>그래서 이번에 새로 제출한 코드는 아래와 같다.<br /></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import sys
+from collections import Counter
+
+case = int(input())
+
+input_int = []
+for i in range(case):
+    a = int(input())
+    input_int.append(a)
+
+if case == 1:
+    print(input_int[0])
+    print(input_int[0])
+    print(input_int[0])
+    print(0)
+    sys.exit() # 곧 바로 종료.
+
+input_int.sort()
+
+print(round((sum(input_int) / len(input_int)))) # 산술평균
+print(input_int[len(input_int)//2]) # 중앙값
+
+cnt = Counter(input_int) 
+cnt = sorted(cnt.items(), key = lambda x: (-x[1],x[0])) 
+
+cnt_max = 0
+cnt_max_list = []
+
+for i in cnt:
+    if i[1] &gt; cnt_max: # 최빈값의 개수가 더 많아질 경우 초기화.
+        cnt_max = i[1]
+        cnt_max_list = [i[0]] # 최빈 값이라면 리스트에 추가
+    elif i[1] == cnt_max:
+        cnt_max_list.append(i[0]) # 최빈 값이 여러개 면 추가.
+
+if len(cnt_max_list) == 1:
+    print(cnt_max_list[0]) # 최빈 값이 하나일 경우
+elif len(cnt_max_list) &gt; 1:
+    print(cnt_max_list[1]) # 최빈 값이 여러 개 일경우 두 번째것 출력
+
+print('%i' %(input_int[-1] - input_int[0])) # 범위
+</code></pre></div></div>
+
+<p>그리고 결과는
+<img src="https://github.com/WookeyKim95/WookeyKim95.github.io/blob/main/assets/img/study/coding_test/2022-02-21_4.jpg?raw=true" alt="오케이 정답!" /><br /></p>
+
+<p>오케이 정답!<br /></p>
+
+<p>이로써 정정을 완료 했다.<br /></p>
+
+<p>아참! 제출 언어는 Python3가 아니라 PyPy3로 제출하였다. 처리속도에 문제가 있는 것인지 같은코드라도 일반 Python3로 제출하면 시간초과가 뜬다.<br /></p>
+:ET

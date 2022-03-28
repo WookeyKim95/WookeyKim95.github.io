@@ -1,0 +1,144 @@
+I"�<h2 id="min-heap의-파이썬-구현">Min Heap의 파이썬 구현<br /></h2>
+
+<p>Max Heap을 2편에서 구현하였기 때문에 Max Heap을 구현했다면 Min Heap은 이를 이용해서 쉽게 구현할 수 있다.<br /></p>
+
+<p>값을 넣은 다음에 아이템을 재배치하는 플로우는 Max Heap과 같다. 여기서 Min Heap은 작은 값일 수록 Root로 올라간다는 점을 이용해서 Max Heap의 코드에서 값을 비교하는 부분의 부등호를 반대로 조정해주면 된다.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># Min Heap 구현
+class heap:
+    
+    def make_heap(self, data):
+        self.heap_array = list()
+        self.heap_array.append(data)
+        return
+    def __init__(self, data):
+        self.make_heap(data) 
+
+    def exchange(self, list_input, idx_1, idx_2):
+        list_input[idx_1], list_input[idx_2] = list_input[idx_2], list_input[idx_1]
+        return list_input, idx_2
+
+    def insert(self, data):
+        # 진짜 만약에 힙의 길이가 0이면?
+        if len(self.heap_array) == 0:
+            self.make_heap(data)
+            return True
+        
+        # 자연스럽게 이진트리 구조로 만들어지기 때문에 추가해주면 됨.
+        self.heap_array.append(data)
+
+        # 인덱스값의 계산을 편하게 하기 위해서
+        # 계산 과정시에는 리스트 맨 앞에 None을 임의로 추가
+        self.heap_array.insert(0, None)
+	    # None을 삽입했으므로, 실제 idx값을 구하려면 1을 뺄 것.
+        inserted_idx = len(self.heap_array) - 1
+
+	# swap 하는 과정
+        while 1:
+            if inserted_idx &lt;= 1:
+                break
+            parent_idx = inserted_idx // 2
+            if self.heap_array[inserted_idx] &lt;= self.heap_array[parent_idx]:
+                self.heap_array, inserted_idx = self.exchange(self.heap_array, inserted_idx, parent_idx)
+            else:
+                break
+        
+        # 계산이 끝났으니 맨 앞에 넣어두었던 None 삭제
+        del self.heap_array[0]
+
+        return True
+
+    # 힙 데이터의 삭제(pop)
+    
+    def pop(self):
+        if len(self.heap_array) &lt; 1:
+            return None
+        
+        # 계산 과정에서 인덱스 계산을 편하게 하기 위해서
+        # 계산 과정시에는 리스트 맨 앞에 None을 임의로 추가
+        self.heap_array.insert(0, None)
+        
+        returned_data = self.heap_array[1]
+        # 맨 끝 데이터를 루트노드로 이동.
+        self.heap_array[1] = self.heap_array[-1]
+        del self.heap_array[-1]
+        popped_idx = 1
+
+        while 1:
+            left_child_popped_idx = popped_idx * 2
+            right_child_popped_idx = popped_idx * 2 + 1
+            
+            if left_child_popped_idx &gt;= len(self.heap_array): # list 끝에 다다랐기 때문에 루프 중단
+                break
+
+            elif right_child_popped_idx &gt;= len(self.heap_array):
+                if self.heap_array[popped_idx] &gt;= self.heap_array[left_child_popped_idx]:
+                    self.heap_array, popped_idx = self.exchange(self.heap_array, popped_idx, left_child_popped_idx)
+                else:
+                    break
+            else:
+                if self.heap_array[left_child_popped_idx] &lt; self.heap_array[right_child_popped_idx]:
+                    if self.heap_array[popped_idx] &gt;= self.heap_array[left_child_popped_idx]:
+                        self.heap_array, popped_idx = self.exchange(self.heap_array, popped_idx, left_child_popped_idx)
+                    else:
+                        break
+                else:
+                    if self.heap_array[popped_idx] &gt;= self.heap_array[right_child_popped_idx]:
+                        self.heap_array, popped_idx = self.exchange(self.heap_array, popped_idx, right_child_popped_idx)
+                    else:
+                        break
+        
+        del self.heap_array[0]
+        return returned_data
+</code></pre></div></div>
+
+<p>따라서 위와 같이 코드를 짤 수 있다.<br /></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># Test Code
+
+My = heap(10)
+My.insert(5)
+print(My.heap_array)
+My.insert(8)
+print(My.heap_array)
+My.insert(12)
+print(My.heap_array)
+My.insert(4)
+print(My.heap_array)
+My.insert(11)
+print(My.heap_array)
+My.insert(12)
+print(My.heap_array)
+My.insert(15)
+print(My.heap_array)
+
+
+My.pop()
+print(My.heap_array)
+My.pop()
+print(My.heap_array)
+My.pop()
+print(My.heap_array)
+My.pop()
+print(My.heap_array)
+My.pop()
+print(My.heap_array)
+
+# 출력 결과
+
+[5, 10]
+[5, 10, 8]
+[5, 10, 8, 12]
+[4, 5, 8, 12, 10]
+[4, 5, 8, 12, 10, 11]
+[4, 5, 8, 12, 10, 11, 12]
+[4, 5, 8, 12, 10, 11, 12, 15]
+[5, 10, 8, 12, 15, 11, 12]
+[8, 10, 11, 12, 15, 12]
+[10, 12, 11, 12, 15]
+[11, 12, 15, 12]
+[12, 12, 15]
+</code></pre></div></div>
+
+<p>작은 값이 루트노드로 향한다는 점, 작은 값 부터 pop된다는 점 모두 만족한다.<br /></p>
+:ET

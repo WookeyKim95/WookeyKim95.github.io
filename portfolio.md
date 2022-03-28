@@ -57,10 +57,12 @@ order: 2
 
 </style>
 
-  <div>
+<!--  <div>
   <img src="assets\img\me.png" id="grid_img" alt="me">
   </div>
-
+-->
+<br/>
+<br/>
   <div id="grid_content">
   <span style="font-size:170%;font-weight:bold">
   김성욱<br/>
