@@ -25,7 +25,7 @@ related_posts:
 
 그리고 커밋을 했지만 아래와 같은 상태가 계속 지속되고 있다.<br/>
 
-![현 상태]()
+![현 상태](https://github.com/WookeyKim95/WookeyKim95.github.io/blob/main/assets/img/project/2022-03-29-project_1.jpg?raw=true)
 
 28일에 위 과정을 진행했는데, 29일 오전 9시 기준 아직도 저 상태이다.<br/>
 
