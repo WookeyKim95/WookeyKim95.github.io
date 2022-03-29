@@ -25,6 +25,10 @@ author:
   name:              SungWook Kim
   email:             bluebear9508@naver.com
 
+# Language of your content in 2-letter code, e.g.: en, de.
+# You may also provide a location, e.g.: en-us, de_AT.
+lang:                  ko
+
 # Fallback image and color
 image:               /assets/img/sidebar-bg.jpg
 color:               '#4f86aa'
@@ -58,7 +62,7 @@ accent_image:         https://github.com/WookeyKim95/WookeyKim95.github.io/blob/
 accent_color:          rgb(79,177,186)
 
 # Format of the permalinks
-permalink:           
+permalink:           /:categories/:year-:month-:day-:title/
 
 # Pagination configuration (used by the `blog` layout)
 paginate:            8
