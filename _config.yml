@@ -2,7 +2,7 @@
 #  User configuration
 # -----------------------------------------------------------------------------
 
-title:               우키킴의 일지
+title:               우키의 일지
 
 # The unique resource location of your page.
 # Set to `https://<username>.github.io` when hosting on GitHub Pages
@@ -51,7 +51,11 @@ disqus: True
 disqus_shortname:    xxxx
 
 # This text will appear in the footer of every page. Markdown enabled.
-copyright:           '&copy; 2022.01. by Wookey_Kim'
+copyright:           '&copy; 2022.04. by Wookey_Kim'
+
+# Sidebar image and theme color of the site.
+accent_image:         https://github.com/WookeyKim95/WookeyKim95.github.io/blob/main/assets/img/sidebar-bg.jpg?raw=true
+accent_color:          rgb(79,177,186)
 
 # Format of the permalinks
 permalink:           
