@@ -167,6 +167,9 @@ plugins:
   - jekyll-include-cache
   - jekyll-last-modified-at
 
+# File inclusion/exclusion
+# ----------------------------------------------------------------------------------------
+
 exclude:
   - .jekyll-cache
   - .sass-cache
@@ -174,6 +177,10 @@ exclude:
   - vendor
   - Gemfile
   - Gemfile.lock
+include:
+  - .well-known
+  - LICENSE.md
+
 
 # Plugin Configs
 # ---------------------------------------------------------------------------------------
