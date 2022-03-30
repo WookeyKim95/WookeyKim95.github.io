@@ -168,14 +168,12 @@ plugins:
   - jekyll-last-modified-at
 
 exclude:
-  - README.md
-  - LICENSE.md
-  - node_modules
-  - package.json
-  - package-lock.json
+  - .jekyll-cache
+  - .sass-cache
+  - '*.toml'
+  - vendor
   - Gemfile
   - Gemfile.lock
-  - _posts/study/2020-12-26-making-blog04.md
 
 # Plugin Configs
 # ---------------------------------------------------------------------------------------
