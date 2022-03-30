@@ -3,6 +3,7 @@ layout: about
 title: About Me
 menu: true
 order: 1
+accent_image: 'https://github.com/WookeyKim95/WookeyKim95.github.io/blob/main/assets/img/sidebar-bg_3.jpg?raw=true'
 ---
 
 <style>

@@ -3,6 +3,7 @@ layout: about
 title: My Career
 menu: true
 order: 2
+accent_image: 'https://github.com/WookeyKim95/WookeyKim95.github.io/blob/main/assets/img/sidebar-bg_3.jpg?raw=true'
 ---
 
 <style>
