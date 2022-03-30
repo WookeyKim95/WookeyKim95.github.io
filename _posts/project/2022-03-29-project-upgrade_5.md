@@ -36,3 +36,16 @@ related_posts:
 참고로, 로컬서버 구동시, 수정내용은 정상적으로 반영이 되며, 원격 저장소에 있는 파일도<br/>
 
 로컬 저장소에 있는 파일과 동일하다.<br/>
+<br/>
+
+## 경과의 진행
+
+![경과](https://github.com/WookeyKim95/WookeyKim95.github.io/blob/main/assets/img/project/2022-03-29-project_2.jpg?raw=true)
+
+아하하.. 이걸보니까 오히려 기쁜 마음이 들었다..<br/>
+
+몇 시간 뒤 내 깃허브를 다시 확인해보니 Page build Failure가 떴다.<br/>
+
+드디어 어떻게 해결을 해야할지 구글링을 할 지 실마리를 잡을 수 있는 것이다!!<br/>
+
+그리고 그 다음날에 해결하였다. 그 과정은 정리해서 올리도록 하겠다.<br/>
