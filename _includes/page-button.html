@@ -1,8 +1,36 @@
-<div class="page-control" style="  height: 100%;
+<div class="page-control"
+style="height: 100%;
 display: flex;
 align-items: center;
 justify-content: space-between;">
     <div style="max-width: 50%;">
+        <a
+        style="
+        /* width > 500px일 때 */
+        @media (min-width:501px) {
+        
+            display: inline-block;
+            font-family: Arial;
+            font-size: 25px;
+            font-weight: bold;
+            padding: 6px 100px;
+            text-decoration: none;
+            text-shadow: 0px 1px 0px #ffffff;
+          
+        }
+        
+        /* width <= 500px일 때 */
+        @media (max-width:500px) {
+          
+            display: inline-block;
+            font-family: Arial;
+            font-size: 16px;
+            font-weight: bold;
+            padding: 6px 20px;
+            text-decoration: none;
+            text-shadow: 0px 1px 0px #ffffff;
+          
+        }">
         {% if page.previous.url %}
         <a id="prev" class="button url_true" style="  cursor: pointer;
         color: #277ef0;" href="{{ page.previous.url }}">&laquo;
@@ -11,8 +39,35 @@ justify-content: space-between;">
         <a id="prev" class="button url_false" sytle="  cursor: default;
         color: #8f8f8f;">&laquo;이전 글</a>
         {% endif %}
+        </a>
     </div>
     <div style="max-width: 50%;">
+        <a
+        style="/* width > 500px일 때 */
+        @media (min-width:501px) {
+          .button {
+            display: inline-block;
+            font-family: Arial;
+            font-size: 25px;
+            font-weight: bold;
+            padding: 6px 100px;
+            text-decoration: none;
+            text-shadow: 0px 1px 0px #ffffff;
+          }
+        }
+        
+        /* width <= 500px일 때 */
+        @media (max-width:500px) {
+          .button {
+            display: inline-block;
+            font-family: Arial;
+            font-size: 16px;
+            font-weight: bold;
+            padding: 6px 20px;
+            text-decoration: none;
+            text-shadow: 0px 1px 0px #ffffff;
+          }
+        }">
         {% if page.next.url %}
         <a id="next" class="button url_true" style="  cursor: pointer;
         color: #277ef0;" href="{{ page.next.url }}">
@@ -21,5 +76,6 @@ justify-content: space-between;">
         <a id="next" class="button url_false" sytle="  cursor: default;
         color: #8f8f8f;"> 다음 글 &raquo;</a>
         {% endif %}
+        </a>
     </div>
 </div>
