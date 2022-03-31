@@ -1,18 +1,25 @@
-<div class="page-control">
-    <div>
+<div class="page-control" style="  height: 100%;
+display: flex;
+align-items: center;
+justify-content: space-between;">
+    <div style="max-width: 50%;">
         {% if page.previous.url %}
-        <a id="prev" class="button url_true" href="{{ page.previous.url }}">&laquo;
+        <a id="prev" class="button url_true" style="  cursor: pointer;
+        color: #277ef0;" href="{{ page.previous.url }}">&laquo;
             이전 글</a>
         {% else %}
-        <a id="prev" class="button url_false">&laquo;이전 글</a>
+        <a id="prev" class="button url_false" sytle="  cursor: default;
+        color: #8f8f8f;">&laquo;이전 글</a>
         {% endif %}
     </div>
-    <div>
+    <div style="max-width: 50%;">
         {% if page.next.url %}
-        <a id="next" class="button url_true" href="{{ page.next.url }}">
+        <a id="next" class="button url_true" style="  cursor: pointer;
+        color: #277ef0;" href="{{ page.next.url }}">
             다음 글 &raquo;</a>
         {% else %}
-        <a id="next" class="button url_false"> 다음 글 &raquo;</a>
+        <a id="next" class="button url_false" sytle="  cursor: default;
+        color: #8f8f8f;"> 다음 글 &raquo;</a>
         {% endif %}
     </div>
 </div>
