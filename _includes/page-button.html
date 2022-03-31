@@ -3,12 +3,12 @@ style="height: 100%;
 display: flex;
 align-items: center;
 justify-content: space-between;">
-    <div style="max-width: 50%;
+    <div style="
         
         
         /* width > 500px일 때 */
         @media (min-width:501px) {
-        
+            max-width: 50%;
             display: inline-block;
             font-family: Arial;
             font-size: 25px;
@@ -41,11 +41,12 @@ justify-content: space-between;">
         {% endif %}
         
     </div>
-    <div style="max-width: 50%;
+    <div style="
         
         /* width > 500px일 때 */
         @media (min-width:501px) {
-          .button {
+          
+            max-width: 50%;
             display: inline-block;
             font-family: Arial;
             font-size: 25px;
@@ -53,12 +54,12 @@ justify-content: space-between;">
             padding: 6px 100px;
             text-decoration: none;
             text-shadow: 0px 1px 0px #ffffff;
-          }
+          
         }
         
         /* width <= 500px일 때 */
         @media (max-width:500px) {
-          .button {
+          
             display: inline-block;
             font-family: Arial;
             font-size: 16px;
@@ -66,7 +67,7 @@ justify-content: space-between;">
             padding: 6px 20px;
             text-decoration: none;
             text-shadow: 0px 1px 0px #ffffff;
-          }
+          
         }">
         {% if page.next.url %}
         <a id="next" class="button url_true" style="  cursor: pointer;
