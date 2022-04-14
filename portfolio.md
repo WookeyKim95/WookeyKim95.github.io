@@ -218,15 +218,14 @@ accent_image: 'https://github.com/WookeyKim95/WookeyKim95.github.io/blob/main/as
 * Frontend<br/>
   HTML/CSS/JavaScript
 
-* 3D Modeling<br/>
-  Blender
+* C
 
 ---
 ## Hobbies
 
 * Swimming
 * Playing the Piano
-* Painting
+* Painting with a Tablet
 
 
 
