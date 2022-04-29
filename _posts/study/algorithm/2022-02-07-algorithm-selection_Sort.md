@@ -150,3 +150,30 @@ True
 여기서 중간에 low_idx를 저장하는 과정을 빼고 그냥 i번 인덱스랑 j번 인덱스의 값을 바꾸는 것만 넣어도 정렬이 잘 된다. 다만 자리를 바꾸는 횟수가 늘어날 뿐이다.<br/>
 
 기왕 바꿀 거면 한꺼번에 다 측정하고 난 다음에 바꾸는 것이 좋긴 하지만, 코드의 양을 조금 줄이고 싶다면 위 방법도 나쁘지는 않은 것 같다.<br/>
+<br/>
+
+### C언어로 선택정렬 구현하기.<br/>
+
+```
+void select_sort(int* arr, int size) {
+	
+	int i, j, temp;
+	int minIdx;
+
+	for (i = 0; i < size - 1; i++) {
+		minIdx = i;
+		for(j = i + 1; i < size; j++) {
+			if(arr[minIdx] > arr[j]) {
+				minIdx = j;			
+			}
+		}
+		temp = arr[i];
+		arr[i] = arr[minIdx];
+		arr[i] = temp;
+
+	}
+	
+}
+```
+
+C언어로 구현하면 위와 같이 구현할 수 있다. (입력데이터 : 배열 포인터, 배열의 크기)<br/>
