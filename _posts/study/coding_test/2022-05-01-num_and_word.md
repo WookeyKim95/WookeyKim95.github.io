@@ -17,7 +17,7 @@ related_posts:
 <br/>
 
 ```
-ef solution(s):
+def solution(s):
     
     s += ' ' # 맨 마지막 문자열까지 for문에서 돌리기 위함.
 
