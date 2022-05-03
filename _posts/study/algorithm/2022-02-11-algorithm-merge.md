@@ -139,3 +139,142 @@ list_return += [left[i]]
 list_return += [right[i]]
 ```
 리스트끼리 합치는 형태로 만들 수 있도록 만들어 해결했다.<br/>
+<br/>
+
+## C언어 코드 기록<br/>
+<br/>
+
+5월 2일에 학원에서 배운 C언어로 구현한 병합 정렬 코드를 여기다 기록한다.<br/>
+
+근본적인 원리는 같은데, 파이썬과는 뭔가 과정이 많이 달라서 이해하는데 시간이 많이 걸릴 것 같다.<br/>
+
+```
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+#pragma warning (disable : 4996)
+
+#define SWAP(type, a, b) do{ type temp = a; a = b; b = temp; }while(0)
+
+void display(int* arr, int size);
+void randomize(int* arr, int start, int end, int size);
+void merge(int* arr, int* arrMerge, int left, int mid, int right);
+void merge_sort_util(int* arr , int* arrMerge, int left, int right);
+void merge_sort(int* arr, int size);
+
+int main()
+{
+	int size, st, end;
+	int* arr;
+
+	printf("배열의 크기 입력 : ");
+	scanf("%d", &size);
+
+	arr = (int*)malloc(sizeof(int) * size);
+	
+	printf("시작 수 / 끝 수 입력 : ");
+	scanf("%d %d", &st, &end);
+
+	randomize(arr, st, end, size); //배열에 랜덤한 수 저장		
+	
+	printf("\n\n **** 정렬 전 자료 출력 ***\n\n");
+	display(arr, size); //배열에 저장된 수 출력
+
+	//bubbleSort(arr, size);
+	//improveBubbleSort(arr, size);
+	//selectionSort(arr, size);
+    merge_sort(arr, size);
+
+	printf("\n\n **** 정렬 후 자료 출력 ***\n\n");
+	display(arr, size); //배열에 저장된 수 출력
+
+	free(arr);
+	return 0;
+}
+
+void display(int* arr, int size)
+{
+	int i;
+	for (i = 0; i < size; i++)
+		printf("%d ", arr[i]);
+	puts("");
+}
+
+void randomize(int* arr, int start, int end, int size)
+{
+	int i;
+	srand((unsigned int)time(NULL));
+
+	for (i = 0; i < size; i++)
+	{
+		arr[i] = rand() % (end - start + 1) + start;
+	}
+}
+
+void merge(int* arr, int* arrMerge, int left, int mid, int right) {
+    int p1 = left; // 첫 번째 배열의 인덱스
+    int p2 = mid + 1; // 두 번째 배열의 인덱스
+    int pM = left; // 
+    int i;
+
+    //arr배열의 원소를 arrMerge에 복사(arr배열에 정렬된 값을 저장하기 위해!) 
+
+    for (i = left; i <= right; i++) {
+        arrMerge[i] = arr[i];
+    }
+
+    while (p1 <= mid && p2 <= right) {
+        if (arrMerge[p1] < arrMerge[p2]) {
+            arr[pM] = arrMerge[p1];
+            p1++;
+        }
+        else {
+            arr[pM] = arrMerge[p2];
+            p2++;
+        }
+        pM++;
+    }
+
+    // 앞부분에서 채우지 모한 데이터 마저 채우기
+    while (p1 <= mid) {
+        arr[pM++] = arrMerge[p1++];
+        //pM++;
+        //p1++;        
+    }
+
+    /*
+    while (p2 <= right) {
+        arr[pM++] = arrMerge[p2++];
+    }
+    */
+
+}
+
+void merge_sort_util(int* arr , int* arrMerge, int left, int right) {
+
+    int mid;
+    if (left < right) {
+        // 분할만 하는 코드
+        mid = (left + right) / 2; // 중간 인덱스를 구한다.
+        merge_sort_util(arr, arrMerge, left, mid); // 앞쪽 재귀 호출
+        merge_sort_util(arr, arrMerge, mid + 1, right);
+
+        //병합하는 작업
+        merge(arr, arrMerge, left, mid, right);
+    }
+}
+
+void merge_sort(int* arr, int size) {
+
+    int* arrMerge = malloc(sizeof(int) * size);
+    // 공간복잡도 : O(N) -> 배열의 크기만큼 메모리가 더 필요함.
+
+    merge_sort_util(arr, arrMerge, 0, size - 1);
+
+    free(arrMerge);
+}
+
+
+
+```
