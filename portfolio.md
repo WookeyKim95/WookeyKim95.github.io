@@ -131,8 +131,19 @@ accent_image: 'https://github.com/WookeyKim95/WookeyKim95.github.io/blob/main/as
 
 
 ---
-## Work Experiences
+## Experiences
 
+> **<span style="font-size:1.3em">42Seoul - La Piscine</span>** <br/>
+>  2022.05 - 2022.06  <br/>
+>
+>  **_Pisciner_**<br/>
+>  이노베이션 아카데미 42서울 7기 최종 선발과정<br/>
+>  + <span style="font-size:0.9em">C언어를 통한 자료구조 및 알고리즘에 대한 학습</span>
+>  + <span style="font-size:0.9em">동료 평가 진행 150회 이상</span><br/>
+> <span style="font-size:0.8em"> 동료평가 : 동료에게 자신의 코드를 설명하거나 자신이 동료에게 설명을 듣고 동료의 코드를 평가하는 시스템
+>  + <span style="font-size:0.9em">최종 선발 불합격</span>
+
+<br/>
 
 > **<span style="font-size:1.3em">Platom .inc</span>** <br/>
 >  2021.10 - 2021.11  <br/>
