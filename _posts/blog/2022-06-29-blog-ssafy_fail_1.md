@@ -2,7 +2,7 @@
 layout: post
 title: "SSAFY 8기 최종 불합격 후기"
 subtitle:   
-date: 2022-06-29 15:46:14 +0900
+date: 2022-06-29 15:47:14 +0900
 tags:
 categories: blog
 comments: true
