@@ -103,7 +103,7 @@ disqus: True
 disqus_shortname:    xxxx
 
 # This text will appear in the footer of every page. Markdown enabled.
-copyright:           '&copy; 2022.04. by Wookey_Kim'
+copyright:           '&copy; 2022.07. by Wookey_Kim'
 
 # Sidebar image and theme color of the site.
 accent_image:         https://github.com/WookeyKim95/WookeyKim95.github.io/blob/main/assets/img/sidebar-bg.jpg?raw=true
