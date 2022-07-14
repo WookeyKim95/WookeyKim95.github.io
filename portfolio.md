@@ -211,6 +211,7 @@ accent_image: 'https://github.com/WookeyKim95/WookeyKim95.github.io/blob/main/as
 
 * Programming
   + Python
+  + C++
   + HTML/CSS/JavaScript
 
 * Computer Programs
@@ -229,7 +230,7 @@ accent_image: 'https://github.com/WookeyKim95/WookeyKim95.github.io/blob/main/as
 * Frontend<br/>
   HTML/CSS/JavaScript
 
-* C
+* C++
 
 ---
 ## Hobbies
