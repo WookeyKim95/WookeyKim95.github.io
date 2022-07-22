@@ -43,7 +43,7 @@ accent_image: 'https://github.com/WookeyKim95/WookeyKim95.github.io/blob/main/as
 ## 제가 꿈꾸는 저의 모습<br/>
 
 - **문제를 해결하고 생각을 현실로 펼치는 열쇠**
-- **참 가지가지 하는 사람**<br/>
+- **하나를 깊게 파고 나중엔 여러가지 하는 사람**<br/>
 
 <span style="font-size:1.3em;">입니다.</span>
 
@@ -51,7 +51,7 @@ accent_image: 'https://github.com/WookeyKim95/WookeyKim95.github.io/blob/main/as
 ## 프로그래밍은 기초부터 조금씩
 
 - 자료구조, 알고리즘에 대해서 차근차근 공부해나가고자 하는 중 입니다.<br/>
-- 웹 개발과 3D 작업을 공부하고 있습니다.<br/>
+- C++부터 시작해서 게임 개발을 공부하고 있습니다.<br/>
 <br/>
 
 ## 제가 생각하는 저의 성격은?
