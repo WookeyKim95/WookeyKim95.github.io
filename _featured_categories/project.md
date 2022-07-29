@@ -1,10 +1,10 @@
 ---
 layout: list
-title: Project
+title: Project / Practice
 slug: project
 menu: true
 submenu: false
 order: 3
 description: >
-  개인 프로젝트
+  개인 실습 / 프로젝트
 ---
