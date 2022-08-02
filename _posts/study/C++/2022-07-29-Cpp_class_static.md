@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[C++] 클래스의 static 멤버 번수"
+title:  "[C++] 클래스의 static 멤버 변수"
 subtitle:  
 date: 2022-08-01 19:12:40 +0900
 categories: study
@@ -10,7 +10,7 @@ related_posts:
 
 ---
 
-# [C++] 클래스의 static 멤버 번수<br/>
+# [C++] 클래스의 static 멤버 변수<br/>
 <br/>
 
 ## Static 멤버 변수<br/>
