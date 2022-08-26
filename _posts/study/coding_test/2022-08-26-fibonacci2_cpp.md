@@ -2,7 +2,7 @@
 layout: post
 title:  "[백준] 피보나치수 2 C++"
 subtitle:   
-date: 2022-08-20 13:53:56 +0900
+date: 2022-08-26 13:53:56 +0900
 tags: coding_test
 categories: study
 use_math: true
