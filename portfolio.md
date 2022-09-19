@@ -227,10 +227,9 @@ accent_image: 'https://github.com/WookeyKim95/WookeyKim95.github.io/blob/main/as
 
 * Algorithms and Data Structure
 
-* Frontend<br/>
-  HTML/CSS/JavaScript
-
-* C++
+* Game Programming<br/>
+  + C++
+  + WinAPI
 
 ---
 ## Hobbies
