@@ -139,6 +139,7 @@ accent_image: 'https://github.com/WookeyKim95/WookeyKim95.github.io/blob/main/as
 >  **_Pisciner_**<br/>
 >  이노베이션 아카데미 42서울 7기 최종 선발과정<br/>
 >  + <span style="font-size:0.9em">C언어를 통한 자료구조 및 알고리즘에 대한 학습</span>
+>  + <span style="font-size:0.9em">MacOS를 활용한 UNIX 기초 대한 학습</span>
 >  + <span style="font-size:0.9em">동료 평가 진행 150회 이상</span><br/>
 > <span style="font-size:0.8em"> 동료평가 : 자신이 동료에게 설명을 듣고 동료의 코드를 평가하고 함께 점검하는 시스템
 >  + <span style="font-size:0.9em">최종 선발 불합격</span>
@@ -148,7 +149,7 @@ accent_image: 'https://github.com/WookeyKim95/WookeyKim95.github.io/blob/main/as
 > **<span style="font-size:1.3em">Platom .inc</span>** <br/>
 >  2021.10 - 2021.11  <br/>
 >
->  **_Intern_**<br/>
+>  **_Part Time Job Assistant_**<br/>
 >  KMO(한국수학올림피아드) 교육용 애플리케이션 **MO**개발 참여<br/>
 >  + <span style="font-size:0.9em">플로우차트, 기능명세서 작성</span>
 >  + <span style="font-size:0.9em">홍보문구 제시</span>
