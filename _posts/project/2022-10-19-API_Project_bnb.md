@@ -91,4 +91,41 @@ Eidtor의 기본 화면을 위와 같이 화면을 구성하는데 성공하였�
 - 타일 별로 텍스쳐를 다르게 저장할 수 있게 구현하기
 - 타일 맵 저장, 로드 구현하기
 
+## 10월 21일<br/>
+<br/>
+
+![에디터 기본 화면](https://github.com/WookeyKim95/WookeyKim95.github.io/blob/main/assets/img/project/bnb_2.png?raw=true)
+
+<br/>
+
+위와 같이 팔레트를 만들려고 하는 중이었다.<br/>
+
+팔레트에 있는 타일을 클릭하면 해당 타일이 선택되며, 이를 통해 맵에다가 타일을 설치할 수 있는 것이다.
+
+```
+if (IsTap(KEY::LBTN))
+	{
+		// 범위 내에서 마우스 좌클릭을 실행하였을 경우
+		// 마우스 위치를 받아와서 실제좌표로 변환	
+		Vec2 vMousePos = MOUSE_POS;
+
+		int iCol = (int)(vMousePos.x - 20.f) / TILE_SIZE;
+		int iRow = (int)(vMousePos.y - 40.f) / TILE_SIZE;
+
+		if (0.f <= vMousePos.x && iCol < GetTileXCount()
+			&& 0.f <= vMousePos.y && iRow < GetTileYCount())
+		{
+			int iIdx = iRow * GetTileXCount() + iCol;
+			const vector<CObj*>& vecTile = GetLayer(LAYER::TILE);
+			//((CTile*)vecTile[iIdx])->SetAtlas();
+		}
+	}
+```
+타일을 업데이트 하는 함수 내에 있는 코드이다. 여기서 m_AtlasNum의 값을 이용하여
+```
+((CTile*)vecTile[iIdx])->SetAtlas();
+```
+
+타일을 클릭하면 m_AtlasNum 값을 바꾸며 다른 타일이 맵에 입력되도록 하는 방법을 연구 중이다.<br/>
+
 **계속 업데이트 중 입니다.**
