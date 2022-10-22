@@ -128,4 +128,155 @@ if (IsTap(KEY::LBTN))
 
 타일을 클릭하면 m_AtlasNum 값을 바꾸며 다른 타일이 맵에 입력되도록 하는 방법을 연구 중이다.<br/>
 
+### 오후 7시<br/>
+<Br/>
+
+```
+if (IsTap(KEY::LBTN))
+	{
+		// 범위 내에서 마우스 좌클릭을 실행하였을 경우
+		// 마우스 위치를 받아와서 실제좌표로 변환	
+		Vec2 vMousePos = MOUSE_POS;
+
+		int iCol = (int)(vMousePos.x - 20.f) / TILE_SIZE;
+		int iRow = (int)(vMousePos.y - 40.f) / TILE_SIZE;
+
+		if (0.f <= vMousePos.x && iCol < GetTileXCount()
+			&& 0.f <= vMousePos.y && iRow < GetTileYCount())
+		{
+			int iIdx = iRow * GetTileXCount() + iCol;
+			const vector<CObj*>& vecTile = GetLayer(LAYER::TILE);
+			((CTile*)vecTile[iIdx])->SetAtlas(m_Tilelist[m_AtlasNum]);
+		}
+	}
+```
+
+```
+    vector<CTexture*>   m_Tilelist; // 타일의 종류를 저장하는 벡터
+    UINT            m_AtlasNum; // 현재 선택한 타일의 아틀라스를 선택하기 위한 것.
+                                // 팔레트 출력 목록
+```
+
+```
+    void SetAtlasNum0() { m_AtlasNum = 0; };
+    void SetAtlasNum1() { m_AtlasNum = 1; };
+    void SetAtlasNum2() { m_AtlasNum = 2; };
+    void SetAtlasNum3() { m_AtlasNum = 3; };
+    void SetAtlasNum4() { m_AtlasNum = 4; };
+    void SetAtlasNum5() { m_AtlasNum = 5; };
+    void SetAtlasNum6() { m_AtlasNum = 6; };
+```
+
+우선 위와 같이 하드코딩을 해서 타일 팔레트를 구현하였다.<br/>
+타일 UI 7개에 각기 다른 함수를 넣어주고(기능 : 인덱스를 바꿈), <br/>
+m_AtlasNum을 인덱스로 활용하여 현재 m_AtlasNum값에 따라서 CTexture*을 저장한 벡터에서<br/>
+몇번째 인덱스를 타일에 저장할지를 마우스 클릭을 통해서 입력하는 것이다.<br/>
+
+저장 기능, 로드 기능 까지는 잘 작동하지만 나중을 위해서 조금 코드를 고칠 필요가 있다고 보인다.<br/>
+
+그리고 다음 목표는
+
+- 오브젝트모드, 타일모드에 따라서 각기 다른 팔레트가 우측에 나오도록 설정하는 것
+- 타일에 따라서 지나갈 수 있는 곳인지 없는 곳인지 정보를 저장하고 로드하는 과정 구현
+
+이렇게 설정해야겠다.<br/>
+
+## 10월 22일<br/>
+<Br/>
+
+```
+// EditorLevel의 tick() 함수
+
+void CEditorLevel::tick()
+{
+	CLevel::tick();
+
+	if (IsTap(KEY::ENTER))
+	{
+		ChangeLevel(LEVEL_TYPE::START);
+	}
+
+	if (IsTap(KEY::_1))
+	{
+		m_eMode = EDITOR_MODE::TILE;
+		// 기존 팔레트 지우기
+		for (int i = 0; i < m_UIList[m_curPalette].size(); ++i)
+		{
+			m_UIList[m_curPalette][i]->SetDead();
+		}
+		m_curPalette = 0;
+
+		// 타일 팔레트 출력
+		for (int i = 0; i < m_UIList[m_curPalette].size(); ++i)
+		{
+			m_UIList[m_curPalette][i]->SetPos(Vec2(660.f, 50.f + 50.f * i));
+			AddObject(m_UIList[m_curPalette][i], LAYER::UI);
+		}
+
+	}
+
+	if (IsTap(KEY::_2))
+	{
+		m_eMode = EDITOR_MODE::BOX;
+		// 기존 팔레트 지우기
+		for (int i = 0; i < m_UIList[m_curPalette].size(); ++i)
+		{
+			m_UIList[m_curPalette][i]->SetDead();
+		}
+		m_curPalette = 1;
+
+		// 박스 팔레트 출력
+		for (int i = 0; i < m_UIList[m_curPalette].size() / 2; ++i)
+		{
+			m_UIList[m_curPalette][i]->SetPos(Vec2(660.f, 50.f + 50.f * i));
+			AddObject(m_UIList[m_curPalette][i], LAYER::UI);
+		}
+
+		for (int i = 0; i < m_UIList[m_curPalette].size() / 2; ++i)
+		{
+			m_UIList[m_curPalette][i + m_UIList[m_curPalette].size() / 2]->SetPos(Vec2(710.f, 50.f + 50.f * i));
+			AddObject(m_UIList[m_curPalette][i], LAYER::UI);
+		}
+		
+	}
+
+	if (IsTap(KEY::_0))
+	{
+		m_eMode = EDITOR_MODE::NONE;
+		m_curPalette = 2;
+	}
+
+	update();
+}
+```
+
+위의 코드를 요약하면
+
+- 1번을 누르면 우측에 있던 기존 팔레트를 지우고 (SetDead()함수) 타일 팔레트를 출력한다.
+
+- 2번을 누르면 우측에 있던 기존 팔레트를 지우고 박스 팔레트를 출력한다.
+
+그런데 2번을 눌렀다가 1번을 누르면 오류가 발생한다.<br/>
+
+아! 팔레트 구성이 잘못되었나??<br/>
+
+현재 팔레트를 바꿀 때마다 delete하고 push_back하는 과정으로 해야하는데 delete만 계속하니 오류가 발생하는 것이라 추측했다.<br/>
+
+팔레트 구성이나 팔레트 출력 구성을 바꿔봐야겠다.<br/>
+
+SetDead를 쓰지 않고 순수 팔레트만 출력하는 구조로 바꾸기로 했다.<br/>
+
+아니면 SetDead가 필수라면 팔레트를 보관하는 구조를 다시 고민해보아야 할 것 같다.<br/>
+<Br/>
+
+### 12시 30분<br/>
+
+SetDead함수를 없애고 이것 저것 만지고 스테이지 UI를 씌우니까 그럴듯 하게 보이고있다.<br/>
+
+하지만 클릭을 할 때마다 UI그림이 다시 그려지는 듯한 느낌을 지울 수가 없다.<br/>
+
+우선은.. 박스까지 저장하는 구조와 특정 타일에서는 박스를 지우는 방법을 고민해야겠다.<br/>
+
+아니면.. 맵의 구조 로직 자체를 새로 고민해야할지도 모르겠다.<br/>
+
 **계속 업데이트 중 입니다.**
