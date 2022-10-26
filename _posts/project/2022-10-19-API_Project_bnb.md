@@ -425,4 +425,82 @@ for (int i = 0; i < 15; ++i)
 
 2중 for문 완전 탐색을 이용해서 15열 13행 총 195개의 타일 중에서 가장 가까운 타일의 중앙에 놓이도록 조정을 했다.<br/>
 
+### 20시 20분<br/>
+<br/>
+
+- 예를 들어, 왼쪽과 아래키를 동시에 눌렀다가 아래키를 떼는 경우<br/>
+아래키를 뗐기 때문에 왼쪽으로 움직이지만 애니메이션은 아래쪽을 바라보고 서있는 모션이 재생된다.
+
+이 문제를 해결하였다.<br/>
+
+```
+// 가다가 섰을 때 애니메이션 재생
+	if (IsRelease(KEY::RIGHT) && !(IsPressed(KEY::DOWN)) && !(IsPressed(KEY::UP)) && !(IsPressed(KEY::LEFT)))
+	{
+		GetAnimator()->Play(L"IDLE_RIGHT", true);
+	}
+
+	if (IsRelease(KEY::LEFT) && !(IsPressed(KEY::DOWN)) && !(IsPressed(KEY::UP)) && !(IsPressed(KEY::RIGHT)))
+	{
+		GetAnimator()->Play(L"IDLE_LEFT", true);
+	}
+
+	if (IsRelease(KEY::UP) && !(IsPressed(KEY::DOWN)) && !(IsPressed(KEY::RIGHT)) && !(IsPressed(KEY::LEFT)))
+	{
+		GetAnimator()->Play(L"IDLE_UP", true);
+	}
+
+	if (IsRelease(KEY::DOWN) && !(IsPressed(KEY::RIGHT)) && !(IsPressed(KEY::UP)) && !(IsPressed(KEY::LEFT)))
+	{
+		GetAnimator()->Play(L"IDLE_DOWN", true);
+	}
+```
+
+위와 같이 오직 한쪽의 방향키가 눌려있있다가 뗐을 때에만 멈추는 모션이 재생되도록 하였다.<br/>
+
+그런데 문제는 애시당초 크레이지 아케이드는 대각선으로 움직이면 안된다.<br/>
+
+음.. 그렇다면 위에 이동을 관장하는 코드도 바꿀 필요가 있겠다.<br/>
+
+```
+// 상하좌우 키로 움직이기
+	if (IsPressed(KEY::RIGHT) && !(IsPressed(KEY::DOWN)) && !(IsPressed(KEY::UP)) && !(IsPressed(KEY::LEFT)))
+	{
+		Vec2 vPos = GetPos();
+
+		vPos.x += m_fSpeed * DT;
+		SetPos(vPos);
+	}
+
+	if (IsPressed(KEY::LEFT) && !(IsPressed(KEY::DOWN)) && !(IsPressed(KEY::UP)) && !(IsPressed(KEY::RIGHT)))
+	{
+		Vec2 vPos = GetPos();
+
+		vPos.x -= m_fSpeed * DT;
+		SetPos(vPos);
+	}
+
+	if (IsPressed(KEY::DOWN) && !(IsPressed(KEY::UP)) && !(IsPressed(KEY::RIGHT)) && !(IsPressed(KEY::LEFT)))
+	{
+		Vec2 vPos = GetPos();
+
+		vPos.y += m_fSpeed * DT;
+		SetPos(vPos);
+	}
+
+	if (IsPressed(KEY::UP) && !(IsPressed(KEY::RIGHT)) && !(IsPressed(KEY::DOWN)) && !(IsPressed(KEY::LEFT)))
+	{
+		Vec2 vPos = GetPos();
+
+		vPos.y -= m_fSpeed * DT;
+		SetPos(vPos);
+	}
+```
+
+상하좌우로 움직이는 부분의 코드를 위와 같이 수정하였다.<br/>
+
+하지만 이렇게 하면 움직임을 전환할 때 뻣뻣한 느낌을 준다.<br/>
+
+더 좋은 방법을 연구할 필요가 있겠어.<br/>
+
 **계속 업데이트 중 입니다.**
