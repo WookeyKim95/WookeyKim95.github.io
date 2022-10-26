@@ -300,4 +300,105 @@ SetDead함수를 없애고 이것 저것 만지고 스테이지 UI를 씌우니�
 
 오늘은 코드 설계보다는 리소스 정리를 진행하였다.<br/>
 
+## 10월 26일<br/>
+<br/>
+
+![에디터 기본 화면](https://github.com/WookeyKim95/WookeyKim95.github.io/blob/main/assets/img/project/bnb_4.png?raw=true)
+
+에디터에서 편집한 맵을 스테이지에서 불러올 수 있도록 했다.<br/>
+
+그리고 플레이어 캐릭터에다가 상, 하, 좌, 우로 움직이는 경우 애니메이션을 부여하였다.<br/>
+
+```
+
+	// 상하좌우 키로 움직이기
+	if (IsPressed(KEY::RIGHT))
+	{
+		Vec2 vPos = GetPos();
+
+		vPos.x += m_fSpeed * DT;
+		SetPos(vPos);
+	}
+
+	if (IsPressed(KEY::LEFT))
+	{
+		Vec2 vPos = GetPos();
+
+		vPos.x -= m_fSpeed * DT;
+		SetPos(vPos);
+	}
+
+	if (IsPressed(KEY::DOWN))
+	{
+		Vec2 vPos = GetPos();
+
+		vPos.y += m_fSpeed * DT;
+		SetPos(vPos);
+	}
+
+	if (IsPressed(KEY::UP))
+	{
+		Vec2 vPos = GetPos();
+
+		vPos.y -= m_fSpeed * DT;
+		SetPos(vPos);
+	}
+
+	// 가다가 섰을 때 애니메이션 재생
+	if (IsRelease(KEY::RIGHT))
+	{
+		GetAnimator()->Play(L"IDLE_RIGHT", true);
+	}
+
+	if (IsRelease(KEY::LEFT))
+	{
+		GetAnimator()->Play(L"IDLE_LEFT", true);
+	}
+
+	if (IsRelease(KEY::UP))
+	{
+		GetAnimator()->Play(L"IDLE_UP", true);
+	}
+
+	if (IsRelease(KEY::DOWN))
+	{
+		GetAnimator()->Play(L"IDLE_DOWN", true);
+	}
+
+	// 걷는 중 애니메이션 재생
+	if (IsTap(KEY::RIGHT))
+	{
+		GetAnimator()->Play(L"WALK_RIGHT", true);
+	}
+
+	if (IsTap(KEY::UP))
+	{
+		GetAnimator()->Play(L"WALK_UP", true);
+	}
+
+	if (IsTap(KEY::LEFT))
+	{
+		GetAnimator()->Play(L"WALK_LEFT", true);
+	}
+
+	if (IsTap(KEY::DOWN))
+	{
+		GetAnimator()->Play(L"WALK_DOWN", true);
+	}
+```
+
+IsTap은 누른 순간에 발동되는 조건문이고, IsRelease는 키보드에서 손을 뗀 순간에 발동되는 조건문이다.<br/>
+
+그리고 IsPressed는 눌려있는 동안에 발동되는 조건문이다.<br/>
+
+애니메이션 재생 시작 자체는 처음 한번만 일어나야하기 때문에 IsTap에다가 걷는 모션의 애니메이션을 배치하였다.<br/>
+
+여기서 발생한 문제는 두 키를 동시에 눌렀다가 뗐을 경우에 애니메이션이 잘못 재생되는 문제가 발생한다.<br/>
+
+- 예를 들어, 왼쪽과 아래키를 동시에 눌렀다가 아래키를 떼는 경우<br/>
+아래키를 뗐기 때문에 왼쪽으로 움직이지만 애니메이션은 아래쪽을 바라보고 서있는 모션이 재생된다.
+
+이를 해결하기 위해서 코드 배치를 다시 생각해보아야겠다.<brb>
+
+
 **계속 업데이트 중 입니다.**
