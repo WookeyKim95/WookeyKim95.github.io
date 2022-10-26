@@ -401,4 +401,28 @@ IsTap은 누른 순간에 발동되는 조건문이고, IsRelease는 키보드�
 이를 해결하기 위해서 코드 배치를 다시 생각해보아야겠다.<brb>
 
 
+### 19시 40분<br/>
+<br/>
+
+![에디터 기본 화면](https://github.com/WookeyKim95/WookeyKim95.github.io/blob/main/assets/img/project/bnb_5.png?raw=true)
+
+위와 같이 타일에 걸쳐서 물풍선(검은색 사각형)을 놓는 경우 근처 타일의 중앙에 놓이도록 구현하였다.<br/>
+
+```
+for (int i = 0; i < 15; ++i)
+	{
+		for (int j = 0; j < 13; ++j)
+		{
+			Vec2 Candi_TileCenter = { 20.f + TILE_SIZE / 2 + TILE_SIZE * i
+									, 40.f + TILE_SIZE / 2 + TILE_SIZE * j };
+			if ((abs(GetPos().x - m_TileCenter.x) > abs(GetPos().x - Candi_TileCenter.x)))
+				m_TileCenter.x = Candi_TileCenter.x;
+			if ((abs(GetPos().y - m_TileCenter.y) > abs(GetPos().y - Candi_TileCenter.y)))
+				m_TileCenter.y = Candi_TileCenter.y;
+		}
+	}
+```
+
+2중 for문 완전 탐색을 이용해서 15열 13행 총 195개의 타일 중에서 가장 가까운 타일의 중앙에 놓이도록 조정을 했다.<br/>
+
 **계속 업데이트 중 입니다.**
