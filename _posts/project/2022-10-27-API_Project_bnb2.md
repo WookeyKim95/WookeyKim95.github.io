@@ -29,6 +29,90 @@ related_posts:
 해당 방향으로 더 이상 이동을 하지 못하도록 로직을 짜고자 한다.<br/>
 
 아직 실질적인 구현은 안되었다.<br/>
+<br/>
+
+### 20시 30분 추가기록<br/>
+<br/>
+
+```
+void CPlayer::BeginOverlap(CCollider* _pOther)
+{
+	if (_pOther->GetOwner()->ReturnLayer() == LAYER::OBSTACLE)
+	{
+		CObstacle* _pObstacle = (CObstacle*)(_pOther->GetOwner());
+		if (_pObstacle->GetObstacle() == true) // 이동 불가능한 곳에 접촉 했을 때
+		{
+			Vec2 ObsPos = _pObstacle->GetPos();
+			Vec2 vPos = GetPos();
+
+
+			if (vPos.y - ObsPos.y < (3.f * TILE_SIZE / 2.f) && IsPressed(KEY::UP)) // 위쪽에 블록이 있을 경우
+			{
+				SetPos(GetPrevPos()); // 현재 위치를 닿기 직전의 위치로 옮김.
+				CanMove[0] = false; // 더이상 이동 못하게 막음.
+			}
+
+			if (ObsPos.y - vPos.y < (TILE_SIZE / 2.f) && IsPressed(KEY::DOWN)) // 아래쪽에 블록이 있을 경우
+			{
+				SetPos(GetPrevPos()); // 현재 위치를 닿기 직전의 위치로 옮김.
+				CanMove[1] = false; // 더이상 이동 못하게 막음.
+			}
+			if (vPos.x - ObsPos.x < (3.f * TILE_SIZE / 2.f) && IsPressed(KEY::LEFT)) // 왼쪽에 블록이 있을 경우
+			{
+				SetPos(GetPrevPos());
+				CanMove[2] = false; // 더이상 이동 못하게 막음.
+			}
+
+			if (ObsPos.x - vPos.x < (TILE_SIZE / 2.f) && IsPressed(KEY::RIGHT)) // 오른쪽에 블록이 있을 경우
+			{
+				SetPos(GetPrevPos());
+				CanMove[3] = false; // 더이상 이동 못하게 막음.
+			}
+
+		}
+	}
+}
+
+void CPlayer::EndOverlap(CCollider* _pOther)
+{
+	if (_pOther->GetOwner()->ReturnLayer() == LAYER::OBSTACLE)
+	{
+		CObstacle* _pObstacle = (CObstacle*)(_pOther->GetOwner());
+		if (_pObstacle->GetObstacle() == true) // 이동 불가능한 곳에 접촉 했을 때
+		{
+			if (!CanMove[0])
+				CanMove[0] = true;
+			if (!CanMove[1])
+				CanMove[1] = true;
+			if (!CanMove[2])
+				CanMove[2] = true;
+			if (!CanMove[3])
+				CanMove[3] = true;
+		}
+	}
+}
+```
+4개의 bool 변수를 담을 수 있는 CanMove를 선언하였고,<br/>
+
+Obj 객체에서 바로 직전의 좌표를 저장하는 변수를 새로 생성하고 Player에 적용<br/>
+
+tick() 함수에서 새로운 좌표를 지정하기 전에 이전 좌표를 먼저 지정해주었다.(SetPrevPos())<br/>
+
+<br/>
+
+BeginOverlap 함수에서 충돌이 일어났을 경우 바로 직전 좌표로 이동시킨 뒤 더이상의 이동을 막는다.<br/>
+
+그리고 충돌 직전의 좌표로 이동했으면 자동으로 EndOverlap함수로 넘어간다.<br/>
+
+이때 방향 이동을 막은 것을 해제해준다.<br/>
+
+즉, 만약에 블록이나 장애물에 닿으면 위의 코드로 더 이상 이동하지 못하게 막고,<br/>
+
+현재 좌표를 충돌하기 바로 직전의 이전 좌표로 저장하는 식으로 장애물을 통과하지 못하도록 구현하였다.<br/>
+
+다음 목표는 블록 사이를 매끄럽게 이동할 수 있도록<br/>
+
+블록과 충돌이 일어났을 경우 타일의 정 가운데로 옆으로 미끄러지는 상황을 구현하도록 하겠다.
 
 
 **계속 업데이트 중 입니다.**
