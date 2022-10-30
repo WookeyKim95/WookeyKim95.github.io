@@ -334,5 +334,213 @@ EndOverlap함수 재조정 및 더 나은 코드를 고민해보아야겠다.<br
 
 지금까지 작업 과정 중 현재 제일 어려움을 겪고 있는 부분이다.<br/>
 
+### 17시 50분<br/>
+<br/>
+
+```
+	if (vPos.x < 40.f || 600.f < vPos.x || vPos.y < 60.f || vPos.y > 540.f)
+	{
+		SetPos(GetPrevPos());
+		vPos = GetPrevPos();
+	}
+```
+캐릭터가 맵 밖으로 벗어나지 못하게 하는 아이디어를 짜는 과정에서 해결방안을 찾아내었다.<br/>
+
+만약에 왼쪽이 막혀있다면? 그냥 굳이 변수를 설정해 줄 것이 아니라 위처럼<br/>
+
+바로 직전 포지션으로 SetPos해주면 될 일이었다.<br/>
+
+```
+void CPlayer::BeginOverlap(CCollider* _pOther)
+{
+	Vec2 vPos = GetPos();
+	if (_pOther->GetOwner()->ReturnLayer() == LAYER::OBSTACLE)
+	{
+		CObstacle* _pObstacle = (CObstacle*)(_pOther->GetOwner());
+		Vec2 ObsPos = _pObstacle->GetPos();
+
+		if (_pObstacle->GetObstacle() == true) // 이동 불가능한 곳에 접촉 했을 때
+		{
+			if (vPos.y - ObsPos.y < (3.f * TILE_SIZE / 2.f) && IsPressed(KEY::UP)) // 위쪽에 블록이 있을 경우
+			{
+				SetPos(GetPrevPos()); // 현재 위치를 닿기 직전의 위치로 옮김.
+
+				// 캐릭터가 블록보다 오른쪽에 더 치우쳐있을경우
+				if (vPos.x - ObsPos.x > TILE_SIZE)
+				{
+					vPos.x += m_fSpeed * DT; // 미끄러 지듯이 이동
+					SetPos(vPos);
+				}
+				// 캐릭터가 블록보다 왼쪽에 더 치우쳐 있을 경우
+				if (ObsPos.x - vPos.x > 0.f)
+				{
+					vPos.x -= m_fSpeed * DT; // 미끄러 지듯이 이동
+					SetPos(vPos);
+				}
+
+			}
+
+			else if (ObsPos.y - vPos.y < (TILE_SIZE / 2.f) && IsPressed(KEY::DOWN)) // 아래쪽에 블록이 있을 경우
+			{
+				SetPos(GetPrevPos()); // 현재 위치를 닿기 직전의 위치로 옮김.
+
+				// 오른쪽에 더 치우쳐있을경우
+				if (vPos.x - ObsPos.x > TILE_SIZE)
+				{
+					vPos.x += m_fSpeed * DT;
+					SetPos(vPos);
+				}
+				// 왼쪽에 더 치우쳐 있을 경우
+				if (ObsPos.x - vPos.x > 0.f)
+				{
+					vPos.x -= m_fSpeed * DT;
+					SetPos(vPos);
+				}
+
+			}
+			else if (vPos.x - ObsPos.x < (3.f * TILE_SIZE / 2.f) && IsPressed(KEY::LEFT)) // 왼쪽에 블록이 있을 경우
+			{
+				SetPos(GetPrevPos());
+
+
+				// 캐릭터가 블록보다 위에 더 치우쳐있을경우
+				if (ObsPos.y - vPos.y > 0.f)
+				{
+					vPos.y -= m_fSpeed * DT; // 미끄러 지듯이 이동
+					SetPos(vPos);
+				}
+				// 캐릭터가 블록보다 아래에 더 치우쳐 있을 경우
+				if (vPos.y - ObsPos.y > TILE_SIZE)
+				{
+					vPos.y += m_fSpeed * DT; // 미끄러 지듯이 이동
+					SetPos(vPos);
+				}
+			}
+
+			else if (ObsPos.x - vPos.x < (TILE_SIZE / 2.f) && IsPressed(KEY::RIGHT)) // 오른쪽에 블록이 있을 경우
+			{
+				SetPos(GetPrevPos());
+
+
+				// 캐릭터가 블록보다 위에 더 치우쳐있을경우
+				if (ObsPos.y - vPos.y > 0.f)
+				{
+					vPos.y -= m_fSpeed * DT; // 미끄러 지듯이 이동
+					SetPos(vPos);
+				}
+				// 캐릭터가 블록보다 아래에 더 치우쳐 있을 경우
+				if (vPos.y - ObsPos.y > TILE_SIZE)
+				{
+					vPos.y += m_fSpeed * DT; // 미끄러 지듯이 이동
+					SetPos(vPos);
+				}
+			}
+
+		}
+	}
+}
+
+void CPlayer::OnOverlap(CCollider* _pOther)
+{
+	Vec2 vPos = GetPos();
+	if (_pOther->GetOwner()->ReturnLayer() == LAYER::OBSTACLE)
+	{
+		CObstacle* _pObstacle = (CObstacle*)(_pOther->GetOwner());
+		Vec2 ObsPos = _pObstacle->GetPos();
+
+		if (_pObstacle->GetObstacle() == true) // 이동 불가능한 곳에 접촉 했을 때
+		{
+			if (vPos.y - ObsPos.y < (3.f * TILE_SIZE / 2.f) && IsPressed(KEY::UP)) // 캐릭터보다 위쪽에 블록이 있을 경우
+			{
+				SetPos(GetPrevPos());
+				// 캐릭터가 블록보다 오른쪽에 더 치우쳐있을경우
+				if (vPos.x - ObsPos.x > TILE_SIZE)
+				{
+					SetPrevPos(GetPos());
+					vPos.x += m_fSpeed * DT; // 미끄러 지듯이 이동
+					SetPos(vPos);
+				}
+				// 캐릭터가 블록보다 왼쪽에 더 치우쳐 있을 경우
+				else if (ObsPos.x - vPos.x > 0.f)
+				{
+					vPos.x -= m_fSpeed * DT; // 미끄러 지듯이 이동
+					SetPrevPos(GetPos()); 
+					SetPos(vPos);
+				}
+			}
+
+			if (ObsPos.y - vPos.y < (TILE_SIZE / 2.f) && IsPressed(KEY::DOWN)) // 아래쪽에 블록이 있을 경우
+			{
+				SetPos(GetPrevPos());
+				// 오른쪽에 더 치우쳐있을경우
+				if (vPos.x - ObsPos.x > TILE_SIZE)
+				{
+					SetPrevPos(GetPos());
+					vPos.x += m_fSpeed * DT;
+					SetPos(vPos);
+				}
+				// 왼쪽에 더 치우쳐 있을 경우
+				else if (ObsPos.x - vPos.x > 0.f)
+				{
+					vPos.x -= m_fSpeed * DT;
+					SetPrevPos(GetPos());
+					SetPos(vPos);
+				}
+
+			}
+			if (vPos.x - ObsPos.x < (3.f * TILE_SIZE / 2.f) && IsPressed(KEY::LEFT)) // 왼쪽에 블록이 있을 경우
+			{
+				SetPos(GetPrevPos());
+				// 캐릭터가 블록보다 위에 더 치우쳐있을경우
+				if (ObsPos.y - vPos.y > 0.f)
+				{
+					vPos.y -= m_fSpeed * DT; // 미끄러 지듯이 이동
+					SetPos(vPos);
+				}
+				// 캐릭터가 블록보다 아래에 더 치우쳐 있을 경우
+				else if (vPos.y - ObsPos.y > TILE_SIZE)
+				{
+					vPos.y += m_fSpeed * DT; // 미끄러 지듯이 이동
+					SetPos(vPos);
+				}
+
+			}
+
+			if (ObsPos.x - vPos.x < (TILE_SIZE / 2.f) && IsPressed(KEY::RIGHT)) // 오른쪽에 블록이 있을 경우
+			{
+				SetPos(GetPrevPos());
+				// 캐릭터가 블록보다 위에 더 치우쳐있을경우
+				if (ObsPos.y - vPos.y > 0.f)
+				{
+					vPos.y -= m_fSpeed * DT; // 미끄러 지듯이 이동
+					SetPos(vPos);
+				}
+				// 캐릭터가 블록보다 아래에 더 치우쳐 있을 경우
+				else if (vPos.y - ObsPos.y > TILE_SIZE)
+				{
+					vPos.y += m_fSpeed * DT; // 미끄러 지듯이 이동
+					SetPos(vPos);
+				}
+
+			}
+		}
+	}
+}
+
+void CPlayer::EndOverlap(CCollider* _pOther)
+{
+
+}
+
+```
+
+코드를 위와 같이 바꿔주었고, 그리고 Obstacle 객체의 크기도 39 x 39로 바꾸어주었다.<br/>
+
+조금 야매이긴하지만 블록 사이를 지나갈 때 속도가 느려지는 원인을 해결하기 위해서 <br/>
+
+위와 같은 조치를 취해주었다.<br/>
+
+이렇게 조치를 해주니 매끄럽게 지나가지며, 블록 위로 지나가는 버그도 발생하지 않는다.<br/>
+
 
 **계속 업데이트 중 입니다.**
