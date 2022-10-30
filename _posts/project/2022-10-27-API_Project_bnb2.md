@@ -11,7 +11,7 @@ related_posts:
 ---
 # [WinAPI Project] BNB 제작 일지 2<br/>
 
-개발기간 : 10월 18일 ~ 11월 24일 (예정)<br/>
+개발기간 : 10월 18일 ~ 11월 20일 (예정)<br/>
 <Br/>
 
 [개발 일정표 노션 링크](https://small-fairy-d44.notion.site/0e7da7a478a8425484162dbd15138ee3?v=15d21b2d0372477ebe6de7f9cd129443)<br/>
@@ -542,5 +542,130 @@ void CPlayer::EndOverlap(CCollider* _pOther)
 
 이렇게 조치를 해주니 매끄럽게 지나가지며, 블록 위로 지나가는 버그도 발생하지 않는다.<br/>
 
+### 19시 10분<br/>
+<br/>
+
+물풍선의 물줄기를 구현하였다.<br/>
+
+![인게임 화면](https://github.com/WookeyKim95/WookeyKim95.github.io/blob/main/assets/img/project/bnb2_2.png?raw=true)<br/>
+
+```
+CWave::CWave(int _WaveCount, int _Dir) :
+	m_WaveCount(_WaveCount),
+	m_Dir(_Dir),
+	m_BOOM(false)
+{
+	CreateCollider();
+	CreateAnimator();
+
+	GetCollider()->SetOffsetPos(Vec2(0.f, 0.f));
+	GetCollider()->SetScale(Vec2(40.f, 40.f));
+
+	// Animator 에서 사용할 Image 로딩
+	if (_Dir == 0)
+	{
+		if (_WaveCount == 1)
+		{
+			CTexture* pWaveUp = CResMgr::GetInst()->LoadTexture(L"WaveUp", L"Texture\\Flow\\Flow_Up.bmp");
+			GetAnimator()->CreateAnimation(L"WAVE_UP", pWaveUp, Vec2(0.f, 0.f), Vec2(40.f, 40.f), Vec2(0.f, 0.f), 4, 0.125f);
+			GetAnimator()->Play(L"WAVE_UP", false);
+		}
+		else if (_WaveCount > 1)
+		{
+			CTexture* pWaveUpM = CResMgr::GetInst()->LoadTexture(L"WaveUpM", L"Texture\\Flow\\Flow_UpM.bmp");
+			GetAnimator()->CreateAnimation(L"WAVE_UPM", pWaveUpM, Vec2(0.f, 0.f), Vec2(40.f, 40.f), Vec2(0.f, 0.f), 4, 0.125f);
+			GetAnimator()->Play(L"WAVE_UPM", false);
+		}
+	}
+
+	else if (_Dir == 1)
+	{
+		if (_WaveCount == 1)
+		{
+			CTexture* pWaveDown = CResMgr::GetInst()->LoadTexture(L"WaveDown", L"Texture\\Flow\\Flow_Down.bmp");
+			GetAnimator()->CreateAnimation(L"WAVE_DOWN", pWaveDown, Vec2(0.f, 0.f), Vec2(40.f, 40.f), Vec2(0.f, 0.f), 4, 0.125f);
+			GetAnimator()->Play(L"WAVE_DOWN", false);
+		}
+		else if (_WaveCount > 1)
+		{
+			CTexture* pWaveDownM = CResMgr::GetInst()->LoadTexture(L"WaveDownM", L"Texture\\Flow\\Flow_DownM.bmp");
+			GetAnimator()->CreateAnimation(L"WAVE_DOWNM", pWaveDownM, Vec2(0.f, 0.f), Vec2(40.f, 40.f), Vec2(0.f, 0.f), 4, 0.125f);
+			GetAnimator()->Play(L"WAVE_DOWNM", false);
+		}
+	}
+
+	else if (_Dir == 2)
+	{
+		if (_WaveCount == 1)
+		{
+			CTexture* pWaveLeft = CResMgr::GetInst()->LoadTexture(L"WaveLeft", L"Texture\\Flow\\Flow_Left.bmp");
+			GetAnimator()->CreateAnimation(L"WAVE_LEFT", pWaveLeft, Vec2(0.f, 0.f), Vec2(40.f, 40.f), Vec2(0.f, 0.f), 4, 0.125f);
+			GetAnimator()->Play(L"WAVE_LEFT", false);
+		}
+		else if (_WaveCount > 1)
+		{
+			CTexture* pWaveLeftM = CResMgr::GetInst()->LoadTexture(L"WaveLeftM", L"Texture\\Flow\\Flow_LeftM.bmp");
+			GetAnimator()->CreateAnimation(L"WAVE_LEFTM", pWaveLeftM, Vec2(0.f, 0.f), Vec2(40.f, 40.f), Vec2(0.f, 0.f), 4, 0.125f);
+			GetAnimator()->Play(L"WAVE_LEFTM", false);
+		}
+	}
+
+	else if (_Dir == 3)
+	{
+		if (_WaveCount == 1)
+		{
+			CTexture* pWaveRight = CResMgr::GetInst()->LoadTexture(L"WaveRight", L"Texture\\Flow\\Flow_Right.bmp");
+			GetAnimator()->CreateAnimation(L"WAVE_RIGHT", pWaveRight, Vec2(0.f, 0.f), Vec2(40.f, 40.f), Vec2(0.f, 0.f), 4, 0.125f);
+			GetAnimator()->Play(L"WAVE_RIGHT", false);
+		}
+		else if (_WaveCount > 1)
+		{
+			CTexture* pWaveRightM = CResMgr::GetInst()->LoadTexture(L"WaveRightM", L"Texture\\Flow\\Flow_RightM.bmp");
+			GetAnimator()->CreateAnimation(L"WAVE_RIGHTM", pWaveRightM, Vec2(0.f, 0.f), Vec2(40.f, 40.f), Vec2(0.f, 0.f), 4, 0.125f);
+			GetAnimator()->Play(L"WAVE_RIGHTM", false);
+		}
+	}
+
+}
+```
+
+```
+if (!m_BOOM)
+	{
+		if (m_WaveCount > 1)
+		{
+			CWave* pWave = new CWave(--m_WaveCount, m_Dir);
+			pWave->SetScale(Vec2(40.f, 40.f));
+
+			if (m_Dir == 0)
+				Instantiate(pWave, Vec2(GetPos().x, GetPos().y - TILE_SIZE), LAYER::WAVE);
+			else if (m_Dir == 1)
+				Instantiate(pWave, Vec2(GetPos().x, GetPos().y + TILE_SIZE), LAYER::WAVE);
+			else if (m_Dir == 2)
+				Instantiate(pWave, Vec2(GetPos().x - TILE_SIZE, GetPos().y), LAYER::WAVE);
+			else if (m_Dir == 3)
+				Instantiate(pWave, Vec2(GetPos().x + TILE_SIZE, GetPos().y), LAYER::WAVE);
+		}
+	}
+	m_DurationTime += DT;
+
+	if (m_DurationTime > 0.5f)
+	{
+		SetDead();
+		m_DurationTime = 0;
+	}
+```
+
+생성자 인자에 방향을 나타낼 정수와 몇 번째 물줄기인지를 넣었다.<br/>
+
+그리고 tick 함수에서 처음에 터지지 않았을 경우에<br/>
+
+상속받은 방향과 몇번째 물줄기인지 카운트에 따라서 다음 물줄기에<br/>
+
+물줄기 카운트 - 1과 자신의 방향을 물려주고 새로운 객체를 생성하는 식으로 만들었다.<br/>
+
+그리고 물줄기는 0.5초뒤에 사라지게 하였다.<br/>
+
+다음 목표는 물줄기가 블록에 부딪히거나 장애물여부가 true인 곳에서는 막히도록 코드를 조정하는 것이다.<br/>
 
 **계속 업데이트 중 입니다.**
