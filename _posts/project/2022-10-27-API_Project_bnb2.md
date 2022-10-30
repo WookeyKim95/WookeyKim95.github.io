@@ -318,4 +318,21 @@ EndOverlap함수 재조정 및 더 나은 코드를 고민해보아야겠다.<br
 
 <br/>
 
+## 10월 30일 <br/>
+<br/>
+
+29일엔 휴식을 취하고 30일에 작업을 재시작하였다.<br/>
+<Br/>
+
+![인게임 화면](https://github.com/WookeyKim95/WookeyKim95.github.io/blob/main/assets/img/project/bnb2_1.png?raw=true)<br/>
+
+<br/>
+
+현재 위 화면과 같이 버그가 발생한 상태이다.<br/>
+
+아무래도 블록 사이에서도 이동을 원활하게 하려고 EndOverlap함수와 OnOverlap함수의 코드를 조정하다보니 이런 버그가 생긴 것 같다.<br/>
+
+지금까지 작업 과정 중 현재 제일 어려움을 겪고 있는 부분이다.<br/>
+
+
 **계속 업데이트 중 입니다.**
