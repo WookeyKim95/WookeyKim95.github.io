@@ -681,4 +681,36 @@ Wave객체에게 어떻게 이 칸에 블록이 있는지, 장애물이있는지
 
 이를 어떻게 해결하면 좋을까?<br/>
 
+### 14시 45분<br/>
+<br/>
+
+해결방안은 간단했다.<br/>
+
+우선, "하지만 tick을 돌고 애니메이션이 재생되는 동안 OnOverlap함수나 BeginOverlap함수에 들어가지 않는다."<br/>
+
+원인은 해당 Level에서 Obstacle과 Wave의 충돌설정을 해주지 않아서 발생하는 문제였다.<br/>
+
+설정을 해주니 BeginOverlap이 된다.<br/>
+
+그리고<br/>
+
+```
+void CWave::BeginOverlap(CCollider* _pOther)
+{
+	if (_pOther->GetOwner()->ReturnLayer() == LAYER::OBSTACLE)
+	{
+		CObstacle* pObstacle = (CObstacle*)_pOther->GetOwner();
+		if (pObstacle->GetObstacle() == false)
+		{
+			m_MoreBOOM = true;
+		}
+	}
+}
+```
+
+위와 같이 코딩을 해주니<br/>
+
+![인게임 화면](https://github.com/WookeyKim95/WookeyKim95.github.io/blob/main/assets/img/project/bnb2_3.png?raw=true)<br/>
+
+좋았어! 원하는 부분까지만 물줄기가 생성된다!<br/>
 **계속 업데이트 중 입니다.**
