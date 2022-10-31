@@ -924,4 +924,12 @@ void CObstacle::EndOverlap(CCollider* _pOther)
 이렇게하니까 더 자연스러워졌다.<br/>
 <br/>
 
+### 20시 30분<br/>
+<br/>
+
+렌더 순서를 조절하였다.<br/>
+(타일 - 블록 - 물줄기 - 캐릭터)<br/>
+
+![인게임 화면](https://github.com/WookeyKim95/WookeyKim95.github.io/blob/main/assets/img/project/bnb2_4.png?raw=true)<br/>
+
 **계속 업데이트 중 입니다.**
