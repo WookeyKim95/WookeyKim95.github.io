@@ -892,4 +892,36 @@ if (IsTap(KEY::SPACE) && m_BombCount > 0 && m_CanSetBomb)
 
 어떻게 해결할 것 인가를 고민해야겠다.<br/>
 
+<br/>
+
+### 19시 20분<br/>
+
+물 웅덩이에 물줄기가 닿으면 이동할 수 있게 되는 버그를 해결했다.<br/>
+
+의외로 간단했다.<br/>
+
+바로 또 변수추가!<br/>
+
+```
+    bool    is_AbsObstacle; //절대 부숴지지 않는 장애물인가?
+```
+
+박스로 인해서 임시적으로 장애물일 수 있으나,<br/>
+
+부숴지지 않는 박스라던지, 물웅덩이라던지가 있는 경우에는 영구적인 장애물이라는 것을 표시한다.<br/>
+
+```
+void CObstacle::EndOverlap(CCollider* _pOther)
+{
+	if (_pOther->GetOwner()->ReturnLayer() == LAYER::WAVE && !is_AbsObstacle)
+	{
+		is_Obstacle = false;
+	}
+}
+```
+이렇게 한 뒤에, 물줄기를 만났을 때 영구적인 장애물이 아닌 경우에만 Obstacle을 false로 변환한다.<br/>
+
+이렇게하니까 더 자연스러워졌다.<br/>
+<br/>
+
 **계속 업데이트 중 입니다.**
