@@ -713,4 +713,53 @@ void CWave::BeginOverlap(CCollider* _pOther)
 ![인게임 화면](https://github.com/WookeyKim95/WookeyKim95.github.io/blob/main/assets/img/project/bnb2_3.png?raw=true)<br/>
 
 좋았어! 원하는 부분까지만 물줄기가 생성된다!<br/>
+
+다음으로는 물줄기가 박스에 닿으면 사라지는 것을 구현해야겠다.<br/>
+
+### 17시 <br/>
+<br/>
+
+물줄기가 박스에 닿으면 사라지는 것을 구현하였다.(SetDead사용)<br/>
+
+그리고 물풍선을 여러개 놓았을 때 다른 물줄기에 물풍선이 닿으면 터지도록 하는 과정도 구현하였다.<br/>
+
+```
+	if (_pOther->GetOwner()->ReturnLayer() == LAYER::WAVE)
+	{
+		CWaveCenter* pWaveCenter = new CWaveCenter(m_WhoUsed->GetWaveCount());
+		pWaveCenter->SetScale(Vec2(40.f, 40.f));
+		Instantiate(pWaveCenter, GetPos(), LAYER::WAVE_CENTER);
+
+		SetDead();
+		int BombCount = m_WhoUsed->GetBombCount();
+		if (m_WhoUsed->GetBombCount() < m_WhoUsed->GetMaxBombCount())
+			m_WhoUsed->SetBombCount(++BombCount);
+		m_DurationTime = 0;
+	}
+```
+이 코드를 BeginOverlap 함수에 넣어주었다.<br/>
+
+같은 코드가 반복되는 것 같으니 함수화 시켜주면 될 듯 하다.<br/>
+
+```
+void CBomb::BOOM()
+{
+	CWaveCenter* pWaveCenter = new CWaveCenter(m_WhoUsed->GetWaveCount());
+	pWaveCenter->SetScale(Vec2(40.f, 40.f));
+	Instantiate(pWaveCenter, GetPos(), LAYER::WAVE_CENTER);
+
+	SetDead();
+	int BombCount = m_WhoUsed->GetBombCount();
+	if (m_WhoUsed->GetBombCount() < m_WhoUsed->GetMaxBombCount())
+		m_WhoUsed->SetBombCount(++BombCount);
+	m_DurationTime = 0;
+}
+
+```
+오케이. BOOM()이라는 함수로 따로 빼내주었다.<br/>
+
+다음 고민거리는 지금 같은 칸 내에 풍선을 두 개 놓을 수 있게 되는 버그가 있다.<br/>
+
+이를 해결해보아야겠다.<br/>
+
 **계속 업데이트 중 입니다.**
