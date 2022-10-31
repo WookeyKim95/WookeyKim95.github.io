@@ -761,5 +761,88 @@ void CBomb::BOOM()
 다음 고민거리는 지금 같은 칸 내에 풍선을 두 개 놓을 수 있게 되는 버그가 있다.<br/>
 
 이를 해결해보아야겠다.<br/>
+<br/>
+
+### 18시 30분<br/>
+<Br/>
+
+새로운 고민거리를 발견하고 해결했다.<br/>
+
+물풍선을 놓은 직후에는 물풍선과 겹쳐도 이동할 수 있어야하지만,<br/>
+
+물풍선과 떨어지고 나서 다시 충돌할 때에는 물풍선이 있는 방향으로 이동해선 안된다.<br/>
+
+고민 끝에, player에 변수를 하나 추가했다.<br/>
+
+```
+    bool        m_BombFirst; // 폭탄을 놓고난 직후인지 여부
+```
+
+폭탄을 놓고난 직후엔 저 변수값은 true이지만,<br/>
+
+```
+void CPlayer::EndOverlap(CCollider* _pOther)
+{
+	if (_pOther->GetOwner()->ReturnLayer() == LAYER::BOMB)
+	{
+		if (!CanMove[0])
+		{
+			CanMove[0] = true;
+		}
+
+		if (!CanMove[1])
+		{
+			CanMove[1] = true;
+		}
+
+		if (!CanMove[2])
+		{
+			CanMove[2] = true;
+		}
+
+		if (!CanMove[3])
+		{
+			CanMove[3] = true;
+		}
+
+	}
+	m_BombFirst = false;
+}
+```
+
+EndOverlap함수를 거치고 난 뒤엔 false로 바뀐다.<br/>
+
+그리고 다시 접촉했을 때 BeginOverlap함수를 만난다면<br/>
+
+```
+else if (_pOther->GetOwner()->ReturnLayer() == LAYER::BOMB)
+	{
+		CBomb* _pBomb = (CBomb*)(_pOther->GetOwner());
+		Vec2 BombPos = _pBomb->GetPos();
+
+		if (vPos.y - BombPos.y < (TILE_SIZE) && IsPressed(KEY::UP) && !m_BombFirst) // 위쪽에 물풍선이 있을 경우
+		{
+			CanMove[0] = false;
+		}
+
+		else if (BombPos.y - vPos.y < (TILE_SIZE) && IsPressed(KEY::DOWN) && !m_BombFirst) // 아래쪽에 물풍선이 있을 경우
+		{
+			CanMove[1] = false;
+		}
+		else if (vPos.x - BombPos.x < (TILE_SIZE) && IsPressed(KEY::LEFT) && !m_BombFirst) // 왼쪽에 물풍선이 있을 경우
+		{
+			CanMove[2] = false;
+		}
+
+		else if (BombPos.x - vPos.x < (TILE_SIZE) && IsPressed(KEY::RIGHT) && !m_BombFirst) // 오른쪽에 물풍선이 있을 경우
+		{
+			CanMove[3] = false;
+		}
+	}
+```
+
+이 코드로 인해서 해당방향으론 이동할 수 없게 만들어진다.<br/>
+
+변수명 짓기가 슬슬 힘들어지고있다.<br/>
 
 **계속 업데이트 중 입니다.**
