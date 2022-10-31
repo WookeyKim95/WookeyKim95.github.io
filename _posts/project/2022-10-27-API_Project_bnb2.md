@@ -845,4 +845,51 @@ else if (_pOther->GetOwner()->ReturnLayer() == LAYER::BOMB)
 
 변수명 짓기가 슬슬 힘들어지고있다.<br/>
 
+### 18시 50분<br/>
+<br/>
+
+계속해서, 고민이었던 같은 칸에 물폭탄이 2개 놓여지는 현상에 대해서 생각했다.<br/>
+
+해결방안은 또 변수 추가이다.<br/>
+
+```
+    bool        m_CanSetBomb; // 폭탄을 설치할 수 있는지 여부
+```
+
+그리고 OnOverlap함수에 아래의 코드를 설치했다.<br/>
+
+```
+else if (_pOther->GetOwner()->ReturnLayer() == LAYER::BOMB)
+	{
+		Vec2 BombPos = _pOther->GetOwner()->GetPos();
+
+		if (m_TileCenter == BombPos)
+			m_CanSetBomb = false;
+	}
+```
+
+생각해보면 플레이어의 위치에 따라 타일의 가운데 좌표를 조사, 저장하고,<br/>
+
+물풍선은 타일의 가운데에 설치하도록 구현했다.<br/>
+
+그렇다면 물풍선의 위치랑 현재 타일 가운데의 위치가 같다면 설치를 못하게 막으면 되는 것이었다.<br/>
+
+```
+	if (m_CanSetBomb == false)
+		m_CanSetBomb = true;
+```
+물풍선과 떨어지면 다시 true로 바꿔주고,<br/>
+
+```
+if (IsTap(KEY::SPACE) && m_BombCount > 0 && m_CanSetBomb)
+```
+
+물풍선 설치 조건문에다가 변수를 추가해주었다.<br/>
+
+이렇게 하니 버그가 해결되었다.<br/>
+
+계속해서 다음 고민은 State패턴 생성, 그리고 물웅덩이에 물줄기가 닿으면 이동할 수 있도록 하는 버그를<br/>
+
+어떻게 해결할 것 인가를 고민해야겠다.<br/>
+
 **계속 업데이트 중 입니다.**
