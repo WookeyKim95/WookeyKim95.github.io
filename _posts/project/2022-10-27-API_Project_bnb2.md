@@ -931,5 +931,35 @@ void CObstacle::EndOverlap(CCollider* _pOther)
 (타일 - 블록 - 물줄기 - 캐릭터)<br/>
 
 ![인게임 화면](https://github.com/WookeyKim95/WookeyKim95.github.io/blob/main/assets/img/project/bnb2_4.png?raw=true)<br/>
+<br/>
+
+## 11월 1일<br/>
+<br/>
+
+플레이어의 State를 구성하는 중이다.<br/>
+
+기존의 CPlayer의 tick에서 연산하던 코드를 CPIdleState 클래스를 생성해 그곳에 있는 tick으로 옮겼고,<br/>
+
+TrappedState클래스를 새로 생성해주었다.<br/>
+
+```
+void CPTrappedState::Enter()
+{
+	CPlayer* pPlayer = dynamic_cast<CPlayer*>(GetOwnerPlayer());
+	assert(pPlayer);
+
+	pPlayer->GetAnimator()->Play(L"TRAPPED", false);
+}
+```
+
+TrappedState 클래스의 일부로, 여기서 물줄기에 플레이어가 닿으면 물방울 안에 갇히도록 구현하였다.<br/>
+
+그리고 느린속도로 이동할 수 있도록 tick함수에 세팅하였다.<br/>
+
+![인게임 화면](https://github.com/WookeyKim95/WookeyKim95.github.io/blob/main/assets/img/project/bnb2_5.png?raw=true)<br/>
+
+위 사진과 같이 이제 물줄기에 닿으면 물방울 안에 갇히게 된다.<br/>
+
+다음 목표는 사망모션과 부활모션을 생성할 것이다.<br/>
 
 **계속 업데이트 중 입니다.**
