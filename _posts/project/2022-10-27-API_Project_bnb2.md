@@ -1052,4 +1052,13 @@ void CObstacle::EndOverlap(CCollider* _pOther)
 
 이를 통해 프레임 드랍이 감소한 것을 확인하였다.<br/>
 
+### 18시<br/>
+<Br/>
+
+바늘의 기능을 구현하였고, 특정 아이템(바늘 등)을 먹으면 사진과 같이<br/>
+
+소유 아이템이 표시되도록 구현하였다.<br/>
+
+![인게임 화면](https://github.com/WookeyKim95/WookeyKim95.github.io/blob/main/assets/img/project/bnb2_6.png?raw=true)<br/>
+
 **계속 업데이트 중 입니다.**
