@@ -962,4 +962,94 @@ TrappedState 클래스의 일부로, 여기서 물줄기에 플레이어가 닿�
 
 다음 목표는 사망모션과 부활모션을 생성할 것이다.<br/>
 
+### 오후 3시<br/>
+<br/>
+
+같은 방법으로 DeadState를 생성해서 Trapped 상태가 된지 5초가 지나면 죽는 모션을 만들었고,<br/>
+
+또한, 우선은 TrappedState에서 Q를 누르면 부활을 하도록 구현하였다.<br/>
+
+나중에 바늘아이템이 있는지 여부에 따라서 부활 가능인지 여부를 넣으려고 한다.<br/>
+<br/>
+
+### 오후 7시 30분<br/>
+<br/>
+
+아이템을 구현 중이다. 현재 물줄기 증가, 물풍선 개수 증가, 이동속도 증가, 물줄기 최대화를 구현하였다.<br/>
+
+```
+void CObstacle::EndOverlap(CCollider* _pOther)
+{
+	if (_pOther->GetOwner()->ReturnLayer() == LAYER::WAVE && !is_AbsObstacle) // 절대 장애물이 아닌 경우에!
+	{
+
+		if (is_Obstacle) // is_Obstacle은 박스가 있는 곳.
+		{
+			// 박스가 부숴지고 확률적으로 아이템 생성
+			int random_item = rand() % 100;
+
+			if (0 <= random_item && random_item < 10)
+			{
+				CBombPlus* pBombPlus = new CBombPlus;
+				pBombPlus->SetScale(Vec2(38.f, 38.f));
+				Instantiate(pBombPlus, GetPos(), LAYER::ITEM);
+			}
+
+			else if (10 <= random_item && random_item < 20)
+			{
+				CWavePlus* pWavePlus = new CWavePlus;
+				pWavePlus->SetScale(Vec2(38.f, 38.f));
+				Instantiate(pWavePlus, GetPos(), LAYER::ITEM);
+			}
+
+			else if (20 <= random_item && random_item < 25)
+			{
+				CMaxWave* pMaxWave = new CMaxWave;
+				pMaxWave->SetScale(Vec2(38.f, 38.f));
+				Instantiate(pMaxWave, GetPos(), LAYER::ITEM);
+			}
+
+			else if (25 <= random_item && random_item < 35)
+			{
+				CSpeedUp* pSpeedUp = new CSpeedUp;
+				pSpeedUp->SetScale(Vec2(38.f, 38.f));
+				Instantiate(pSpeedUp, GetPos(), LAYER::ITEM);
+			}
+		is_Obstacle = false;
+	}
+}
+```
+
+박스가 부숴지고나서 아이템이 확률적으로 생성되도록 구현하였다.<br/>
+
+나중에 여유가 된다면 물풍선을 발로차는 아이템도 구현하고자 한다.<br/>
+
+### 20시<br/>
+<br/>
+
+중대한 문제가 발생했다.<br/>
+
+**설치한 물풍선이 많고, 최대 물줄기가 길어지면 프레임 드랍이 발생한다.**<br/>
+
+물줄기를 생성하는 원리가 도미노처럼 물줄기하나가 다음 물줄기를 형성하는 형태로 생성하는 것인데,<br/>
+
+이 과정에서 프레임 드랍이 발생하는 것 같다.<br/>
+
+최적화가 필요해보인다. 어떻게 해결할까?<br/>
+
+## 11월 2일<br/>
+<br/>
+
+다행히 해결하였다.<br/>
+
+원인을 파악해보니, 물줄기가 new로 계속 생성될 때마다 애니메이션 로드를 계속해주었기 때문에 발생하는 문제였다.<br/>
+
+물줄기와 애니메이션의 복사생성자를 생성하여<br/>
+
+물줄기 가운데와 가운데와 맞닿아있는 첫 칸은 new로 생성, 나머지는 복사생성자를 통해 생성해주어<br/>
+
+로딩 과정을 줄였다.<br/>
+
+이를 통해 프레임 드랍이 감소한 것을 확인하였다.<br/>
+
 **계속 업데이트 중 입니다.**
