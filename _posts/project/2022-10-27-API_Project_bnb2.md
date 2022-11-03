@@ -1061,4 +1061,15 @@ void CObstacle::EndOverlap(CCollider* _pOther)
 
 ![인게임 화면](https://github.com/WookeyKim95/WookeyKim95.github.io/blob/main/assets/img/project/bnb2_6.png?raw=true)<br/>
 
+## 11월 3일<br/>
+<Br/>
+
+코딩과 구현 보다는 몬스터의 State 설계를 진행하였다.<br/>
+
+기본적인 MonsterState를 구성하고, 각 몬스터마다 이를 어떻게 적용할지 고민 중이다.<br/>
+
+그리고 컨디션이 좋지 않은지 진전이 느껴지지 않는다.<br/>
+
+조금만 하고 재충전을 해야할 것 같다<br/>
+
 **계속 업데이트 중 입니다.**
