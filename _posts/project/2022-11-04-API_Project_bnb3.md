@@ -38,4 +38,88 @@ related_posts:
 
 블록을 만나면 다른 방향으로 틀어야하는데 말이지.<br/>
 
+## 11월 5일<br/>
+<br/>
+
+절반은 성공한 것 같다.<br/>
+
+```
+void CElli::BeginOverlap(CCollider* _pOther)
+{
+	Vec2 vPos = GetPos();
+
+	if (_pOther->GetOwner()->ReturnLayer() == LAYER::WAVE || _pOther->GetOwner()->ReturnLayer() == LAYER::WAVE_CENTER)
+	{
+		if (m_BTrapped == false)
+		{
+			m_BTrapped = true;
+		}
+	}
+
+	else if (_pOther->GetOwner()->ReturnLayer() == LAYER::OBSTACLE)
+	{
+		CObstacle* pObstacle = (CObstacle*)_pOther->GetOwner();
+		Vec2 ObsPos = pObstacle->GetPos();
+		if (pObstacle->GetObstacle() || pObstacle->GetAbsObstacle()) // 장애물을 만나면 방향전환
+		{
+			int dice = rand() % 3;
+
+			if (0 < vPos.y - ObsPos.y && vPos.y - ObsPos.y < (3.f * TILE_SIZE / 2.f)) // 위쪽에 블록이 있을 경우 m_dir = 0
+			{
+				if (dice == 0)
+					m_dir = 2;
+				else if (dice == 1)
+					m_dir = 3;
+				else
+					m_dir = 1;
+
+				SetPos(GetPrevPos()); // 현재 위치를 닿기 직전의 위치로 옮김.
+			}
+
+			else if (0 < ObsPos.y - vPos.y && ObsPos.y - vPos.y < (TILE_SIZE / 2.f)) // 아래쪽에 블록이 있을 경우 m_dir = 1
+			{
+				if (dice == 0)
+					m_dir = 2;
+				else if (dice == 1)
+					m_dir = 3;
+				else
+					m_dir = 0;
+
+				SetPos(GetPrevPos()); // 현재 위치를 닿기 직전의 위치로 옮김.
+
+			}
+			else if (0 < vPos.x - ObsPos.x && vPos.x - ObsPos.x < (3.f * TILE_SIZE / 2.f)) // 왼쪽에 블록이 있을 경우 m_dir = 2
+			{
+				if (dice == 0)
+					m_dir = 0;
+				else if (dice == 1)
+					m_dir = 1;
+				else
+					m_dir = 3;
+
+				SetPos(GetPrevPos());
+			}
+
+			else if (0 < ObsPos.x - vPos.x && ObsPos.x - vPos.x < (TILE_SIZE / 2.f)) // 오른쪽에 블록이 있을 경우 m_dir = 3
+			{
+				if (dice == 0)
+					m_dir = 0;
+				else if (dice == 1)
+					m_dir = 1;
+				else
+					m_dir = 2;
+			}
+        SetPos(m_TileCenter);
+		}
+	}
+}
+```
+
+위 코드를 통해서 블록을 만나면 타일의 정중앙으로 이동하고, 직전 진행방향을 제외한 나머지 방향 중 한 부분으로 움직인다.<br/>
+
+그리고 충돌체를 Obstacle보다 조금 작게 설정했기 때문에 바꾼 방향이 막혀있더라도 바로 다른 방향으로 바꿀 수 있도록 구현하였다.<br/>
+
+방향이 바뀌면 애니메이션도 바뀌도록 구현을 해야겠다.<br/>
+
+
 **계속 업데이트 중입니다.**
