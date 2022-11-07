@@ -121,5 +121,29 @@ void CElli::BeginOverlap(CCollider* _pOther)
 
 방향이 바뀌면 애니메이션도 바뀌도록 구현을 해야겠다.<br/>
 
+### 17시 40분<br/>
+<br/>
+
+방향이 바뀌면 애니메이션도 바뀌도록 구현하였다.<br/>
+
+이제 물줄기에 맞으면 TrappedState가 되도록 구현할 차례이다.<br/>
+
+## 11월 7일<br/>
+<br/>
+
+6일엔 휴식을 취하고<br/>
+
+7일에 다음의 내용을 구현하였다.<br/>
+
+- Elli의 Idle, Trapped, DeadState 구현
+- 다른몬스터 (MiniBall1, MiniBall2, Orange)들의 Idle, DeadState 구현
+
+![인게임 화면](https://github.com/WookeyKim95/WookeyKim95.github.io/blob/main/assets/img/project/bnb3_1.png?raw=true)<br/>
+
+Elli는 Idle 상태에서 물줄기를 맞으면 Trapped로, 그리고 Trapped에서 다시 물줄기를 맞으면 Dead로 상태가 전환된다.<br/>
+
+나머지 몬스터들은 Idle에서 물줄기를 맞으면 바로 Dead로 상태가 전환된다.<br/>
+
+
 
 **계속 업데이트 중입니다.**
