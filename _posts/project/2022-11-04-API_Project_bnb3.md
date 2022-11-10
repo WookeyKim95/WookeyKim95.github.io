@@ -163,4 +163,18 @@ Seal은 보스몬스터 취급으로 다른 일반몬스터와는 달리 블록�
 11월 9일에 에이스타 알고리즘 (길찾기 알고리즘 중 하나)을 수업하기로 했으니 이를 참고해야지.<br/>
 
 
+## 11월 9일 ~ 10일<br/>
+<br/>
+
+스테이지의 이동을 구현하였다.<br/>
+
+- 패배조건 달성시 (플레이어 목숨이 0이 될시) 맨 처음 페이지로 이동<br/>
+- 승리조건 달성시 (레벨에 몬스터가 0마리) 다음 스테이지로 이동
+
+![인게임 화면](https://github.com/WookeyKim95/WookeyKim95.github.io/blob/main/assets/img/project/bnb3_2.png?raw=true)<br/>
+![인게임 화면](https://github.com/WookeyKim95/WookeyKim95.github.io/blob/main/assets/img/project/bnb3_3.png?raw=true)<br/>
+
+
+아직 패배시 LOSE가 뜨는 것은 구현이 안되었다. 이것과 맨 처음 메인화면을 구현하는 것이 다음 목표이다.<br/>
+
 **계속 업데이트 중입니다.**
