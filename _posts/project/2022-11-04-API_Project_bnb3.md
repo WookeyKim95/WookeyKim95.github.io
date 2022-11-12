@@ -189,4 +189,9 @@ Seal은 보스몬스터 취급으로 다른 일반몬스터와는 달리 블록�
 ![인게임 화면](https://github.com/WookeyKim95/WookeyKim95.github.io/blob/main/assets/img/project/bnb3_4.png?raw=true)<br/>
 ![인게임 화면](https://github.com/WookeyKim95/WookeyKim95.github.io/blob/main/assets/img/project/bnb3_5.png?raw=true)<br/>
 
+## 11월 12일<br/>
+<br/>
+
+물개의 위에 체력바가 따라다니도록 구현하였다.<br/>
+
 **계속 업데이트 중입니다.**
