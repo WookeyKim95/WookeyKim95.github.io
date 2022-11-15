@@ -194,4 +194,36 @@ Seal은 보스몬스터 취급으로 다른 일반몬스터와는 달리 블록�
 
 물개의 위에 체력바가 따라다니도록 구현하였다.<br/>
 
+## 11월 14일<br/>
+<br/>
+
+메인 화면에 버튼을 추가하였다.<br/>
+
+일반모드는 몬스터 모드로, 경쟁모드는 2인 플레이 모드로 들어가게 된다.<br/>
+
+![인게임 화면](https://github.com/WookeyKim95/WookeyKim95.github.io/blob/main/assets/img/project/bnb3_6.png?raw=true)<br/>
+
+## 11월 15일<br/>
+<Br/>
+
+2인 플레이어 모드를 구현하였다.<br/>
+
+- BGM 삽입
+- 1P : 상하좌우키로 움직임
+- 2P : WSAD키로 움직임
+- 한명이 죽을 시 게임오버 구현
+
+현재 구현 완료 상황이다.
+
+앞으로 할 것
+
+- 2P용 ItemUI 만들기
+- 2P와 블록 충돌처리 시키기
+
+현재 2P는 블록을 통과해서 다니는 버그가 발생하고있다.<br/>
+
+왜 그런지 조사를 해야겠다.<br/>
+
+![인게임 화면](https://github.com/WookeyKim95/WookeyKim95.github.io/blob/main/assets/img/project/bnb3_7.png?raw=true)<br/>
+
 **계속 업데이트 중입니다.**
