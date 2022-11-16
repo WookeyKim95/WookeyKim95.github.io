@@ -226,4 +226,150 @@ Seal은 보스몬스터 취급으로 다른 일반몬스터와는 달리 블록�
 
 ![인게임 화면](https://github.com/WookeyKim95/WookeyKim95.github.io/blob/main/assets/img/project/bnb3_7.png?raw=true)<br/>
 
+## 11월 16일<br/>
+<br/>
+
+완료한 것
+
+- 2P용 ItemUI 제작
+- 2P와 블록 충돌처리
+
+왜 블록 충돌이 처리가안됐나 했더니 2P키로 눌렀을 때 충돌처리가 되도록 세팅을 해놨어야 했는데 그렇지 않았다.
+
+아래와 같이 바꾸어주니 충돌이 된다.<br/>
+
+```
+void CPlayer2::OnOverlap(CCollider* _pOther)
+{
+	Vec2 vPos = GetPos();
+	if (_pOther->GetOwner()->ReturnLayer() == LAYER::OBSTACLE)
+	{
+		CObstacle* _pObstacle = (CObstacle*)(_pOther->GetOwner());
+		Vec2 ObsPos = _pObstacle->GetPos();
+
+		if (_pObstacle->GetObstacle() == true) // 이동 불가능한 곳에 접촉 했을 때
+		{
+			if (vPos.y - ObsPos.y < (3.f * TILE_SIZE / 2.f) && IsPressed(KEY::W)) // 캐릭터보다 위쪽에 블록이 있을 경우
+			{
+				SetPos(GetPrevPos());
+				// 캐릭터가 블록보다 오른쪽에 더 치우쳐있을경우
+				if (vPos.x - ObsPos.x > TILE_SIZE)
+				{
+					SetPrevPos(GetPos());
+					vPos.x += m_fSpeed * DT; // 미끄러 지듯이 이동
+					SetPos(vPos);
+				}
+				// 캐릭터가 블록보다 왼쪽에 더 치우쳐 있을 경우
+				else if (ObsPos.x - vPos.x > 0.f)
+				{
+					vPos.x -= m_fSpeed * DT; // 미끄러 지듯이 이동
+					SetPrevPos(GetPos());
+					SetPos(vPos);
+				}
+			}
+
+			if (ObsPos.y - vPos.y < (TILE_SIZE / 2.f) && IsPressed(KEY::S)) // 아래쪽에 블록이 있을 경우
+			{
+				SetPos(GetPrevPos());
+				// 오른쪽에 더 치우쳐있을경우
+				if (vPos.x - ObsPos.x > TILE_SIZE)
+				{
+					SetPrevPos(GetPos());
+					vPos.x += m_fSpeed * DT;
+					SetPos(vPos);
+				}
+				// 왼쪽에 더 치우쳐 있을 경우
+				else if (ObsPos.x - vPos.x > 0.f)
+				{
+					vPos.x -= m_fSpeed * DT;
+					SetPrevPos(GetPos());
+					SetPos(vPos);
+				}
+
+			}
+			if (vPos.x - ObsPos.x < (3.f * TILE_SIZE / 2.f) && IsPressed(KEY::A)) // 왼쪽에 블록이 있을 경우
+			{
+				SetPos(GetPrevPos());
+				// 캐릭터가 블록보다 위에 더 치우쳐있을경우
+				if (ObsPos.y - vPos.y > 0.f)
+				{
+					vPos.y -= m_fSpeed * DT; // 미끄러 지듯이 이동
+					SetPos(vPos);
+				}
+				// 캐릭터가 블록보다 아래에 더 치우쳐 있을 경우
+				else if (vPos.y - ObsPos.y > TILE_SIZE)
+				{
+					vPos.y += m_fSpeed * DT; // 미끄러 지듯이 이동
+					SetPos(vPos);
+				}
+
+			}
+
+			if (ObsPos.x - vPos.x < (TILE_SIZE / 2.f) && IsPressed(KEY::D)) // 오른쪽에 블록이 있을 경우
+			{
+				SetPos(GetPrevPos());
+				// 캐릭터가 블록보다 위에 더 치우쳐있을경우
+				if (ObsPos.y - vPos.y > 0.f)
+				{
+					vPos.y -= m_fSpeed * DT; // 미끄러 지듯이 이동
+					SetPos(vPos);
+				}
+				// 캐릭터가 블록보다 아래에 더 치우쳐 있을 경우
+				else if (vPos.y - ObsPos.y > TILE_SIZE)
+				{
+					vPos.y += m_fSpeed * DT; // 미끄러 지듯이 이동
+					SetPos(vPos);
+				}
+
+			}
+		}
+	}
+```
+
+그리고 발차기 아이템을 구현하였다.<br/>
+
+기존에 물풍선과 충돌중일 때 일정시간동안 계속 충돌하고 방향키를 누르면<br/>
+
+방향키를 누른 방향으로 물풍선이 밀려나도록 구현하였다.<br/>
+
+이 과정에서 물풍선의 이동 방향을 저장할 int변수와 발로 차졌는지 여부를 저장할 bool 변수를 추가하였다.<br/>
+
+또한, 타일의 정중앙에 위치를 시켜야하므로 현재위치에서 가장 가까운 타일의 정중앙 위치를 저장할 변수를 추가하였다.<br/>
+
+1p와 2p의 물풍선을 모두 찰 수 있다.<br/>
+
+여기서 큰일날뻔했던 점이 생각난다.<br/>
+
+```
+void CKick::BeginOverlap(CCollider* _pOther)
+{
+	if (_pOther->GetOwner()->ReturnLayer() == LAYER::PLAYER)
+	{
+		CPlayer* pPlayer = (CPlayer*)_pOther->GetOwner();
+
+		pPlayer->SetKick(true);
+
+		CSound* pSound = CResMgr::GetInst()->FindSound(L"ItemGet");
+
+		pSound->Play();
+
+		SetDead();
+	}
+}
+```
+
+필자는 지금 CPlayer와 CPlayer2 클래스를 구현한 상태이다.<br/>
+
+하지만 아이템 획득 관련 코드에서 CPlayer* 포인터만을 사용했는데,<br/>
+
+만약에 CPlayer와 CPlayer2의 변수 구성이 달랐다면 <br/>
+
+메모리 에러가 났을 것이다.<br/>
+
+하지만 두 클래스의 변수 구성이 같기 때문에 에러가 발생하지 않은 것 같다.<br/>
+
+다른 코딩할때에는 구분을 짓도록 주의해서 코딩해야겠다.<br/>
+
+다이나믹 캐스팅을 활용해야지.<br/>
+
 **계속 업데이트 중입니다.**
