@@ -11,7 +11,7 @@ related_posts:
 ---
 # [WinAPI Project] BNB 제작 일지 3<br/>
 
-개발기간 : 10월 18일 ~ 11월 20일 (예정)<br/>
+개발기간 : 10월 18일 ~ 11월 20일<br/>
 <Br/>
 
 [개발 일정표 노션 링크](https://small-fairy-d44.notion.site/0e7da7a478a8425484162dbd15138ee3?v=15d21b2d0372477ebe6de7f9cd129443)<br/>
@@ -372,4 +372,11 @@ void CKick::BeginOverlap(CCollider* _pOther)
 
 다이나믹 캐스팅을 활용해야지.<br/>
 
-**계속 업데이트 중입니다.**
+## 11월 18일<br/>
+<br/>
+
+전반적인 개발은 완료하였다.<br/>
+
+테스트를 계속해보고 버그가 발생하면 디버깅을하고 리팩토링을 진행해야겠다.<br/>
+
+그럴 때마다 기록으로 남겨놔야겠다!<br/>

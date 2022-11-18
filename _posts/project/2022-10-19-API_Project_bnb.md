@@ -11,7 +11,7 @@ related_posts:
 ---
 # [WinAPI Project] BNB 제작 일지<br/>
 
-개발기간 : 10월 18일 ~ 11월 20일 (예정)<br/>
+개발기간 : 10월 18일 ~ 11월 20일<br/>
 <Br/>
 
 [개발 일정표 노션 링크](https://small-fairy-d44.notion.site/0e7da7a478a8425484162dbd15138ee3?v=15d21b2d0372477ebe6de7f9cd129443)<br/>
