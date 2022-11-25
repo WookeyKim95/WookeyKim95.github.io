@@ -95,3 +95,67 @@ private:
 프로그램이 종료되면 데이터 영역에 생성된 정적변수는 자동으로 해제되므로 위의 힙영역을 이용한 코드와는 달리 종료 함수를 따로 작성할 필요가 없다.<br/>
 
 실무에서 많이 쓰이며, 이후에는 이를 이용해서 윈도우 프로그램이 동작하는 원리를 알아가볼 것이다.<br/>
+<br/>
+
+## 싱글톤의 상속<br/>
+<br/>
+
+```
+typedef void (*EXIT)(void);
+
+
+template<typename T>
+class CSingleton
+{
+private:
+	static T* m_Inst;
+
+public:
+	static T* GetInst();
+	static void Destroy();
+
+public:
+CSingleton() {}
+virtual ~CSingleton() {}
+
+};
+
+template<typename T>
+T* CSingleton<T>::m_Inst = nullptr;
+
+template<typename T>
+inline T* CSingleton<T>::GetInst()
+{
+	if (m_Inst == nullptr)
+	{
+		m_Inst = new T;
+		atexit( (EXIT) &CSingleton<T>::Destroy); // main 함수 종료 직전에 호출되는 함수
+	}
+
+	return m_Inst;
+}
+
+template<typename T>
+inline void CSingleton<T>::Destroy()
+{
+	if (m_Inst != nullptr)
+	{
+		delete m_Inst;
+		m_Inst = nullptr;
+	}
+}
+
+
+
+// 엔진 등 다른 클래스에서 상속 받을 때
+class CEngine
+	: public CSingleton<CEngine>
+{
+	...
+
+public:
+	void init(HWND _hWnd, UINT _iWidth, UINT _iHeight);
+	
+	...
+}
+```
