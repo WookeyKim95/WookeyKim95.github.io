@@ -4,7 +4,7 @@ title:  "[WinAPI] Singleton 패턴"
 subtitle:  
 date: 2022-09-14 12:49:18 +0900
 categories: study
-tags: WinAPI
+tags: WinAPI&DirectX
 comments: true
 related_posts:
 

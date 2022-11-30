@@ -4,7 +4,7 @@ title:  "[WinAPI] 윈도우의 동작, 그리고 PeekMessage"
 subtitle:  
 date: 2022-09-15 09:11:19 +0900
 categories: study
-tags: WinAPI
+tags: WinAPI&DirectX
 comments: true
 related_posts:
 
