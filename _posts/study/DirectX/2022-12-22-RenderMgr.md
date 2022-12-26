@@ -472,6 +472,8 @@ void CLevelMgr::init()
 ```
 
 init()함수에서 카메라를 등록하는 과정을 진행한다.<br/>
+
+LevelMgr에서 카메라가 원근투영(PERSPECTIVE)인지, 직교투영(ORTHOGRAPHIC)인지를 설정할 수 있다.<br/>
 <br/>
 
 ## CEngine 클래스<br/>
