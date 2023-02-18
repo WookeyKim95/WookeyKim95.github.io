@@ -2,7 +2,7 @@
 layout: post
 title:  "[프로그래머스] 개인정보 수집 유효기간 C++"
 subtitle:   
-date: 2023-02-18 13:11:21 +0900
+date: 2023-02-17 13:11:21 +0900
 tags: coding_test
 categories: study
 use_math: true
