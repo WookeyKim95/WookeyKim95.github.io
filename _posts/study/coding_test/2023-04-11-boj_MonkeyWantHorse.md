@@ -56,7 +56,7 @@ void bfs()
 {
     queue<pair<pair<int, int>, int>> q;
 
-    q.push({{0, 0}, 0});
+    q.push(make_pair(make_pair(0, 0), 0));
     visited[0][0][0] = true;
     result[0][0][0] = 0;
 
