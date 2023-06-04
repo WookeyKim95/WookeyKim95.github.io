@@ -40,7 +40,7 @@ int dy[4] = {0, 0, -1, 1};
 pii dijkstra(int a, int b)
 {
     priority_queue<pair<pii, pii>, vector<pair<pii, pii>>, greater<pair<pii, pii>>> pq;
-    pq.push({{0, 0}, {a, b}});
+    pq.push({ {0, 0}, {a, b} });
     memset(cost, -1, sizeof(cost));
 
     cost[a][b] = 0;
