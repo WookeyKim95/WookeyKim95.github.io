@@ -78,7 +78,7 @@ pii dijkstra(int a, int b)
                 continue;
             
             if (map[NewY][NewX] == 'g')
-                pq.push({{NGab+1, NearGab}, {NewX, NewY}});
+                pq.push({ {NGab+1, NearGab}, {NewX, NewY} });
             
             else if (map[NewY][NewX] == '.')
             {
@@ -90,9 +90,9 @@ pii dijkstra(int a, int b)
                 }
 
                 if (flag)
-                    pq.push({{NGab, NNearGab+1}, {NewX, NewY}});
+                    pq.push({ {NGab, NNearGab+1}, {NewX, NewY} });
                 else
-                    pq.push({{NGab, NNearGab}, {NewX, NewY}});
+                    pq.push({ {NGab, NNearGab}, {NewX, NewY} });
             }
 
             cost[NewY][NewX] = cost[CurY][CurX] + 1;
@@ -189,7 +189,7 @@ if (to_break)
 
 ```
 if (map[NewY][NewX] == 'g')
-    pq.push({{NGab+1, NearGab}, {NewX, NewY}});
+    pq.push({ {NGab+1, NearGab}, {NewX, NewY} });
 
 else if (map[NewY][NewX] == '.')
 {
@@ -201,8 +201,8 @@ else if (map[NewY][NewX] == '.')
     }
 
     if (flag)
-        pq.push({{NGab, NNearGab+1}, {NewX, NewY}});
+        pq.push({ {NGab, NNearGab+1}, {NewX, NewY} });
     else
-        pq.push({{NGab, NNearGab}, {NewX, NewY}});
+        pq.push({ {NGab, NNearGab}, {NewX, NewY} });
 }
 ```
