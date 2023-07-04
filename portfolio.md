@@ -133,6 +133,15 @@ accent_image: 'https://github.com/WookeyKim95/WookeyKim95.github.io/blob/main/as
 ---
 ## Experiences
 
+> **<span style="font-size:1.3em">Samsung Software Academy For Youth</span>** <br/>
+>  2023.07 - Present  <br/>
+>
+>  **_Student_**<br/>
+>  삼성 청년 SW 아카데미 10기 교육생<br/>
+
+
+<br/>
+
 > **<span style="font-size:1.3em">42Seoul - La Piscine</span>** <br/>
 >  2022.05 - 2022.06  <br/>
 >
