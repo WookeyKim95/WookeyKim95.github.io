@@ -2,7 +2,7 @@
 layout: post
 title:  "[백준] 11505_구간 곱 구하기 C++"
 subtitle:   
-date: 2023-08-23 07:01:03 +0900
+date: 2023-09-04 07:01:03 +0900
 tags: coding_test
 categories: study
 use_math: true
