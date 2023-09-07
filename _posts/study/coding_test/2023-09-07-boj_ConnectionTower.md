@@ -2,7 +2,7 @@
 layout: post
 title:  "[백준] 17398_통신망 분할 C++"
 subtitle:   
-date: 2023-08-25 07:17:58 +0900
+date: 2023-09-07 07:17:58 +0900
 tags: coding_test
 categories: study
 use_math: true
