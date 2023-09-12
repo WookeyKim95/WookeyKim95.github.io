@@ -65,7 +65,7 @@ bool BFS(int Low, int High)
 		return false;
 
 	queue<pair<int, int>> q;
-	q.push({ Sx, Sy });
+	q.push( { Sx, Sy } );
 	visited[Sy][Sx] = true;
 
 	while (!q.empty())
