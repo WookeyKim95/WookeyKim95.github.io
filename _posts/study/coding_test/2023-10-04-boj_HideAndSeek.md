@@ -2,7 +2,7 @@
 layout: post
 title:  "[백준] 1697_숨바꼭질 C++"
 subtitle:   
-date: 2023-10-04 06:49:53 +0900
+date: 2023-10-04 06:49:17 +0900
 tags: coding_test
 categories: study
 use_math: true
