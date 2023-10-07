@@ -2,7 +2,7 @@
 layout: post
 title:  "[백준] 11660_구간 합 구하기 5 C++"
 subtitle:   
-date: 2023-06-18 10:25:21 +0900
+date: 2023-06-18 10:25:22 +0900
 tags: coding_test
 categories: study
 use_math: true
