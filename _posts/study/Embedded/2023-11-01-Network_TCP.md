@@ -83,7 +83,7 @@ TCP/IP 4계층의 링크 계층은 OSI 7계층에선 데이터링크 계층, 물
 
 지국 사이의 경로가 패킷 전송이 이루어지기 전에 확정되어야 하고, 논리적 접속 혹은 가상 회선상으로 데이터가 교환된다. 그리고 각 패킷에서는 가상회선 식별자가 포함되며 모든 패킷을 전송하면 가상회선이 해제되고 패킷들은 전송한 순서대로 도착한다.
 
-![Alt text](Network_TCP_1.png)
+![Alt text](https://github.com/WookeyKim95/WookeyKim95.github.io/blob/main/_posts/study/Embedded/Network_TCP_1.png?raw=true)
 
 <br/>
 
@@ -93,13 +93,13 @@ TCP/IP 4계층의 링크 계층은 OSI 7계층에선 데이터링크 계층, 물
 데이터그램 패킷 교환 방식은 패킷이 독립적으로 이동하여 최적 경로를 선택해 간다.<br/>
 그래서 서로 다른 경로로 전송되기 때문에 순서가 바뀔 수 있어서 특수한 목적의 경우에만 사용된다.<br/>
 
-![Alt text](Network_TCP_2.png)
+![Alt text](https://github.com/WookeyKim95/WookeyKim95.github.io/blob/main/_posts/study/Embedded/Network_TCP_2.png?raw=true)
 
 <br/>
 
 ### TCP 연결의 성립과정 (3-Way-HandShake)<br/>
 
-![Alt text](Network_TCP_3.png)
+![Alt text](https://github.com/WookeyKim95/WookeyKim95.github.io/blob/main/_posts/study/Embedded/Network_TCP_3.png?raw=true)
 
 - 클라이언트가 서버에게 SYN 패킷을 보냄.Client > Server : TCP SYN
 - 서버가 SYN(x)을 받고 클라이언트로 받았다는 신호 ACK(x + 1)와 SYN(y)패킷을 보냄.Server > Client : TCP SYN, ACK
@@ -111,7 +111,7 @@ TCP/IP 4계층의 링크 계층은 OSI 7계층에선 데이터링크 계층, 물
 
 ### TCP 연결의 해제과정 (4-Way-HandShake)<br/>
 
-![Alt text](Network_TCP_4.png)
+![Alt text](https://github.com/WookeyKim95/WookeyKim95.github.io/blob/main/_posts/study/Embedded/Network_TCP_4.png?raw=true)
 
 - 클라이언트는 서버에게 연결을 종료한다는 FIN 플래그 보냄.
 - 서버는 FIN을 받고, 확인했다는 ACK를 클라이언트에게 보낸다. 이 때, 모든 데이터를 보내기 위해 CLOSE_WAIT 상태가 된다.

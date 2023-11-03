@@ -75,7 +75,7 @@ IP 주소는 IPv4와 IPv6로 나뉜다.<br/>
 대규모 네트워크가 늘어나는 상황에서 IP 주소 클래스가 등장하게 되었다.
 한정된 자원인 IP주소를 체계적으로 나눠 쓸 필요가 있다.<br/>
 
-![Alt text](IP_1.png)
+![Alt text](https://github.com/WookeyKim95/WookeyKim95.github.io/blob/main/_posts/study/Embedded/IP_1.png?raw=true)
 
 
 ### A 클래스<br/>
