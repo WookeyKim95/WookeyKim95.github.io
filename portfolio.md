@@ -136,8 +136,12 @@ accent_image: 'https://github.com/WookeyKim95/WookeyKim95.github.io/blob/main/as
 > **<span style="font-size:1.3em">Samsung Software Academy For Youth</span>** <br/>
 >  2023.07 - Present  <br/>
 >
->  **_Student_**<br/>
+>  **_Trainee_**<br/>
 >  삼성 청년 SW 아카데미 10기 교육생<br/>
+>  + <span style="font-size:0.9em">임베디드 트랙 수강 중</span>
+>  + <span style="font-size:0.9em">C/C++, Linux, 라즈베리파이를 이용한 학습</span>
+>  + <span style="font-size:0.9em">C++을 활용한 알고리즘 학습</span>
+>  + <span style="font-size:0.9em">Node.js, Vue.js를 이용한 웹 개발 기초 학습</span>
 
 
 <br/>
@@ -237,9 +241,9 @@ accent_image: 'https://github.com/WookeyKim95/WookeyKim95.github.io/blob/main/as
 
 * Algorithms and Data Structure
 
-* Game Programming<br/>
-  + C++
-  + WinAPI
+* Embedded Programming<br/>
+  + C/C++
+  + Linux
 
 ---
 ## Hobbies
