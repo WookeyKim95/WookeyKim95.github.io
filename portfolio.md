@@ -114,21 +114,18 @@ accent_image: 'https://github.com/WookeyKim95/WookeyKim95.github.io/blob/main/as
 ---
 ## Education
 
-> **2021.09 : 한양대학교 대학원(자퇴)** <br/>
->
-> 일반대학원 건설환경공학과<br/>
-> Department Of Civil & Environmental Engineering)<br/>
-> _Track : Construction project management_
-
-<br/>
-
-> **2021.08 : 한양대학교 졸업** <br/>
+> **2019.03 - 2021.08 : 한양대학교** <br/>
 >
 > 공과대학 건설환경공학과<br/>
 > (Department Of Civil & Environmental Engineering)<br/>
 > GPA : 4.11/4.5 , 131학점 이수<br/>
 > Summa Cum Laude
 
+> **2014.03 - 2021.08 : 연세대학교 원주캠퍼스** <br/>
+>
+> 과학기술대학 물리학과<br/>
+> (Department Of Physics)<br/>
+> GPA : 3.50/4.3 , 75학점 이수<br/>
 
 ---
 ## Experiences
@@ -138,7 +135,7 @@ accent_image: 'https://github.com/WookeyKim95/WookeyKim95.github.io/blob/main/as
 >
 >  **_Trainee_**<br/>
 >  삼성 청년 SW 아카데미 10기 교육생<br/>
->  + <span style="font-size:0.9em">임베디드 트랙 수강 중</span>
+>  + <span style="font-size:0.9em">임베디드 트랙</span>
 >  + <span style="font-size:0.9em">C/C++, Linux, 라즈베리파이를 이용한 학습</span>
 >  + <span style="font-size:0.9em">C++을 활용한 알고리즘 학습</span>
 >  + <span style="font-size:0.9em">Node.js, Vue.js를 이용한 웹 개발 기초 학습</span>
