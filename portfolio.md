@@ -118,13 +118,15 @@ accent_image: 'https://github.com/WookeyKim95/WookeyKim95.github.io/blob/main/as
 >
 > 공과대학 건설환경공학과<br/>
 > (Department Of Civil & Environmental Engineering)<br/>
+> 2019.03 편입
 > GPA : 4.11/4.5 , 131학점 이수<br/>
 > Summa Cum Laude
 
-> **2014.03 - 2021.08 : 연세대학교 원주캠퍼스** <br/>
+> **2014.03 - 2018.09 : 연세대학교 원주캠퍼스** <br/>
 >
 > 과학기술대학 물리학과<br/>
 > (Department Of Physics)<br/>
+> 2018.09 중퇴
 > GPA : 3.50/4.3 , 75학점 이수<br/>
 
 ---
