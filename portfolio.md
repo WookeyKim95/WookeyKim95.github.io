@@ -118,7 +118,7 @@ accent_image: 'https://github.com/WookeyKim95/WookeyKim95.github.io/blob/main/as
 >
 > 공과대학 건설환경공학과<br/>
 > (Department Of Civil & Environmental Engineering)<br/>
-> 2019.03 편입
+> 2019.03 편입 <br/>
 > GPA : 4.11/4.5 , 131학점 이수<br/>
 > Summa Cum Laude
 
