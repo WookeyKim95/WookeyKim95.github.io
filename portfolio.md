@@ -120,7 +120,7 @@ accent_image: 'https://github.com/WookeyKim95/WookeyKim95.github.io/blob/main/as
 > (Department Of Civil & Environmental Engineering)<br/>
 > 2019.03 편입 <br/>
 > GPA : 4.11/4.5 , 131학점 이수<br/>
-> Summa Cum Laude
+> Summa Cum Laude<br/>
 
 > **2014.03 - 2018.09 : 연세대학교 원주캠퍼스** <br/>
 >
