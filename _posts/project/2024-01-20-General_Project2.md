@@ -110,3 +110,14 @@ import "./App.scss"
 상품 목록 상세 페이지도 아래와 같이 구현하였다.<br/>
 
 ![Alt text](https://github.com/WookeyKim95/WookeyKim95.github.io/blob/main/assets/img/project/General_Project2_2.png?raw=true)
+
+<br/>
+
+## 리뷰 목록 및 상세 페이지 구현<br/>
+<br/>
+
+패스트캠퍼스 강의를 참고하면서 구현을 했고,<br/>
+
+좋아요 기능을 구현하기 위해서 Prisma로 가 데이터베이스를 만들어서 구현해보았다.<br/>
+
+Prisma에 대한 글 작성 예정.<br/>
