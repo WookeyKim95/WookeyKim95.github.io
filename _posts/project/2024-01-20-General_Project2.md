@@ -2,7 +2,7 @@
 layout: post
 title:  "[공통프로젝트] 플랫폼 제작 일지 2"
 subtitle: 
-date: 2024-01-20 06:17:34 +0900
+date: 2024-01-20 06:17:35 +0900
 categories: project
 tags:
 comments: true
