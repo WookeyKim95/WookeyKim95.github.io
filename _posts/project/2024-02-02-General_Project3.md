@@ -63,6 +63,104 @@ npx next start
 어디서 오류가 나는지 발견이 쉽고, 웹 상에서 오류가 나기전에 오류를 잡을 수 있었다.<br/>
 <br/>
 
+## Nextauth를 이용한 로그인 구현<br/>
+<Br/>
+
+우선 app/api/auth/[...nextauth]/route.ts 파일을 만들어서 아래와 같이 작성하였다.<br/>
+
+```
+import NextAuth, { NextAuthOptions } from "next-auth"
+import CredentialsProvider from "next-auth/providers/credentials"
+import { NextApiRequest } from "next";
+import axios, { AxiosResponse } from "axios";
+
+export const authOptions:NextAuthOptions = {
+  providers: [
+    CredentialsProvider({
+      name: "credentials",
+      credentials: {
+        username: { label: "Username", type: "text" },
+        password: { label: "Password", type: "password" }
+      },
+      async authorize(credentials) {
+
+          const backendUrl = "https://i10a207.p.ssafy.io/api";
+          // Artist
+
+          const userResponse: AxiosResponse<any> = await axios.post(`${backendUrl}/artists/login`, credentials, {
+            headers: {
+              'Content-Type': 'application/json;charset=UTF-8'
+            }
+          });
+          console.log(userResponse.data);
+          if (userResponse.data === "바보 멍텅구리 로그인 실패했잔요") {
+            // Member
+            const memberResponse: AxiosResponse<any> = await axios.post(`${backendUrl}/members/login`, credentials, {
+              headers: {
+                'Content-Type': 'application/json;charset=UTF-8'
+              }
+            });
+
+            if (memberResponse.data === "바보 멍텅구리 로그인 실패했잔요") {
+              console.log('error');
+              return null;
+            }
+
+            return {
+              name: memberResponse.data.memberNickname,
+              id: memberResponse.data.memberId,
+            };
+          }
+
+          return {
+            name: userResponse.data.artistName,
+            id: userResponse.data.artistId,
+          };
+      },
+    }),
+  ],
+  session: {
+    strategy: 'jwt'
+  },
+  jwt: {
+    secret: process.env.JWT_SECRET,
+    maxAge: 30 * 24 * 60 * 60 // 30days
+  },
+  pages: {
+    signIn: '/LoginPage',
+  },
+  callbacks: {
+    async jwt({ token, user }) {
+      if (user) {
+        token.id = user.id;
+        token.name = user.name;
+      }
+      return token;
+    },
+    async session({ session, token }) {
+      session.user = token;
+      return session;
+    },
+  },
+};
+
+const handler = NextAuth(authOptions);
+
+export {handler as GET, handler as POST};
+```
+
+아직은 오류가 조금 나는 것 같다. 백엔드와 통신을 하는 방법을 정확히는 모르기 때문이다.<br/>
+
+알고보면 명세서를 받아야할 것 같다.<br/>
+
+아참, 중요했던 것은 Nextauth는 SSR 환경에서만 동작하기 때문에<br/>
+
+여태까지 SSG로 빌드했던 것을 다시 SSR로 돌려야하는 작업이 필요할 것이다.<br/>
+
+NginX를 SSR로 어떻게 돌려야 할지 감을 잡아야겠다.<br/>
+
+<Br/>
+
 ## 백엔드와 연동<br/>
 <br/>
 
