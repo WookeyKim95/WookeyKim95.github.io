@@ -133,7 +133,7 @@ accent_image: 'https://github.com/WookeyKim95/WookeyKim95.github.io/blob/main/as
 ## Experiences
 
 > **<span style="font-size:1.3em">Samsung Software Academy For Youth</span>** <br/>
->  2023.07 - Present  <br/>
+>  2023.07 - 2024.06  <br/>
 >
 >  **_Trainee_**<br/>
 >  삼성 청년 SW 아카데미 10기 교육생<br/>
@@ -141,6 +141,10 @@ accent_image: 'https://github.com/WookeyKim95/WookeyKim95.github.io/blob/main/as
 >  + <span style="font-size:0.9em">C/C++, Linux, 라즈베리파이를 이용한 학습</span>
 >  + <span style="font-size:0.9em">C++을 활용한 알고리즘 학습</span>
 >  + <span style="font-size:0.9em">Node.js, Vue.js를 이용한 웹 개발 기초 학습</span>
+>  + <span style="font-size:0.9em">React, Next.js를 이용한 웹 프론트엔드 개발</span>
+>  + <span style="font-size:0.9em">Unity를 이용한 게임 클라이언트 개발</span>
+>  + <span style="font-size:0.9em">Gitlab을 이용한 형상관리</span>
+>  + <span style="font-size:0.9em">JIRA를 통한 개발 일정관리 및 협업</span>
 
 
 <br/>
@@ -187,7 +191,7 @@ accent_image: 'https://github.com/WookeyKim95/WookeyKim95.github.io/blob/main/as
 >     + <span style="font-size:0.8em">3D Voxel 망의 XYZ좌표 및 토량계산 결과 데이터를 통한 건설장비 운용경로 산출 로직 작성</span>
 
 ---
-## Research Projects Has Joined in...
+## Projects Has Joined in...
 
 
 > **지능형 관제 플랫폼 및 빅 데이터 기반 최적 경로 네비게이션(C-Map) 기술 개발**
@@ -195,25 +199,54 @@ accent_image: 'https://github.com/WookeyKim95/WookeyKim95.github.io/blob/main/as
 > <span style="font-size:0.9em">한국도로공사 스마트건설기술사업단</span><br/>
 > <span style="font-size:0.9em">연구보조원(학부생 인턴) 2020.06 ~ 2021.08 </span>
 
-<br/>
-
 >**스마트 디지털 엔지니어링 전문인력사업**
 >
 ><span style="font-size:0.9em">서울대학교 산학협력단</span><br/>
 ><span style="font-size:0.9em">연구보조원(학부생 인턴) 2020.09 ~ 2021.02 </span>
-
-<br/>
 
 >**토공사를 위한 디지털트윈 프레임워크**
 >
 ><span style="font-size:0.9em">한국연구재단</span><br/>
 ><span style="font-size:0.9em">연구보조원(학부생 인턴) 2020.03 ~ 2021.08 </span>
 
+> **게임 CrazyArcade 모작**
+>
+> <span style="font-size:0.9em">개인 프로젝트</span><br/>
+> <span style="font-size:0.9em">2022.09 ~ 2022.10 </span>
+
+> **RC카 다중 제어 프로젝트**
+>
+> <span style="font-size:0.9em">삼성청년SW아카데미</span><br/>
+> <span style="font-size:0.9em">팀원 2023.11 </span>
+
+> **SSAFY RACE**
+>
+> <span style="font-size:0.9em">삼성청년SW아카데미</span><br/>
+> <span style="font-size:0.9em">팀원 2023.12 </span>
+
+> **신진 작가를 위한 웹 플랫폼 Bon Voyage**
+>
+> <span style="font-size:0.9em">삼성청년SW아카데미</span><br/>
+> <span style="font-size:0.9em">팀원 2024.01 ~ 2024.02 </span>
+
+> **RPG 및 타이쿤게임 Michelin de 한양**
+>
+> <span style="font-size:0.9em">삼성청년SW아카데미</span><br/>
+> <span style="font-size:0.9em">팀장 2024.02 ~ 2024.04 </span>
+
+> **실시간 동시 편집 기능 지원 웹 협업툴 H-UP**
+>
+> <span style="font-size:0.9em">삼성청년SW아카데미</span><br/>
+> <span style="font-size:0.9em">팀원 2024.04 ~ 2024.05 </span>
+
+<br/>
+
 ---
 ## Awards
 
 
 - 한양 졸업우수상 (졸업평점 4.00 이상)
+- 삼성청년SW아카데미 특화프로젝트(메타버스 게임) 우수상
 
 ---
 ## Skills and Certification
@@ -226,6 +259,21 @@ accent_image: 'https://github.com/WookeyKim95/WookeyKim95.github.io/blob/main/as
   + Python
   + C++
   + HTML/CSS/JavaScript
+  + C#
+  + React
+  + Next.js
+  + Npm
+
+* Developing Tools
+  + Visual Studio
+  + VSCode
+  + MobaXterm
+  + VIM
+  + Linux(Ubuntu)
+  + Unity Engine
+  + Unreal Engine
+  + Git
+  + JIRA
 
 * Computer Programs
   + Excel
@@ -233,7 +281,6 @@ accent_image: 'https://github.com/WookeyKim95/WookeyKim95.github.io/blob/main/as
   + Word
   + AutoCAD (LOD 400)
   + Revit (LOD 300)
-
      
 ---
 ## Studying..
@@ -244,11 +291,18 @@ accent_image: 'https://github.com/WookeyKim95/WookeyKim95.github.io/blob/main/as
   + C/C++
   + Linux
 
+* Frontend Programming<br/>
+  + React
+  + Next.js
+
+* Game Client Programming<br/>
+  + Unity Engine
+  + Unreal Engine 4,5
+
 ---
 ## Hobbies
 
 * Swimming
-* Playing the Piano
 * Painting with a Tablet
 
 
