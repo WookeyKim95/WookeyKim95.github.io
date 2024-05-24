@@ -58,7 +58,6 @@ accent_image: 'https://github.com/WookeyKim95/WookeyKim95.github.io/blob/main/as
 
 - 꾸준한 성실함으로 급격히 성장합니다.
 - 상상하고 시각화하는 것을 좋아합니다.
-- 무언가에 빠지고 싶어합니다.
 - 효율적으로 문제를 해결하고 싶어합니다.
 - 해결하지 못하면 마음이 불편합니다.
 - 디버깅을 즐깁니다.
