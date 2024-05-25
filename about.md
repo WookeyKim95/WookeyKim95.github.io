@@ -60,4 +60,4 @@ accent_image: 'https://github.com/WookeyKim95/WookeyKim95.github.io/blob/main/as
 - 상상하고 시각화하는 것을 좋아합니다.
 - 효율적으로 문제를 해결하고 싶어합니다.
 - 해결하지 못하면 마음이 불편합니다.
-- 디버깅을 즐깁니다.
+- 어떤 문제를 생각할 때 왜?에 대해서 생각을 합니다.
