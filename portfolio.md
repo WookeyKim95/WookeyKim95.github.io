@@ -132,6 +132,32 @@ accent_image: 'https://github.com/WookeyKim95/WookeyKim95.github.io/blob/main/as
 ---
 ## Experiences
 
+> **<span style="font-size:1.3em">Gloud Inc.</span>** <br/>
+>  2025.04 - Present  <br/>
+>
+>  **_Product Engineer_**<br/>
+>  프로덕트 SW 엔지니어<br/>
+>  + <span style="font-size:0.9em">치과 치료를 위한 디지털 전환 서비스 JustScan 개발</span>
+>  + <span style="font-size:0.9em">3D 프린터 출력을 위한 3D 모델 슬라이싱 프로그램 개발</span>
+>  + <span style="font-size:0.9em">Frontend : React.js, Tailwind CSS, TypeScript</span>
+>  + <span style="font-size:0.9em">3D Modeling and Graphics : Three.js</span>
+
+<br/>
+
+> **<span style="font-size:1.3em">Samsung Software Academy For Youth</span>** <br/>
+>  2024.12 - 2025.04  <br/>
+>
+>  **_SW Developer of SSAFY Research Team_**<br/>
+>  연구팀 프로<br/>
+>  + <span style="font-size:0.9em">ChatGPT를 위한 프롬프트 공유 플랫폼 SSAFY GPT 유지보수</span>
+>  + <span style="font-size:0.9em">SSAFY GPT 학습센터 웹 프론트엔드 및 백엔드 개발</span>
+>  + <span style="font-size:0.9em">SSAFY GPT 모바일 환경 웹 UI 디자인 및 개발</span>
+>  + <span style="font-size:0.9em">Frontend : React.js, Tailwind CSS, TypeScript</span>
+>  + <span style="font-size:0.9em">Backend : JAVA, Spring Boot</span>
+>  + <span style="font-size:0.9em">교육과정 업그레이드를 위한 교육 프로 및 SSAFY 교육생들과 소통</span>
+
+<br/>
+
 > **<span style="font-size:1.3em">Samsung Software Academy For Youth</span>** <br/>
 >  2023.07 - 2024.06  <br/>
 >
@@ -146,7 +172,6 @@ accent_image: 'https://github.com/WookeyKim95/WookeyKim95.github.io/blob/main/as
 >  + <span style="font-size:0.9em">Gitlab을 이용한 형상관리</span>
 >  + <span style="font-size:0.9em">JIRA를 통한 개발 일정관리 및 협업</span>
 
-
 <br/>
 
 > **<span style="font-size:1.3em">42Seoul - La Piscine</span>** <br/>
@@ -159,17 +184,6 @@ accent_image: 'https://github.com/WookeyKim95/WookeyKim95.github.io/blob/main/as
 >  + <span style="font-size:0.9em">동료 평가 진행 150회 이상</span><br/>
 > <span style="font-size:0.8em"> 동료평가 : 자신이 동료에게 설명을 듣고 동료의 코드를 평가하고 함께 점검하는 시스템
 >  + <span style="font-size:0.9em">최종 선발 불합격</span>
-
-<br/>
-
-> **<span style="font-size:1.3em">Platom .inc</span>** <br/>
->  2021.10 - 2021.11  <br/>
->
->  **_Part Time Job Assistant_**<br/>
->  KMO(한국수학올림피아드) 교육용 애플리케이션 **MO**개발 참여<br/>
->  + <span style="font-size:0.9em">플로우차트, 기능명세서 작성</span>
->  + <span style="font-size:0.9em">홍보문구 제시</span>
->  + <span style="font-size:0.9em">문제내용 오류 검토</span>
 
 <br/>
 
@@ -294,6 +308,8 @@ accent_image: 'https://github.com/WookeyKim95/WookeyKim95.github.io/blob/main/as
 * Frontend Programming<br/>
   + React
   + Next.js
+  + TypeScript
+  + Three.js
 
 * Game Client Programming<br/>
   + Unity Engine
