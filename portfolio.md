@@ -139,6 +139,7 @@ accent_image: 'https://github.com/WookeyKim95/WookeyKim95.github.io/blob/main/as
 >  프로덕트 SW 엔지니어<br/>
 >  + <span style="font-size:0.9em">치과 치료를 위한 디지털 전환 서비스 JustScan 개발</span>
 >  + <span style="font-size:0.9em">3D 프린터 출력을 위한 3D 모델 슬라이싱 프로그램 개발</span>
+>  + <span style="font-size:0.9em">비니어 제작을 위한 Dental WebCAD 프로그램 개발</span>
 >  + <span style="font-size:0.9em">Frontend : React.js, Tailwind CSS, TypeScript</span>
 >  + <span style="font-size:0.9em">3D Modeling and Graphics : Three.js</span>
 
