@@ -13,12 +13,12 @@ url:                 https://Wookeykim95.github.io
 baseurl:             ""
 
 # A very short description of your page
-tagline:             "Project : Reboot"
+tagline:             "Project : Rise"
 
 # A short description of the page, used in the sidebar and as fallback for the meta description tag.
 # Markdown enabled, but don't use more than one paragraph (enforced by `>`)
 description:        > 
-                    개발자를 꿈꾸며 한 페이지씩 써내려가는 나의 일지.
+                    조금씩 써내려가는 우상향하는 나의 모습.
 
 # This should be the same author as first entry in `_data/authors.yml`
 author:
